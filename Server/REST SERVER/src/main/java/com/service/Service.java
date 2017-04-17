@@ -1,8 +1,8 @@
 package com.service;
 
 
-import com.dao.OrderDao;
-import com.dao.TimetableDao;
+import com.txtDao.OrderDao;
+import com.txtDao.TimetableDao;
 import com.model.Order;
 import com.model.Timetable;
 

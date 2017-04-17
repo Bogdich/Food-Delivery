@@ -1,4 +1,4 @@
-package com.dao;
+package com.txtDao;
 
 
 import com.model.Timetable;

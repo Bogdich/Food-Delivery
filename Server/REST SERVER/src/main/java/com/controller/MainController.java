@@ -10,7 +10,7 @@ import java.util.List;
 
 @CrossOrigin()
 @RestController
-@RequestMapping(value = "/cinema")
+@RequestMapping(value = "/food-delivery")
 public class MainController {
     private Service service = new Service();
 
