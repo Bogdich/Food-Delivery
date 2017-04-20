@@ -10,7 +10,7 @@ import java.util.List;
 
 @CrossOrigin()
 @RestController
-@RequestMapping(value = "/cinema")
+@RequestMapping(value = "/food-delivery")
 public class MainController {
     private Service service = new Service();
 
@@ -53,6 +53,17 @@ public class MainController {
                               @RequestParam("time")String time, @RequestParam("count")String count) {
         Answer answer = new Answer();
         answer.setAnswer(service.addOrder(name,date,time,count));
+        return answer;
+    }
+
+    @RequestMapping(value = "/order/addUser",method = RequestMethod.GET)
+    @ResponseBody
+    public Answer createUser(/*@RequestParam("login")String login, @RequestParam("password")String password*/) {
+        Answer answer = new Answer();
+        service.init();
+        service.updateUser(1, "ikloo", "1234");
+        //answer.setAnswer();
+        answer.setAnswer("nil");
         return answer;
     }
 }
