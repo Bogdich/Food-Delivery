@@ -2,9 +2,6 @@ package com.model;
 
 import java.util.Arrays;
 
-/**
- * Created by Lenovo on 3/31/2017.
- */
 public class Order {
     private String id;
     private Timetable timetable;
