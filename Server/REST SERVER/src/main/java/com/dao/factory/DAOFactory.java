@@ -14,7 +14,7 @@ public abstract class DAOFactory {
 
 	public abstract UserDAO getUserDAO();
 
-//	public abstract PoolDAO getPoolDAO();
+	public abstract PoolDAO getPoolDAO();
 //
 //	public abstract CardDAO getCardDAO();
 //

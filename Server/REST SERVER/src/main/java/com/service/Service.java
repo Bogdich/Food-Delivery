@@ -1,6 +1,7 @@
 package com.service;
 
 
+import com.dao.PoolDAO;
 import com.dao.UserDAO;
 import com.dao.exception.DAOException;
 import com.dao.factory.DAOFactory;
@@ -197,5 +198,26 @@ public class Service {
             return "1";
         int id = Integer.parseInt(all.get(all.size() - 1).getId());
         return String.valueOf(id + 1);
+    }
+
+
+    public void init() {//throws ServiceException {
+        try {
+            DAOFactory daoFactory = DAOFactory.getInstance(DAOFactory.Factories.MYSQL);
+            PoolDAO poolDAO = daoFactory.getPoolDAO();
+            poolDAO.init();
+        } catch (DAOException e) {
+           // throw new ServiceException("Cannot init a pool", e);
+        }
+    }
+
+    public void destroy() {//throws ServiceException {
+        try {
+            DAOFactory daoFactory = DAOFactory.getInstance(DAOFactory.Factories.MYSQL);
+            PoolDAO poolDAO = daoFactory.getPoolDAO();
+            poolDAO.destroy();
+        } catch (DAOException e) {
+            //throw new ServiceException("Cannot destroy a pool", e);
+        }
     }
 }

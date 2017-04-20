@@ -9,7 +9,7 @@ public class MySQLDAOFactory extends DAOFactory {
 
     private final UserDAO userDAO = new MySQLUserDAO();
     //private final CardDAO cardDAO = new MySQLCardDAO();
-    //private final PoolDAO poolDAO = new MySQLPoolDAO();
+    private final PoolDAO poolDAO = new MySQLPoolDAO();
     //private final CarDAO carDAO = new MySQLCarDAO();
     //private final ReportDAO reportDAO = new MySQLReportDAO();
 
@@ -25,10 +25,10 @@ public class MySQLDAOFactory extends DAOFactory {
     }
 
 
-//    @Override
-//    public PoolDAO getPoolDAO() {
-//        return poolDAO;
-//    }
+    @Override
+    public PoolDAO getPoolDAO() {
+        return poolDAO;
+    }
 //
 //    @Override
 //    public CardDAO getCardDAO() {

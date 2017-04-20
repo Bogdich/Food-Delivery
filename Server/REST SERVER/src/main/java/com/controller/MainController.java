@@ -60,6 +60,7 @@ public class MainController {
     @ResponseBody
     public Answer createUser(/*@RequestParam("login")String login, @RequestParam("password")String password*/) {
         Answer answer = new Answer();
+        service.init();
         service.updateUser(1, "ikloo", "1234");
         //answer.setAnswer();
         answer.setAnswer("nil");
