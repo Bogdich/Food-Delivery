@@ -18,7 +18,7 @@ public interface UserDAO {
 
     void delete(int id) throws DAOException;
 
-    User findByLogin(String login) throws DAOException;
+//    User findByLogin(String login) throws DAOException;
 
  //   User findByIdAndRole(int id, boolean isAdmin) throws DAOException;
 

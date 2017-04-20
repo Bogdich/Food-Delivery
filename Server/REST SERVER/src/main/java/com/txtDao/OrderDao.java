@@ -9,7 +9,7 @@ import java.util.List;
 
 
 public class OrderDao {
-    private static final String ORDER_FILE = "/Users/KirillBudevich/Projects/Study/University/CourseWorkRIS/REST SERVER/order.txt";
+    private static final String ORDER_FILE = "order.txt";
 
     public String delete(Order order){
         String answer = "Error";

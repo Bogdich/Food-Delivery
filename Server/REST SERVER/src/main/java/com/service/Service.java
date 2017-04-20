@@ -1,6 +1,11 @@
 package com.service;
 
 
+import com.dao.UserDAO;
+import com.dao.exception.DAOException;
+import com.dao.factory.DAOFactory;
+import com.dao.impl.MySQLUserDAO;
+import com.model.User;
 import com.txtDao.OrderDao;
 import com.txtDao.TimetableDao;
 import com.model.Order;
@@ -13,7 +18,58 @@ public class Service {
     private OrderDao orderDao;
     private TimetableDao timetableDao;
 
+    public void updateUser(int id, String login, String password)/* throws ServiceException*/ {
+//        if(!Validator.validateLogin(login)){
+//            throw new ServiceWrongLoginException("Wrong login");
+//        }
+//        if(!Validator.validatePassword(password)){
+//            throw new ServiceWrongPasswordException("Wrong password");
+//        }
+//        if(!Validator.validateInt(id) || !Validator.validateString(email, EMAIL_MAX_LENGTH) ||
+//                !Validator.validateString(surname, SURNAME_MAX_LENGTH) ||
+//                !Validator.validateString(name, NAME_MAX_LENGTH)){
+//            throw new ServiceException("Wrong parameters for registration");
+//        }
+//        if(!Validator.validateEmail(email)){
+//            throw new ServiceWrongPasswordException("Wrong email");
+//        }
+
+        DAOFactory factory = DAOFactory.getInstance(DAOFactory.Factories.MYSQL);
+        UserDAO userDAO = factory.getUserDAO();
+
+        try{
+
+            User user = new User();
+            user.setLogin(login);
+            user.setPassword(password);
+//            user.setName(name);
+//            user.setSurname(surname);
+            user.setId(id);
+//            user.setEmail(email);
+
+            userDAO.insert(user);
+
+        } catch (DAOException e){
+            //throw new ServiceException("Service layer: cannot update user", e);
+        }
+    }
+
+    public void deleteUser(int id) /* throws ServiceException*/ {
+//        if(!Validator.validateInt(id)){
+//            throw new ServiceException("Wrong id");
+//        }
+
+        DAOFactory factory = DAOFactory.getInstance(DAOFactory.Factories.MYSQL);
+        UserDAO userDAO = factory.getUserDAO();
+
+        try{
+            userDAO.delete(id);
+        } catch (DAOException e){
+//            throw new ServiceException("Service layer: cannot delete user", e);
+        }
+    }
     public Service(){
+
         orderDao = new OrderDao();
         timetableDao = new TimetableDao();
     }

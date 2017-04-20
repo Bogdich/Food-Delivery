@@ -11,17 +11,13 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-
-/**
- * Created by AndrewRaukut on 12/6/16.
- */
 public class MySQLUserDAO implements UserDAO {
 
     //private static final Logger LOGGER = Logger.getRootLogger();
 
-    private static final String INSERT_USER_QUERY = "INSERT INTO `users` " +
-            "(`login`, `password`, `name`, `surname`, `email`) " +
-            "VALUES (?, ?, ?, ?, ?)";
+    private static final String INSERT_USER_QUERY = "INSERT INTO `user` " +
+            "(`login`, `password`) " +
+            "VALUES (?, ?)";
 
     private static final String UPDATE_USER_QUERY = "UPDATE `users` " +
             "SET `login` = ?, `password` = ?, `name` = ?, `surname` = ?, `email` = ?, `card_id` = ? " +
@@ -31,7 +27,7 @@ public class MySQLUserDAO implements UserDAO {
 
     private static final String SELECT_ADMINISTRATOR_BY_LOGIN_QUERY = "SELECT * FROM `admins` WHERE `login` = ? ";
 
-    private static final String SELECT_USER_BY_LOGIN_QUERY = "SELECT * FROM `users` WHERE `login` = ? ";
+    private static final String SELECT_USER_BY_LOGIN_QUERY = "SELECT * FROM `user` WHERE `login` = ? ";
 
     private static final String SELECT_USER_BY_ID_QUERY = "SELECT * FROM `users` WHERE `user_id` = ? ";
 
@@ -39,7 +35,7 @@ public class MySQLUserDAO implements UserDAO {
 
     private static final String SELECT_ALL_USERS_QUERY = "SELECT * FROM `users` ";
 
-    private static final String DELETE_USER_BY_ID_QUERY = "DELETE FROM `users` WHERE `user_id` = ? ";
+    private static final String DELETE_USER_BY_ID_QUERY = "DELETE FROM `user` WHERE `id` = ? ";
 
     @Override
     public void insert(User user) throws DAOException {
@@ -52,9 +48,6 @@ public class MySQLUserDAO implements UserDAO {
 
             preparedStatement.setString(1, user.getLogin());
             preparedStatement.setString(2, user.getPassword());
-            preparedStatement.setString(3, user.getUserInfo().getName());
-            preparedStatement.setString(4, user.getUserInfo().getSurname());
-            preparedStatement.setString(5, user.getUserInfo().getEmail());
 
             preparedStatement.executeUpdate();
         } catch (InterruptedException | ConnectionPoolException e) {
@@ -168,75 +161,75 @@ public class MySQLUserDAO implements UserDAO {
         }
     }
 
-    @Override
-    public User findByLogin(String login) throws DAOException {
-        ConnectionPool connectionPool = ConnectionPool.getInstance();
-        Connection connection = null;
-        PreparedStatement preparedStatementAdministrator = null;
-        ResultSet resultSetAdministrator = null;
-        PreparedStatement preparedStatementClient = null;
-        ResultSet resultSetClient = null;
-        User user = null;
-        UserInfo userInfo = null;
-        try {
-            connection = connectionPool.getConnection();
-            preparedStatementAdministrator = connection.prepareStatement(SELECT_ADMINISTRATOR_BY_LOGIN_QUERY);
-
-            preparedStatementAdministrator.setString(1, login);
-            resultSetAdministrator = preparedStatementAdministrator.executeQuery();
-
-            if (!resultSetAdministrator.next()) {
-                preparedStatementClient = connection.prepareStatement(SELECT_USER_BY_LOGIN_QUERY);
-
-                preparedStatementClient.setString(1, login);
-                resultSetClient = preparedStatementClient.executeQuery();
-
-                if (resultSetClient.next()) {
-                    user = new User();
-                    user.setId(resultSetClient.getInt(1));
-                    user.setLogin(resultSetClient.getString(2));
-                    user.setPassword(resultSetClient.getString(3));
-                    user.getUserInfo().setName(resultSetClient.getString(4));
-                    user.getUserInfo().setSurname(resultSetClient.getString(5));
-                    user.getUserInfo().setEmail(resultSetClient.getString(6));
-                    userInfo = new UserInfo();
-                    card.setId(resultSetClient.getInt(7));
-                    user.setCard(card);
-                    user.setAdmin(false);
-                    user.setVisitsNumber(resultSetClient.getInt(8));
-                }
-            } else {
-                user = new User();
-                user.setId(resultSetAdministrator.getInt(1));
-                user.setLogin(resultSetAdministrator.getString(2));
-                user.setPassword(resultSetAdministrator.getString(3));
-                user.setName(resultSetAdministrator.getString(4));
-                user.setSurname(resultSetAdministrator.getString(5));
-                user.setEmail(resultSetAdministrator.getString(6));
-                user.setAdmin(true);
-                user.setCard(null);
-            }
-
-        } catch (InterruptedException | ConnectionPoolException e) {
-            //LOGGER.error("Can not get connection from connection pool");
-        } catch (SQLException e) {
-            throw new DAOException("DAO layer: cannot find user by login", e);
-        } finally {
-            closeResultSet(resultSetAdministrator);
-            closeStatement(preparedStatementAdministrator);
-            closeResultSet(resultSetClient);
-            closeStatement(preparedStatementClient);
-            if (connection != null) {
-                try {
-                    connectionPool.freeConnection(connection);
-                } catch (SQLException | ConnectionPoolException e) {
-                    //LOGGER.error("Can not free connection from connection pool");
-                }
-            }
-        }
-
-        return user;
-    }
+//    @Override
+//    public User findByLogin(String login) throws DAOException {
+//        ConnectionPool connectionPool = ConnectionPool.getInstance();
+//        Connection connection = null;
+//        PreparedStatement preparedStatementAdministrator = null;
+//        ResultSet resultSetAdministrator = null;
+//        PreparedStatement preparedStatementClient = null;
+//        ResultSet resultSetClient = null;
+//        User user = null;
+//        UserInfo userInfo = null;
+//        try {
+//            connection = connectionPool.getConnection();
+//            preparedStatementAdministrator = connection.prepareStatement(SELECT_ADMINISTRATOR_BY_LOGIN_QUERY);
+//
+//            preparedStatementAdministrator.setString(1, login);
+//            resultSetAdministrator = preparedStatementAdministrator.executeQuery();
+//
+//            if (!resultSetAdministrator.next()) {
+//                preparedStatementClient = connection.prepareStatement(SELECT_USER_BY_LOGIN_QUERY);
+//
+//                preparedStatementClient.setString(1, login);
+//                resultSetClient = preparedStatementClient.executeQuery();
+//
+//                if (resultSetClient.next()) {
+//                    user = new User();
+//                    user.setId(resultSetClient.getInt(1));
+//                    user.setLogin(resultSetClient.getString(2));
+//                    user.setPassword(resultSetClient.getString(3));
+//                    user.getUserInfo().setName(resultSetClient.getString(4));
+//                    user.getUserInfo().setSurname(resultSetClient.getString(5));
+//                    user.getUserInfo().setEmail(resultSetClient.getString(6));
+//                    userInfo = new UserInfo();
+//                    card.setId(resultSetClient.getInt(7));
+//                    user.setCard(card);
+//                    user.setAdmin(false);
+//                    user.setVisitsNumber(resultSetClient.getInt(8));
+//                }
+//            } else {
+//                user = new User();
+//                user.setId(resultSetAdministrator.getInt(1));
+//                user.setLogin(resultSetAdministrator.getString(2));
+//                user.setPassword(resultSetAdministrator.getString(3));
+//                user.setName(resultSetAdministrator.getString(4));
+//                user.setSurname(resultSetAdministrator.getString(5));
+//                user.setEmail(resultSetAdministrator.getString(6));
+//                user.setAdmin(true);
+//                user.setCard(null);
+//            }
+//
+//        } catch (InterruptedException | ConnectionPoolException e) {
+//            //LOGGER.error("Can not get connection from connection pool");
+//        } catch (SQLException e) {
+//            throw new DAOException("DAO layer: cannot find user by login", e);
+//        } finally {
+//            closeResultSet(resultSetAdministrator);
+//            closeStatement(preparedStatementAdministrator);
+//            closeResultSet(resultSetClient);
+//            closeStatement(preparedStatementClient);
+//            if (connection != null) {
+//                try {
+//                    connectionPool.freeConnection(connection);
+//                } catch (SQLException | ConnectionPoolException e) {
+//                    //LOGGER.error("Can not free connection from connection pool");
+//                }
+//            }
+//        }
+//
+//        return user;
+//    }
 
 //    @Override
 //    public User findByIdAndRole(int id, boolean isAdmin) throws DAOException {

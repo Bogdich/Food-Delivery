@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TimetableDao {
-    private final static String TIMETABLE_FILE = "/Users/KirillBudevich/Projects/Study/University/CourseWorkRIS/REST SERVER/timetable.txt";
+    private final static String TIMETABLE_FILE = "timetable.txt";
     public List<Timetable> getAll(){
         List<Timetable> all = new ArrayList<>();
         try(BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(TIMETABLE_FILE)))){

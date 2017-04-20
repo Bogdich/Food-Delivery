@@ -55,4 +55,14 @@ public class MainController {
         answer.setAnswer(service.addOrder(name,date,time,count));
         return answer;
     }
+
+    @RequestMapping(value = "/order/addUser",method = RequestMethod.GET)
+    @ResponseBody
+    public Answer createUser(/*@RequestParam("login")String login, @RequestParam("password")String password*/) {
+        Answer answer = new Answer();
+        service.updateUser(1, "ikloo", "1234");
+        //answer.setAnswer();
+        answer.setAnswer("nil");
+        return answer;
+    }
 }
