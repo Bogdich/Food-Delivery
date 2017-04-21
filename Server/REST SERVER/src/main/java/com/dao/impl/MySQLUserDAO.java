@@ -38,18 +38,26 @@ public class MySQLUserDAO implements UserDAO {
     private static final String DELETE_USER_BY_ID_QUERY = "DELETE FROM `user` WHERE `id` = ? ";
 
     @Override
-    public void insert(User user) throws DAOException {
+    public int insert(User user) throws DAOException {
         ConnectionPool connectionPool = ConnectionPool.getInstance();
         Connection connection = null;
         PreparedStatement preparedStatement = null;
+        int id = 0;
+
         try {
             connection = connectionPool.getConnection();
-            preparedStatement = connection.prepareStatement(INSERT_USER_QUERY);
+            preparedStatement = connection.prepareStatement(INSERT_USER_QUERY, PreparedStatement.RETURN_GENERATED_KEYS);
 
             preparedStatement.setString(1, user.getLogin());
             preparedStatement.setString(2, user.getPassword());
 
             preparedStatement.executeUpdate();
+            ResultSet rs = preparedStatement.getGeneratedKeys();
+            if (rs.next()){
+                id = rs.getInt(1);
+            }
+            rs.close();
+
         } catch (InterruptedException | ConnectionPoolException e) {
             //LOGGER.error("Can not get connection from connection pool");
         } catch (SQLException e) {
@@ -64,6 +72,8 @@ public class MySQLUserDAO implements UserDAO {
                 }
             }
         }
+
+        return id;
     }
 
 //    @Override

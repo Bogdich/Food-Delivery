@@ -20,7 +20,7 @@ public class MainController {
     public Object getTimetable() {
         Answer answer = new Answer();
         List<Timetable> list = service.getTimetable();
-        answer.setAnswer("nil");
+        answer.setId("nil");
         return list;
     }
 
@@ -29,7 +29,7 @@ public class MainController {
     @ResponseBody
     public Answer undoOrder(@PathVariable String number) {
         Answer answer = new Answer();
-        answer.setAnswer(service.undoOrder(number));
+        answer.setId(service.undoOrder(number));
         return answer;
     }
 
@@ -40,30 +40,20 @@ public class MainController {
         Order order = service.getOrderById(number);
         if(order == null){
             Answer answer = new Answer();
-            answer.setAnswer("Order by this number does not exist");
+            answer.setId("Order by this number does not exist");
             return answer;
         }
         return order;
     }
 
     // забронировать одно или несколько мест на сеансе;
-    @RequestMapping(value = "/order/add",method = RequestMethod.POST)
-    @ResponseBody
-    public Answer createOrder(@RequestParam("name")String name, @RequestParam("date")String date,
-                              @RequestParam("time")String time, @RequestParam("count")String count) {
-        Answer answer = new Answer();
-        answer.setAnswer(service.addOrder(name,date,time,count));
-        return answer;
-    }
 
-    @RequestMapping(value = "/order/addUser",method = RequestMethod.GET)
+    @RequestMapping(value = "/addUser",method = RequestMethod.POST)
     @ResponseBody
-    public Answer createUser(/*@RequestParam("login")String login, @RequestParam("password")String password*/) {
+    public Answer createUser(@RequestParam("login")String login, @RequestParam("password")String password) {
         Answer answer = new Answer();
         service.init();
-        service.updateUser(1, "ikloo", "1234");
-        //answer.setAnswer();
-        answer.setAnswer("nil");
+        answer.setId(String.valueOf(service.updateUser(login, password)));
         return answer;
     }
 }

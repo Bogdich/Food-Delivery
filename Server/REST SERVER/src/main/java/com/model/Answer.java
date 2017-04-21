@@ -1,16 +1,13 @@
 package com.model;
 
-/**
- * Created by Lenovo on 4/3/2017.
- */
 public class Answer {
-    private String answer;
+    private String id;
 
-    public String getAnswer() {
-        return answer;
+    public String getId() {
+        return id;
     }
 
-    public void setAnswer(String answer) {
-        this.answer = answer;
+    public void setId(String id) {
+        this.id = id;
     }
 }
