@@ -10,7 +10,7 @@ import java.util.List;
  */
 public interface UserDAO {
 
-    void insert(User user) throws DAOException;
+    int insert(User user) throws DAOException;
 
 //    void update(User user) throws DAOException;
 
