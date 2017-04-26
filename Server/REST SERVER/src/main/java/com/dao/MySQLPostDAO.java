@@ -3,17 +3,19 @@ package com.dao;
 import com.dao.connectionMySQL.ConnectionPool;
 import com.dao.exception.ConnectionPoolException;
 import com.dao.exception.DAOException;
-import org.apache.log4j.LogManager;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.sql.Connection;
 
 /**
  * Parent class for interfaces
+ * !Unused now!
+ *
  * @param <T> entity
  */
 public interface MySQLPostDAO<T> {
-    Logger logger = LogManager.getLogger();
+    Logger LOGGER = LogManager.getLogger();
     int UNSUPPORTED_PK_INSERT = -1;
 
     void update(T data) throws DAOException;
@@ -26,7 +28,7 @@ public interface MySQLPostDAO<T> {
                 try {
                     resource.close();
                 } catch(Exception e){
-                    logger.error(e);
+                    LOGGER.error(e);
                 }
             }
         }
