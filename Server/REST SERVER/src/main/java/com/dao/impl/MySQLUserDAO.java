@@ -2,14 +2,11 @@ package com.dao.impl;
 
 import com.dao.UserDAO;
 import com.dao.connectionMySQL.ConnectionPool;
-import com.dao.connectionMySQL.ConnectionPoolException;
+import com.dao.exception.ConnectionPoolException;
 import com.dao.exception.DAOException;
 import com.model.User;
-import com.model.UserInfo;
 
 import java.sql.*;
-import java.util.ArrayList;
-import java.util.List;
 
 public class MySQLUserDAO implements UserDAO {
 

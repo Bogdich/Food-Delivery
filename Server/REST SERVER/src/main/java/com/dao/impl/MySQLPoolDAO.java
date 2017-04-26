@@ -2,7 +2,7 @@ package com.dao.impl;
 
 import com.dao.PoolDAO;
 import com.dao.connectionMySQL.ConnectionPool;
-import com.dao.connectionMySQL.ConnectionPoolException;
+import com.dao.exception.ConnectionPoolException;
 import com.dao.exception.DAOException;
 
 public class MySQLPoolDAO implements PoolDAO {
