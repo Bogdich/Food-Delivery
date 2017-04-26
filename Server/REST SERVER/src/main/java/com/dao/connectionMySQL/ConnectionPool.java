@@ -1,6 +1,8 @@
 package com.dao.connectionMySQL;
 
 
+import com.dao.exception.ConnectionPoolException;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
