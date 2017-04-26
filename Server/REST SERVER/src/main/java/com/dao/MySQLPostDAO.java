@@ -8,6 +8,10 @@ import org.apache.log4j.Logger;
 
 import java.sql.Connection;
 
+/**
+ * Parent class for interfaces
+ * @param <T> entity
+ */
 public interface MySQLPostDAO<T> {
     Logger logger = LogManager.getLogger();
     int UNSUPPORTED_PK_INSERT = -1;
@@ -28,7 +32,7 @@ public interface MySQLPostDAO<T> {
         }
     }
 
-    default void retrieve(Connection connection){
+/*    default void retrieve(Connection connection){
         if(connection != null){
             try {
                 ConnectionPool.getInstance().retrieve(connection);
@@ -36,5 +40,5 @@ public interface MySQLPostDAO<T> {
                 logger.error(e);
             }
         }
-    }
+    }*/
 }
