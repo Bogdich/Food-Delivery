@@ -1,6 +1,7 @@
 package com.dao.impl;
 
-import com.bogdevich.catalog.dao.CategoryDAO;
+
+import com.dao.CategoryDAO;
 
 /**
  * Created by Adrienne on 26.04.17.

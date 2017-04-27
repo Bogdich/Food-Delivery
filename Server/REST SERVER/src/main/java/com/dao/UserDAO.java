@@ -1,9 +1,8 @@
 package com.dao;
 
 import com.dao.exception.DAOException;
-import com.model.User;
+import com.entity.User;
 
-import java.util.List;
 
 /**
  * Created by AndrewRaukut on 12/6/16.

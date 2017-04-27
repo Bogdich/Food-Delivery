@@ -1,5 +1,6 @@
 package com.dao.factory;
 import com.dao.*;
+import com.dao.impl.UserDAOImpl;
 
 
 public abstract class DAOFactory {
@@ -15,6 +16,9 @@ public abstract class DAOFactory {
 	public abstract UserDAO getUserDAO();
 
 	public abstract PoolDAO getPoolDAO();
+
+	public abstract UserInfoDAO getUserInfoDAO();
+
 //
 //	public abstract CardDAO getCardDAO();
 //
