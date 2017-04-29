@@ -16,9 +16,9 @@ import java.util.List;
  */
 public class DishAndCategoryService {
 
-    DAOFactory factory = DAOFactory.getInstance(DAOFactory.Factories.MYSQL);
-    DishDAO dishDAO = factory.getDishDAO();
-    CategoryDAO categoryDAO = factory.getCategoryDAO();
+    private DAOFactory factory = DAOFactory.getInstance(DAOFactory.Factories.MYSQL);
+    private DishDAO dishDAO = factory.getDishDAO();
+    private CategoryDAO categoryDAO = factory.getCategoryDAO();
 
     public int insertDish(String name, String description, int weight, BigDecimal price, int category_id) {
 
