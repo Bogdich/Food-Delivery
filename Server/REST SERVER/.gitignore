@@ -6,6 +6,6 @@
 *.pdf
 *.xls
 *.log
-/target/
+/target/**
 logs/
 /.idea/
