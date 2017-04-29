@@ -19,10 +19,9 @@ public abstract class DAOFactory {
 
 	public abstract UserInfoDAO getUserInfoDAO();
 
-//
-//	public abstract CardDAO getCardDAO();
-//
-//	public abstract CarDAO getCarDAO();
+	public abstract DishDAO getDishDAO();
+
+	public abstract CategoryDAO getCategoryDAO();
 //
 //	public abstract ReportDAO getReportDAO();
 

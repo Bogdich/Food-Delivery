@@ -8,15 +8,15 @@ import java.util.ArrayList;
 public class Category {
     private int id;
     private String name;
-    private ArrayList<Dish> dishes;
+//    private ArrayList<Dish> dishes;
 
     public Category() {
     }
 
-    public Category(int id, String name, ArrayList<Dish> dishes) {
+    public Category(int id, String name) {//, ArrayList<Dish> dishes) {
         this.id = id;
         this.name = name;
-        this.dishes = dishes;
+//        this.dishes = dishes;
     }
 
     public int getId() {
@@ -35,11 +35,11 @@ public class Category {
         this.name = name;
     }
 
-    public ArrayList<Dish> getDishes() {
-        return dishes;
-    }
-
-    public void setDishes(ArrayList<Dish> dishes) {
-        this.dishes = dishes;
-    }
+//    public ArrayList<Dish> getDishes() {
+//        return dishes;
+//    }
+//
+//    public void setDishes(ArrayList<Dish> dishes) {
+//        this.dishes = dishes;
+//    }
 }
