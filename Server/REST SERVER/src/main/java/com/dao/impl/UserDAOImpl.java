@@ -90,9 +90,9 @@ public class UserDAOImpl implements UserDAO {
 //            if (user.getCard() == null) {
 //                preparedStatement.setNull(6, Types.INTEGER);
 //            } else {
-//                preparedStatement.setInt(6, user.getCard().getId());
+//                preparedStatement.setInt(6, user.getCard().getResponseID());
 //            }
-//            preparedStatement.setInt(7, user.getId());
+//            preparedStatement.setInt(7, user.getResponseID());
 //
 //            preparedStatement.executeUpdate();
 //        } catch (InterruptedException | ConnectionPoolException e) {
@@ -121,7 +121,7 @@ public class UserDAOImpl implements UserDAO {
 //            preparedStatement = connection.prepareStatement(UPDATE_VIS_NUMB_BY_USER_ID);
 //
 //            preparedStatement.setInt(1, user.getVisitsNumber());
-//            preparedStatement.setInt(2, user.getId());
+//            preparedStatement.setInt(2, user.getResponseID());
 //
 //            preparedStatement.executeUpdate();
 //        } catch (InterruptedException | ConnectionPoolException e) {
@@ -193,21 +193,21 @@ public class UserDAOImpl implements UserDAO {
 //
 //                if (resultSetClient.next()) {
 //                    user = new User();
-//                    user.setId(resultSetClient.getInt(1));
+//                    user.setResponseID(resultSetClient.getInt(1));
 //                    user.setLogin(resultSetClient.getString(2));
 //                    user.setPassword(resultSetClient.getString(3));
 //                    user.getUserInfo().setName(resultSetClient.getString(4));
 //                    user.getUserInfo().setSurname(resultSetClient.getString(5));
 //                    user.getUserInfo().setEmail(resultSetClient.getString(6));
 //                    userInfo = new UserInfo();
-//                    card.setId(resultSetClient.getInt(7));
+//                    card.setResponseID(resultSetClient.getInt(7));
 //                    user.setCard(card);
 //                    user.setAdmin(false);
 //                    user.setVisitsNumber(resultSetClient.getInt(8));
 //                }
 //            } else {
 //                user = new User();
-//                user.setId(resultSetAdministrator.getInt(1));
+//                user.setResponseID(resultSetAdministrator.getInt(1));
 //                user.setLogin(resultSetAdministrator.getString(2));
 //                user.setPassword(resultSetAdministrator.getString(3));
 //                user.setName(resultSetAdministrator.getString(4));
@@ -259,9 +259,9 @@ public class UserDAOImpl implements UserDAO {
 //            if (resultSet.next()) {
 //                user = new User();
 //                Card card = new Card();
-//                card.setId(resultSet.getInt(4));
+//                card.setResponseID(resultSet.getInt(4));
 //                user.setCard(card);
-//                user.setId(resultSet.getInt(1));
+//                user.setResponseID(resultSet.getInt(1));
 //                user.setLogin(resultSet.getString(2));
 //                user.setPassword(resultSet.getString(3));
 //                user.setName(resultSet.getString(4));
@@ -307,9 +307,9 @@ public class UserDAOImpl implements UserDAO {
 //            while (resultSet.next()) {
 //                User user = new User();
 //                Card card = new Card();
-//                card.setId(resultSet.getInt(7));
+//                card.setResponseID(resultSet.getInt(7));
 //                user.setCard(card);
-//                user.setId(resultSet.getInt(1));
+//                user.setResponseID(resultSet.getInt(1));
 //                user.setLogin(resultSet.getString(2));
 //                user.setPassword(resultSet.getString(3));
 //                user.setName(resultSet.getString(4));

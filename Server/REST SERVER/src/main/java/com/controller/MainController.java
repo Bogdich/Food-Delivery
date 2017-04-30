@@ -6,7 +6,6 @@ import com.entity.Dish;
 import com.entity.UserInfo;
 import com.service.DAOService;
 import com.service.DishAndCategoryService;
-import com.service.Service;
 import com.service.UserService;
 import org.springframework.web.bind.annotation.*;
 
@@ -149,7 +148,11 @@ public class MainController {
         UserService userService = new UserService();
         int id = userService.insertUser(login, password, name, surname, address, number, email);
 
-        if (id != 0) answer.setError("OK");
+        if (id != 0) {
+
+            answer.setResponseID(id);
+            answer.setError("OK");
+        }
         else answer.setError("SOMETHING WRONG");
 
         return answer;

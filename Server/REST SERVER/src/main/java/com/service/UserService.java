@@ -42,6 +42,7 @@ public class UserService {
         int id = 0;
         try {
             user.setId(userDAO.insert(user));
+            id = user.getId();
             userInfo = new UserInfo(user, name, surname, number, address, email);
             userInfoDAO.insert(userInfo);
 

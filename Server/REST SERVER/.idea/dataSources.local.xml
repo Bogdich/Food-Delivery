@@ -9,8 +9,9 @@
       <case-sensitivity plain-identifiers="mixed" quoted-identifiers="upper" />
       <secret-storage>master_key</secret-storage>
       <user-name>root</user-name>
-      <introspection-scope>food_delivery:</introspection-scope>
+      <introspection-schemas>*:food_delivery|food_delivery:</introspection-schemas>
       <resolve-scope>food_delivery:</resolve-scope>
+      <unqualified-resolve-schemas>food_delivery:</unqualified-resolve-schemas>
     </data-source>
   </component>
 </project>
