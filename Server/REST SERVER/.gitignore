@@ -1,17 +1,3 @@
-*.iml
-*.zip
-*.jar
-*.war
-*.ear
-*.pdf
-*.xls
-*.log
-logs/
-
-# Intellij
-.idea/
-*.iml
-*.iws
 
 # Mac
 .DS_Store
