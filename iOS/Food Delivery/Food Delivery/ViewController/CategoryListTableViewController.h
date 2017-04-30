@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  CategoryListTableViewController.h
 //  Food Delivery
 //
 //  Created by Kirill Budevich on 30.04.17.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface CategoryListTableViewController : UITableViewController
 
 @end
-

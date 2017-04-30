@@ -9,14 +9,12 @@
 #import "SessionManager.h"
 #import "Category.h"
 #import "User.h"
-#import "CategoryList.h"
 #import "Dish.h"
-#import "DishesList.h"
 
 @interface APIManager : SessionManager
 
-- (NSURLSessionDataTask *)getCategoriesWithSuccess:(void (^)(CategoryList *categories))success failure:(void (^)(NSError *error))failure;
-- (NSURLSessionDataTask *)getDishesByCategoryId:(NSInteger) _id success:(void (^)(DishesList *dishes))success failure:(void (^)(NSError *error))failure;
+- (NSURLSessionDataTask *)getCategoriesWithSuccess:(void (^)(NSArray *categories))success failure:(void (^)(NSError *error))failure;
+- (NSURLSessionDataTask *)getDishesByCategoryId:(NSInteger) _id success:(void (^)(NSArray *dishes))success failure:(void (^)(NSError *error))failure;
 
 - (NSURLSessionDataTask *)addUserWith:(User *)user success:(void (^)(id object))success failure:(void (^)(NSError *error))failure;
 

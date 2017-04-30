@@ -14,11 +14,12 @@
 		F040E6651EB608BD00CAA63E /* UserAuthInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F040E6641EB608BD00CAA63E /* UserAuthInfo.m */; };
 		F040E6691EB60A5700CAA63E /* SessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F040E6681EB60A5700CAA63E /* SessionManager.m */; };
 		F040E66E1EB60B4600CAA63E /* APIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F040E66D1EB60B4600CAA63E /* APIManager.m */; };
-		F040E6731EB6125700CAA63E /* CategoryList.m in Sources */ = {isa = PBXBuildFile; fileRef = F040E6721EB6125700CAA63E /* CategoryList.m */; };
-		F040E6771EB6186500CAA63E /* DishesList.m in Sources */ = {isa = PBXBuildFile; fileRef = F040E6761EB6186500CAA63E /* DishesList.m */; };
+		F040E67B1EB63CB600CAA63E /* CategoryListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F040E67A1EB63CB600CAA63E /* CategoryListTableViewController.m */; };
+		F040E67F1EB66E0400CAA63E /* DishesListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F040E67E1EB66E0400CAA63E /* DishesListTableViewController.m */; };
+		F040E6871EB6811800CAA63E /* CategoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F040E6851EB6811800CAA63E /* CategoryTableViewCell.m */; };
+		F040E6881EB6811800CAA63E /* CategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F040E6861EB6811800CAA63E /* CategoryTableViewCell.xib */; };
 		F0608CF41EB5F185005E3111 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0608CF31EB5F185005E3111 /* main.m */; };
 		F0608CF71EB5F185005E3111 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F0608CF61EB5F185005E3111 /* AppDelegate.m */; };
-		F0608CFA1EB5F185005E3111 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0608CF91EB5F185005E3111 /* ViewController.m */; };
 		F0608CFD1EB5F185005E3111 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0608CFB1EB5F185005E3111 /* Main.storyboard */; };
 		F0608CFF1EB5F185005E3111 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0608CFE1EB5F185005E3111 /* Assets.xcassets */; };
 		F0608D021EB5F185005E3111 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0608D001EB5F185005E3111 /* LaunchScreen.storyboard */; };
@@ -40,16 +41,18 @@
 		F040E6681EB60A5700CAA63E /* SessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SessionManager.m; path = Model/SessionManager.m; sourceTree = "<group>"; };
 		F040E66C1EB60B4600CAA63E /* APIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APIManager.h; path = Model/APIManager.h; sourceTree = "<group>"; };
 		F040E66D1EB60B4600CAA63E /* APIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = APIManager.m; path = Model/APIManager.m; sourceTree = "<group>"; };
-		F040E6711EB6125700CAA63E /* CategoryList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CategoryList.h; path = Model/CategoryList.h; sourceTree = "<group>"; };
-		F040E6721EB6125700CAA63E /* CategoryList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CategoryList.m; path = Model/CategoryList.m; sourceTree = "<group>"; };
-		F040E6751EB6186500CAA63E /* DishesList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DishesList.h; path = Model/DishesList.h; sourceTree = "<group>"; };
-		F040E6761EB6186500CAA63E /* DishesList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DishesList.m; path = Model/DishesList.m; sourceTree = "<group>"; };
+		F040E6791EB63CB600CAA63E /* CategoryListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CategoryListTableViewController.h; path = ViewController/CategoryListTableViewController.h; sourceTree = "<group>"; };
+		F040E67A1EB63CB600CAA63E /* CategoryListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CategoryListTableViewController.m; path = ViewController/CategoryListTableViewController.m; sourceTree = "<group>"; };
+		F040E67D1EB66E0400CAA63E /* DishesListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DishesListTableViewController.h; path = ViewController/DishesListTableViewController.h; sourceTree = "<group>"; };
+		F040E67E1EB66E0400CAA63E /* DishesListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DishesListTableViewController.m; path = ViewController/DishesListTableViewController.m; sourceTree = "<group>"; };
+		F040E6801EB66F2900CAA63E /* constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = constants.h; sourceTree = "<group>"; };
+		F040E6841EB6811800CAA63E /* CategoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CategoryTableViewCell.h; path = View/CategoryTableViewCell.h; sourceTree = "<group>"; };
+		F040E6851EB6811800CAA63E /* CategoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CategoryTableViewCell.m; path = View/CategoryTableViewCell.m; sourceTree = "<group>"; };
+		F040E6861EB6811800CAA63E /* CategoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CategoryTableViewCell.xib; path = View/CategoryTableViewCell.xib; sourceTree = "<group>"; };
 		F0608CEF1EB5F185005E3111 /* Food Delivery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Food Delivery.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0608CF31EB5F185005E3111 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F0608CF51EB5F185005E3111 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F0608CF61EB5F185005E3111 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F0608CF81EB5F185005E3111 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F0608CF91EB5F185005E3111 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F0608CFC1EB5F185005E3111 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F0608CFE1EB5F185005E3111 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0608D011EB5F185005E3111 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -88,7 +91,6 @@
 		F040E65A1EB5FB8300CAA63E /* Dish */ = {
 			isa = PBXGroup;
 			children = (
-				F040E6741EB6184C00CAA63E /* DishesList */,
 				F040E6571EB5F5F300CAA63E /* Dish.h */,
 				F040E6581EB5F5F300CAA63E /* Dish.m */,
 			);
@@ -98,7 +100,6 @@
 		F040E65B1EB5FB8800CAA63E /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				F040E6701EB6122800CAA63E /* CategoryList */,
 				F040E65C1EB5FBA900CAA63E /* Category.h */,
 				F040E65D1EB5FBA900CAA63E /* Category.m */,
 			);
@@ -143,22 +144,48 @@
 			name = APIManager;
 			sourceTree = "<group>";
 		};
-		F040E6701EB6122800CAA63E /* CategoryList */ = {
+		F040E6781EB63C7700CAA63E /* CategoryListTableViewController */ = {
 			isa = PBXGroup;
 			children = (
-				F040E6711EB6125700CAA63E /* CategoryList.h */,
-				F040E6721EB6125700CAA63E /* CategoryList.m */,
+				F040E6791EB63CB600CAA63E /* CategoryListTableViewController.h */,
+				F040E67A1EB63CB600CAA63E /* CategoryListTableViewController.m */,
 			);
-			name = CategoryList;
+			name = CategoryListTableViewController;
 			sourceTree = "<group>";
 		};
-		F040E6741EB6184C00CAA63E /* DishesList */ = {
+		F040E67C1EB66DE000CAA63E /* DishesListTableViewController */ = {
 			isa = PBXGroup;
 			children = (
-				F040E6751EB6186500CAA63E /* DishesList.h */,
-				F040E6761EB6186500CAA63E /* DishesList.m */,
+				F040E67D1EB66E0400CAA63E /* DishesListTableViewController.h */,
+				F040E67E1EB66E0400CAA63E /* DishesListTableViewController.m */,
 			);
-			name = DishesList;
+			name = DishesListTableViewController;
+			sourceTree = "<group>";
+		};
+		F040E6811EB680DA00CAA63E /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				F040E6831EB680EB00CAA63E /* DishesCell */,
+				F040E6821EB680E300CAA63E /* CategoryCell */,
+			);
+			name = TableViewCell;
+			sourceTree = "<group>";
+		};
+		F040E6821EB680E300CAA63E /* CategoryCell */ = {
+			isa = PBXGroup;
+			children = (
+				F040E6841EB6811800CAA63E /* CategoryTableViewCell.h */,
+				F040E6851EB6811800CAA63E /* CategoryTableViewCell.m */,
+				F040E6861EB6811800CAA63E /* CategoryTableViewCell.xib */,
+			);
+			name = CategoryCell;
+			sourceTree = "<group>";
+		};
+		F040E6831EB680EB00CAA63E /* DishesCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = DishesCell;
 			sourceTree = "<group>";
 		};
 		F0608CE61EB5F185005E3111 = {
@@ -192,6 +219,7 @@
 				F0608D001EB5F185005E3111 /* LaunchScreen.storyboard */,
 				F0608D031EB5F185005E3111 /* Info.plist */,
 				F0608CF21EB5F185005E3111 /* Supporting Files */,
+				F040E6801EB66F2900CAA63E /* constants.h */,
 			);
 			path = "Food Delivery";
 			sourceTree = "<group>";
@@ -207,8 +235,8 @@
 		F0608D091EB5F225005E3111 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				F0608CF81EB5F185005E3111 /* ViewController.h */,
-				F0608CF91EB5F185005E3111 /* ViewController.m */,
+				F040E67C1EB66DE000CAA63E /* DishesListTableViewController */,
+				F040E6781EB63C7700CAA63E /* CategoryListTableViewController */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -227,6 +255,7 @@
 		F0608D0B1EB5F233005E3111 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F040E6811EB680DA00CAA63E /* TableViewCell */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -294,6 +323,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0608D021EB5F185005E3111 /* LaunchScreen.storyboard in Resources */,
+				F040E6881EB6811800CAA63E /* CategoryTableViewCell.xib in Resources */,
 				F0608CFF1EB5F185005E3111 /* Assets.xcassets in Resources */,
 				F0608CFD1EB5F185005E3111 /* Main.storyboard in Resources */,
 			);
@@ -354,17 +384,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0608CFA1EB5F185005E3111 /* ViewController.m in Sources */,
-				F040E6731EB6125700CAA63E /* CategoryList.m in Sources */,
-				F040E6771EB6186500CAA63E /* DishesList.m in Sources */,
 				F040E6591EB5F5F300CAA63E /* Dish.m in Sources */,
 				F040E66E1EB60B4600CAA63E /* APIManager.m in Sources */,
 				F040E6691EB60A5700CAA63E /* SessionManager.m in Sources */,
 				F040E6621EB606BE00CAA63E /* User.m in Sources */,
 				F040E65E1EB5FBA900CAA63E /* Category.m in Sources */,
+				F040E67F1EB66E0400CAA63E /* DishesListTableViewController.m in Sources */,
 				F0608CF71EB5F185005E3111 /* AppDelegate.m in Sources */,
 				F0608CF41EB5F185005E3111 /* main.m in Sources */,
 				F040E6651EB608BD00CAA63E /* UserAuthInfo.m in Sources */,
+				F040E6871EB6811800CAA63E /* CategoryTableViewCell.m in Sources */,
+				F040E67B1EB63CB600CAA63E /* CategoryListTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

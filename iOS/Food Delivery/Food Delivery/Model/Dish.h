@@ -11,7 +11,7 @@
 
 @interface Dish : MTLModel <MTLJSONSerializing>
 
-@property NSInteger id_;
+@property (strong, nonatomic) NSNumber* id_;
 @property (strong, nonatomic) NSString *name;
 @property (strong, nonatomic) NSString *description_;
 @property (strong, nonatomic) NSNumber *weight;

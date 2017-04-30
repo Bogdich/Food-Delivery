@@ -26,4 +26,18 @@
     return [MTLJSONAdapter dictionaryTransformerWithModelClass:[Category class]];
 }
 
+- (instancetype)initWithDictionary:(NSDictionary*)dictionary {
+    
+    if (self = [super init]) {
+        self.name = dictionary[@"name"];
+        self.id_ = dictionary[@"id"];
+        self.description_ = dictionary[@"description"];
+        self.weight = dictionary[@"weight"];
+        self.price = dictionary[@"price"];
+        self.category = dictionary[@"description"];
+
+    }
+    return self;
+}
+
 @end

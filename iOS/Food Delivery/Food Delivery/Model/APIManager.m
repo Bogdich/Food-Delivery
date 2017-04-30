@@ -45,17 +45,15 @@
               }];
 }
 
-- (NSURLSessionDataTask *)getCategoriesWithSuccess:(void (^)(CategoryList *categories))success failure:(void (^)(NSError *error))failure {
+- (NSURLSessionDataTask *)getCategoriesWithSuccess:(void (^)(NSArray *categories))success failure:(void (^)(NSError *error))failure {
     
     return [self GET:getCategories parameters:nil progress:nil
              success:^(NSURLSessionDataTask *task, id responseObject) {
         
-                         NSDictionary *responseDictionary = (NSDictionary *)responseObject;
+                 NSDictionary *responseDictionary = (NSDictionary *)responseObject;
         
-                         NSError *error;
-                         CategoryList *categories = [MTLJSONAdapter modelOfClass:[CategoryList class]
-                                                                    fromJSONDictionary:responseDictionary error:&error];
-                         success(categories);
+                 NSArray *categories = (NSArray *)responseDictionary;
+                 success(categories);
         
              } failure:^(NSURLSessionDataTask *task, NSError *error) {
         
@@ -102,16 +100,14 @@
              }];
 }
 
-- (NSURLSessionDataTask *)getDishesByCategoryId:(NSInteger) _id success:(void (^)(DishesList *dishes))success failure:(void (^)(NSError *error))failure {
+- (NSURLSessionDataTask *)getDishesByCategoryId:(NSInteger) _id success:(void (^)(NSArray *dishes))success failure:(void (^)(NSError *error))failure {
     
     return [self GET:[NSString stringWithFormat:@"%@/%lu", getDishesByCategoryID, (long)_id] parameters:nil progress:nil
              success:^(NSURLSessionDataTask *task, id responseObject) {
                  
                  NSDictionary *responseDictionary = (NSDictionary *)responseObject;
                  
-                 NSError *error;
-                 DishesList *dishes = [MTLJSONAdapter modelOfClass:[DishesList class]
-                                        fromJSONDictionary:responseDictionary error:&error];
+                 NSArray *dishes = (NSArray *)responseDictionary;
                  success(dishes);
                  
              } failure:^(NSURLSessionDataTask *task, NSError *error) {
