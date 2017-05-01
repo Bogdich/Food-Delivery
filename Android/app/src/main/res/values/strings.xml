@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">NavigationDrawer</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string-array name="views_array">
+        <item>Каталог</item>
+        <item>Контакты</item>
+    </string-array>
+    <string name="action_settings">Settings</string>
+    <string name="first_adress">ул.Октябрьская, д.54</string>
+    <string name="second_adress">ул.Ленина, д.13</string>
+    <string name="telephone">+375-29-123-45-67</string>
+    <string name="our_adresses">Мы находимся:</string>
+    <string name="our_contact">Телефон для связи:</string>
+</resources>
