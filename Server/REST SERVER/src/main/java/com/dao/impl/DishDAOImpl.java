@@ -18,8 +18,8 @@ import java.util.List;
 public class DishDAOImpl implements DishDAO{
 
     private static final String INSERT_DISH_QUERY = "INSERT INTO `dish` " +
-            "(`name`, `description`, `weight`, `price`, `category_id`) " +
-            "VALUES (?, ?, ?, ?, ?)";
+            "(`name`, `description`, `weight`, `price`, `category_id`, `image_URL`) " +
+            "VALUES (?, ?, ?, ?, ?, ?)";
 
     private static final String UPDATE_DISH_QUERY = "UPDATE `users` " +
             "SET `login` = ?, `password` = ?, `name` = ?, `surname` = ?, `email` = ?, `card_id` = ? " +
@@ -48,6 +48,8 @@ public class DishDAOImpl implements DishDAO{
             preparedStatement.setInt(3, dish.getWeight());
             preparedStatement.setBigDecimal(4, dish.getPrice());
             preparedStatement.setInt(5, dish.getCategory().getId());
+            preparedStatement.setString(6, dish.getImageURL());
+
 
             preparedStatement.executeUpdate();
             ResultSet rs = preparedStatement.getGeneratedKeys();
@@ -132,6 +134,7 @@ public class DishDAOImpl implements DishDAO{
                 dish.setDescription(resultSet.getString(3));
                 dish.setWeight(resultSet.getInt(4));
                 dish.setPrice(resultSet.getBigDecimal(5));
+                dish.setImageURL(resultSet.getString(6));
             }
 
         } catch (InterruptedException | ConnectionPoolException e) {
@@ -169,7 +172,7 @@ public class DishDAOImpl implements DishDAO{
             preparedStatement.setInt(1, categoryId);
             resultSet = preparedStatement.executeQuery();
 
-            if (resultSet.next()) {
+            while (resultSet.next()) {
                 Dish dish = new Dish();
                 Category category = new Category();
 
@@ -178,6 +181,7 @@ public class DishDAOImpl implements DishDAO{
                 dish.setDescription(resultSet.getString(3));
                 dish.setWeight(resultSet.getInt(4));
                 dish.setPrice(resultSet.getBigDecimal(5));
+                dish.setImageURL(resultSet.getString(7));
                 category.setId(categoryId);
 
                 dishes.add(dish);

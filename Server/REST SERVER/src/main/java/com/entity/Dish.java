@@ -12,17 +12,27 @@ public class Dish {
     private int weight;
     private BigDecimal price;
     private Category category;
+    private String imageURL;
 
     public Dish() {
     }
 
-    public Dish(int id, String name, String description, int weight, BigDecimal price, Category category) {
+    public Dish(int id, String name, String description, int weight, BigDecimal price, Category category, String imageURL) {
         this.id = id;
         this.name = name;
         this.description = description;
         this.weight = weight;
         this.price = price;
         this.category = category;
+        this.imageURL = imageURL;
+    }
+
+    public String getImageURL() {
+        return imageURL;
+    }
+
+    public void setImageURL(String imageURL) {
+        this.imageURL = imageURL;
     }
 
     public int getId() {

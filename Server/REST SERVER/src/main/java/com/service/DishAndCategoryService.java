@@ -20,11 +20,11 @@ public class DishAndCategoryService {
     private DishDAO dishDAO = factory.getDishDAO();
     private CategoryDAO categoryDAO = factory.getCategoryDAO();
 
-    public int insertDish(String name, String description, int weight, BigDecimal price, int category_id) {
+    public int insertDish(String name, String description, String imageURL, int weight, BigDecimal price, int category_id) {
 
         Category category = new Category();
         category.setId(category_id);
-        Dish dish = new Dish(0, name, description, weight, price, category);
+        Dish dish = new Dish(0, name, description, weight, price, category, imageURL);
 
         int id = 0;
         try {

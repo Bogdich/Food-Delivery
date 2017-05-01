@@ -98,13 +98,14 @@ public class MainController {
                              @RequestParam("description")String description,
                              @RequestParam("weight")int weight,
                              @RequestParam("price")BigDecimal price,
-                             @RequestParam("categoryId")int categoryId) {
+                             @RequestParam("categoryId")int categoryId,
+                             @RequestParam("imageURL")String imageURL) {
 
         daoService.init();
         Answer answer = new Answer();
 
         DishAndCategoryService dishAndCategoryService = new DishAndCategoryService();
-        int id = dishAndCategoryService.insertDish(name, description, weight, price, categoryId);
+        int id = dishAndCategoryService.insertDish(name, description, imageURL, weight, price, categoryId);
 
 
         if (id != 0) answer.setError("OK");

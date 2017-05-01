@@ -36,6 +36,7 @@ CREATE TABLE IF NOT EXISTS `food_delivery`.`dish` (
   `id` INT(11) NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(45) NOT NULL,
   `description` VARCHAR(45) NOT NULL,
+  `image_URL` VARCHAR(100) NOT NULL,
   `weight` INT(11) NOT NULL,
   `price` DECIMAL(20,0) NOT NULL,
   `category_id` INT(11) NOT NULL,
