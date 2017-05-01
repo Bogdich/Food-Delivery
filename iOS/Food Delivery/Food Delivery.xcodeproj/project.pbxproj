@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		AAC59004733091418D71C34F /* libPods-Food Delivery.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08AB81DBC10189C713F61E29 /* libPods-Food Delivery.a */; };
+		F0390C1C1EB7581600FE9BF4 /* DishesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F0390C1A1EB7581500FE9BF4 /* DishesTableViewCell.m */; };
+		F0390C1D1EB7581600FE9BF4 /* DishesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0390C1B1EB7581500FE9BF4 /* DishesTableViewCell.xib */; };
+		F0390C211EB7833F00FE9BF4 /* PresentDishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0390C201EB7833F00FE9BF4 /* PresentDishViewController.m */; };
+		F0390C261EB7B8EF00FE9BF4 /* CartTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F0390C241EB7B8EF00FE9BF4 /* CartTableViewCell.m */; };
+		F0390C271EB7B8EF00FE9BF4 /* CartTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0390C251EB7B8EF00FE9BF4 /* CartTableViewCell.xib */; };
+		F0390C2A1EB7C38E00FE9BF4 /* CartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0390C291EB7C38D00FE9BF4 /* CartViewController.m */; };
+		F0390C2E1EB7C87800FE9BF4 /* CartManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F0390C2D1EB7C87800FE9BF4 /* CartManager.m */; };
 		F040E6591EB5F5F300CAA63E /* Dish.m in Sources */ = {isa = PBXBuildFile; fileRef = F040E6581EB5F5F300CAA63E /* Dish.m */; };
 		F040E65E1EB5FBA900CAA63E /* Category.m in Sources */ = {isa = PBXBuildFile; fileRef = F040E65D1EB5FBA900CAA63E /* Category.m */; };
 		F040E6621EB606BE00CAA63E /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = F040E6611EB606BE00CAA63E /* User.m */; };
@@ -29,6 +36,18 @@
 		08AB81DBC10189C713F61E29 /* libPods-Food Delivery.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Food Delivery.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B76D11C99D56E5F4FD13AC8 /* Pods-Food Delivery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Food Delivery.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Food Delivery/Pods-Food Delivery.debug.xcconfig"; sourceTree = "<group>"; };
 		8647221731497493B3D783C2 /* Pods-Food Delivery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Food Delivery.release.xcconfig"; path = "Pods/Target Support Files/Pods-Food Delivery/Pods-Food Delivery.release.xcconfig"; sourceTree = "<group>"; };
+		F0390C191EB7581500FE9BF4 /* DishesTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DishesTableViewCell.h; path = View/DishesTableViewCell.h; sourceTree = "<group>"; };
+		F0390C1A1EB7581500FE9BF4 /* DishesTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DishesTableViewCell.m; path = View/DishesTableViewCell.m; sourceTree = "<group>"; };
+		F0390C1B1EB7581500FE9BF4 /* DishesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DishesTableViewCell.xib; path = View/DishesTableViewCell.xib; sourceTree = "<group>"; };
+		F0390C1F1EB7833F00FE9BF4 /* PresentDishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PresentDishViewController.h; path = ViewController/PresentDishViewController.h; sourceTree = "<group>"; };
+		F0390C201EB7833F00FE9BF4 /* PresentDishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PresentDishViewController.m; path = ViewController/PresentDishViewController.m; sourceTree = "<group>"; };
+		F0390C231EB7B8EE00FE9BF4 /* CartTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CartTableViewCell.h; path = View/CartTableViewCell.h; sourceTree = "<group>"; };
+		F0390C241EB7B8EF00FE9BF4 /* CartTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CartTableViewCell.m; path = View/CartTableViewCell.m; sourceTree = "<group>"; };
+		F0390C251EB7B8EF00FE9BF4 /* CartTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CartTableViewCell.xib; path = View/CartTableViewCell.xib; sourceTree = "<group>"; };
+		F0390C281EB7C38D00FE9BF4 /* CartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CartViewController.h; path = ViewController/CartViewController.h; sourceTree = "<group>"; };
+		F0390C291EB7C38D00FE9BF4 /* CartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CartViewController.m; path = ViewController/CartViewController.m; sourceTree = "<group>"; };
+		F0390C2C1EB7C87800FE9BF4 /* CartManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CartManager.h; path = Model/CartManager.h; sourceTree = "<group>"; };
+		F0390C2D1EB7C87800FE9BF4 /* CartManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CartManager.m; path = Model/CartManager.m; sourceTree = "<group>"; };
 		F040E6571EB5F5F300CAA63E /* Dish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Dish.h; path = Model/Dish.h; sourceTree = "<group>"; };
 		F040E6581EB5F5F300CAA63E /* Dish.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Dish.m; path = Model/Dish.m; sourceTree = "<group>"; };
 		F040E65C1EB5FBA900CAA63E /* Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Category.h; sourceTree = "<group>"; };
@@ -88,6 +107,43 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F0390C1E1EB768C900FE9BF4 /* PresentDishViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F0390C1F1EB7833F00FE9BF4 /* PresentDishViewController.h */,
+				F0390C201EB7833F00FE9BF4 /* PresentDishViewController.m */,
+			);
+			name = PresentDishViewController;
+			sourceTree = "<group>";
+		};
+		F0390C221EB7B8C700FE9BF4 /* CartCell */ = {
+			isa = PBXGroup;
+			children = (
+				F0390C231EB7B8EE00FE9BF4 /* CartTableViewCell.h */,
+				F0390C241EB7B8EF00FE9BF4 /* CartTableViewCell.m */,
+				F0390C251EB7B8EF00FE9BF4 /* CartTableViewCell.xib */,
+			);
+			name = CartCell;
+			sourceTree = "<group>";
+		};
+		F0390C2B1EB7C39300FE9BF4 /* CartViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F0390C281EB7C38D00FE9BF4 /* CartViewController.h */,
+				F0390C291EB7C38D00FE9BF4 /* CartViewController.m */,
+			);
+			name = CartViewController;
+			sourceTree = "<group>";
+		};
+		F0390C2F1EB7C87C00FE9BF4 /* CartManager */ = {
+			isa = PBXGroup;
+			children = (
+				F0390C2C1EB7C87800FE9BF4 /* CartManager.h */,
+				F0390C2D1EB7C87800FE9BF4 /* CartManager.m */,
+			);
+			name = CartManager;
+			sourceTree = "<group>";
+		};
 		F040E65A1EB5FB8300CAA63E /* Dish */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +187,7 @@
 			children = (
 				F040E66B1EB60B2900CAA63E /* APIManager */,
 				F040E6661EB60A1200CAA63E /* SessionManager */,
+				F0390C2F1EB7C87C00FE9BF4 /* CartManager */,
 			);
 			name = Managers;
 			sourceTree = "<group>";
@@ -165,6 +222,7 @@
 		F040E6811EB680DA00CAA63E /* TableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				F0390C221EB7B8C700FE9BF4 /* CartCell */,
 				F040E6831EB680EB00CAA63E /* DishesCell */,
 				F040E6821EB680E300CAA63E /* CategoryCell */,
 			);
@@ -184,6 +242,9 @@
 		F040E6831EB680EB00CAA63E /* DishesCell */ = {
 			isa = PBXGroup;
 			children = (
+				F0390C191EB7581500FE9BF4 /* DishesTableViewCell.h */,
+				F0390C1A1EB7581500FE9BF4 /* DishesTableViewCell.m */,
+				F0390C1B1EB7581500FE9BF4 /* DishesTableViewCell.xib */,
 			);
 			name = DishesCell;
 			sourceTree = "<group>";
@@ -235,8 +296,10 @@
 		F0608D091EB5F225005E3111 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				F0390C1E1EB768C900FE9BF4 /* PresentDishViewController */,
 				F040E67C1EB66DE000CAA63E /* DishesListTableViewController */,
 				F040E6781EB63C7700CAA63E /* CategoryListTableViewController */,
+				F0390C2B1EB7C39300FE9BF4 /* CartViewController */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -325,6 +388,8 @@
 				F0608D021EB5F185005E3111 /* LaunchScreen.storyboard in Resources */,
 				F040E6881EB6811800CAA63E /* CategoryTableViewCell.xib in Resources */,
 				F0608CFF1EB5F185005E3111 /* Assets.xcassets in Resources */,
+				F0390C271EB7B8EF00FE9BF4 /* CartTableViewCell.xib in Resources */,
+				F0390C1D1EB7581600FE9BF4 /* DishesTableViewCell.xib in Resources */,
 				F0608CFD1EB5F185005E3111 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,6 +450,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F040E6591EB5F5F300CAA63E /* Dish.m in Sources */,
+				F0390C2A1EB7C38E00FE9BF4 /* CartViewController.m in Sources */,
 				F040E66E1EB60B4600CAA63E /* APIManager.m in Sources */,
 				F040E6691EB60A5700CAA63E /* SessionManager.m in Sources */,
 				F040E6621EB606BE00CAA63E /* User.m in Sources */,
@@ -392,9 +458,13 @@
 				F040E67F1EB66E0400CAA63E /* DishesListTableViewController.m in Sources */,
 				F0608CF71EB5F185005E3111 /* AppDelegate.m in Sources */,
 				F0608CF41EB5F185005E3111 /* main.m in Sources */,
+				F0390C211EB7833F00FE9BF4 /* PresentDishViewController.m in Sources */,
 				F040E6651EB608BD00CAA63E /* UserAuthInfo.m in Sources */,
 				F040E6871EB6811800CAA63E /* CategoryTableViewCell.m in Sources */,
+				F0390C261EB7B8EF00FE9BF4 /* CartTableViewCell.m in Sources */,
+				F0390C2E1EB7C87800FE9BF4 /* CartManager.m in Sources */,
 				F040E67B1EB63CB600CAA63E /* CategoryListTableViewController.m in Sources */,
+				F0390C1C1EB7581600FE9BF4 /* DishesTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

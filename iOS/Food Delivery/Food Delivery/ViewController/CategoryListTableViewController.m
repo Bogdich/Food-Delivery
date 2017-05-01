@@ -32,6 +32,9 @@
     
     self.categoryImages = @[@"category_pizza", @"category_sushi", @"category_roll", @"category_drinks"];
     
+    self.navigationController.navigationBar.topItem.title = @"";
+    self.navigationController.navigationBar.tintColor = [UIColor GOLD_COLOR];
+    
     [SVProgressHUD show];
     [self downloadCategories];
 }
@@ -124,7 +127,7 @@
      
         success:^(NSArray *dishes){
             
-            self.dishesForCategory = dishes;
+            self.dishesForCategory = [self dishArrayWithDictionaryDishArray:dishes];
             
             [SVProgressHUD dismiss];
             [self performSegueWithIdentifier:CategoryListToDishListSegue sender:self];
@@ -133,6 +136,22 @@
         failure:^(NSError *error){
                                                   
     }];
+}
+
+- (NSArray *)dishArrayWithDictionaryDishArray:(NSArray *) dictionaryArray {
+    
+    NSMutableArray *dishArray = [NSMutableArray new];
+    NSError *error;
+    
+    for (NSDictionary *dict in dictionaryArray) {
+        
+        Dish *dish = [MTLJSONAdapter modelOfClass:Dish.class fromJSONDictionary:dict error:&error];
+        [dish loadDishImage];
+        
+        [dishArray addObject:dish];
+    }
+    
+    return dishArray;
 }
 
 #pragma mark - Navigation

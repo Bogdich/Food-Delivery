@@ -7,6 +7,8 @@
 //
 
 #import <Mantle/Mantle.h>
+#import <UIKit/UIKit.h>
+
 #import "Category.h"
 
 @interface Dish : MTLModel <MTLJSONSerializing>
@@ -17,5 +19,9 @@
 @property (strong, nonatomic) NSNumber *weight;
 @property (strong, nonatomic) NSNumber *price;
 @property (strong, nonatomic) Category *category;
+@property (strong, nonatomic) NSURL *imageURL;
+@property (strong, nonatomic) UIImage *image;
+
+- (void)loadDishImage;
 
 @end

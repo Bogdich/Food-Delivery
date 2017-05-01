@@ -2,13 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="852ddb52-3df8-4643-8b46-688d6e8115e0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../DataBase/script.sql" afterPath="$PROJECT_DIR$/../../DataBase/script.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/Assets.xcassets/back.imageset/back@1x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/Assets.xcassets/back.imageset/back@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/Assets.xcassets/back.imageset/bakc@3x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/Assets.xcassets/cancel.imageset/cancel@1x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/Assets.xcassets/cancel.imageset/cancel@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/Assets.xcassets/cancel.imageset/cancel@3x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/Assets.xcassets/cart.imageset/Icon-App-20x20@1x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/Assets.xcassets/cart.imageset/Icon-App-20x20@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/Assets.xcassets/cart.imageset/Icon-App-20x20@3x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/Assets.xcassets/pizza_background.imageset/pizza_background-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/Assets.xcassets/pizza_background.imageset/pizza_background-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/Assets.xcassets/pizza_background.imageset/pizza_background.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/Assets.xcassets/back.imageset/Contents.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/Assets.xcassets/cancel.imageset/Contents.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/Assets.xcassets/cart.imageset/Contents.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/Assets.xcassets/pizza_background.imageset/Contents.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/View/CartTableViewCell.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/View/CartTableViewCell.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/View/CartTableViewCell.xib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/View/DishesTableViewCell.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/View/DishesTableViewCell.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/View/DishesTableViewCell.xib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/ViewController/PresentDishViewController.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/ViewController/PresentDishViewController.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery.xcworkspace/xcuserdata/KirillBudevich.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery.xcworkspace/xcuserdata/KirillBudevich.xcuserdatad/UserInterfaceState.xcuserstate" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/942592df-e23e-4a91-8b83-dd078555e84d.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/942592df-e23e-4a91-8b83-dd078555e84d.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/controller/MainController.java" afterPath="$PROJECT_DIR$/src/main/java/com/controller/MainController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/dao/impl/DishDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/dao/impl/DishDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/entity/Dish.java" afterPath="$PROJECT_DIR$/src/main/java/com/entity/Dish.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/service/DishAndCategoryService.java" afterPath="$PROJECT_DIR$/src/main/java/com/service/DishAndCategoryService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery.xcodeproj/project.pbxproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery.xcworkspace/xcuserdata/KirillBudevich.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery.xcworkspace/xcuserdata/KirillBudevich.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/Base.lproj/Main.storyboard" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/Base.lproj/Main.storyboard" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/Model/APIManager.m" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/Model/APIManager.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/Model/Dish.h" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/Model/Dish.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/Model/Dish.m" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/Model/Dish.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/View/CategoryTableViewCell.xib" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/View/CategoryTableViewCell.xib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/ViewController/CategoryListTableViewController.m" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/ViewController/CategoryListTableViewController.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/ViewController/DishesListTableViewController.m" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/ViewController/DishesListTableViewController.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/constants.h" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/constants.h" />
     </list>
     <ignored path="ReservationSystem.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -80,131 +110,7 @@
     <favorites_list name="ReservationSystem" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DishDAOImpl.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dao/impl/DishDAOImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="179" column="40" lean-forward="false" selection-start-line="179" selection-start-column="40" selection-end-line="179" selection-end-column="40" />
-              <folding>
-                <marker date="1493636178000" expanded="true" signature="451:600" ph="INSERT INTO `dish`... " />
-                <marker date="1493636178000" expanded="true" signature="875:910" ph="SELECT * FRO... dish" />
-                <marker date="1493636178000" expanded="true" signature="983:1027" ph="SELECT * FRO... dish" />
-                <marker date="1493636178000" expanded="true" signature="1091:1124" ph="DELETE FROM " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OderDAOImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dao/impl/OderDAOImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserDAOImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dao/impl/UserDAOImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3749">
-              <caret line="77" column="22" lean-forward="false" selection-start-line="77" selection-start-column="22" selection-end-line="77" selection-end-column="22" />
-              <folding>
-                <marker date="1493634500000" expanded="true" signature="396:484" ph="INSERT INTO `user`... " />
-                <marker date="1493634500000" expanded="true" signature="1408:1441" ph="DELETE FROM " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserInfoDAOImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dao/impl/UserInfoDAOImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-84">
-              <caret line="106" column="23" lean-forward="false" selection-start-line="106" selection-start-column="23" selection-end-line="106" selection-end-column="23" />
-              <folding>
-                <marker date="1493476986000" expanded="true" signature="416:560" ph="INSERT INTO `user_info`... " />
-                <marker date="1493476986000" expanded="true" signature="835:880" ph="SELECT * FRO... user_info" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CategoryDAOImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dao/impl/CategoryDAOImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1646">
-              <caret line="25" column="22" lean-forward="false" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
-              <folding>
-                <marker date="1493476986000" expanded="true" signature="444:508" ph="INSERT INTO `category`... " />
-                <marker date="1493476986000" expanded="true" signature="787:811" ph="SELECT * FRO... category" />
-                <marker date="1493476986000" expanded="true" signature="876:915" ph="SELECT * FRO... category" />
-                <marker date="1493476986000" expanded="true" signature="1100:1137" ph="DELETE FROM " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/controller/MainController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="84" column="50" lean-forward="false" selection-start-line="84" selection-start-column="50" selection-end-line="84" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/942592df-e23e-4a91-8b83-dd078555e84d/console.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="44" lean-forward="false" selection-start-line="0" selection-start-column="44" selection-end-line="0" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DishAndCategoryService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/service/DishAndCategoryService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="126" column="47" lean-forward="false" selection-start-line="126" selection-start-column="47" selection-end-line="126" selection-end-column="47" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DishDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dao/DishDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="18" column="15" lean-forward="false" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Dish.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/entity/Dish.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding>
-                <element signature="e#712#713#0" expanded="true" />
-                <element signature="e#743#744#0" expanded="true" />
-                <element signature="e#791#792#0" expanded="true" />
-                <element signature="e#831#832#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -318,8 +224,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="y" value="22" />
     <option name="width" value="1280" />
-    <option name="height" value="800" />
+    <option name="height" value="702" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -519,40 +426,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="factory" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Food Delivery Server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="REST SERVER" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -610,7 +483,6 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -1240,11 +1112,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27983000" />
+    <option name="totallyTimeSpent" value="30200000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="22" width="1280" height="702" extended-state="1" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1260,16 +1131,16 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.452459" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3260274" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3260274" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27534246" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19386107" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19386107" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1355,8 +1226,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="dbDummy://dbtable:/5f32666d/942592df-e23e-4a91-8b83-dd078555e84d/food_delivery.user" />
-    <entry file="dbDummy://dbtable:/5f32666d/942592df-e23e-4a91-8b83-dd078555e84d/food_delivery.user" />
     <entry file="dbDummy://dbtable:/5f32666d/942592df-e23e-4a91-8b83-dd078555e84d/food_delivery.user_info" />
     <entry file="dbDummy://dbtable:/5f32666d/942592df-e23e-4a91-8b83-dd078555e84d/food_delivery.user_info" />
     <entry file="dbDummy://dbtable:/5f32666d/942592df-e23e-4a91-8b83-dd078555e84d/food_delivery.user" />
@@ -1392,13 +1261,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="744" column="0" lean-forward="false" selection-start-line="744" selection-start-column="0" selection-end-line="744" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dao/UserInfoDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1471,21 +1333,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="44" column="30" lean-forward="false" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/entity/Answer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="26" lean-forward="false" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
           <folding>
-            <element signature="e#212#213#0" expanded="true" />
-            <element signature="e#256#257#0" expanded="true" />
+            <element signature="e#212#213#0" expanded="false" />
+            <element signature="e#256#257#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1505,28 +1359,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dao/impl/UserDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3749">
-          <caret line="77" column="22" lean-forward="false" selection-start-line="77" selection-start-column="22" selection-end-line="77" selection-end-column="22" />
-          <folding>
-            <marker date="1493634500000" expanded="true" signature="396:484" ph="INSERT INTO `user`... " />
-            <marker date="1493634500000" expanded="true" signature="1408:1441" ph="DELETE FROM " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dao/impl/UserInfoDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-84">
-          <caret line="106" column="23" lean-forward="false" selection-start-line="106" selection-start-column="23" selection-end-line="106" selection-end-column="23" />
-          <folding>
-            <marker date="1493476986000" expanded="true" signature="416:560" ph="INSERT INTO `user_info`... " />
-            <marker date="1493476986000" expanded="true" signature="835:880" ph="SELECT * FRO... user_info" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dao/impl/CategoryDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1646">
@@ -1540,23 +1372,82 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/entity/Dish.java">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/942592df-e23e-4a91-8b83-dd078555e84d/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="44" lean-forward="false" selection-start-line="0" selection-start-column="44" selection-end-line="0" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/89547e8d/942592df-e23e-4a91-8b83-dd078555e84d/food_delivery.dish">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dao/impl/DishDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="174" column="20" lean-forward="false" selection-start-line="174" selection-start-column="20" selection-end-line="174" selection-end-column="20" />
           <folding>
-            <element signature="e#712#713#0" expanded="true" />
-            <element signature="e#743#744#0" expanded="true" />
-            <element signature="e#791#792#0" expanded="true" />
-            <element signature="e#831#832#0" expanded="true" />
+            <marker date="1493636410000" expanded="true" signature="451:600" ph="INSERT INTO `dish`... " />
+            <marker date="1493636410000" expanded="true" signature="875:910" ph="SELECT * FRO... dish" />
+            <marker date="1493636410000" expanded="true" signature="983:1027" ph="SELECT * FRO... dish" />
+            <marker date="1493636410000" expanded="true" signature="1091:1124" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dao/impl/UserDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="737">
+          <caret line="77" column="22" lean-forward="false" selection-start-line="77" selection-start-column="22" selection-end-line="77" selection-end-column="22" />
+          <folding>
+            <marker date="1493634500000" expanded="true" signature="396:484" ph="INSERT INTO `user`... " />
+            <marker date="1493634500000" expanded="true" signature="1408:1441" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="15" column="18" lean-forward="false" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dao/UserInfoDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="11" column="12" lean-forward="false" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dao/impl/UserInfoDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="896">
+          <caret line="74" column="20" lean-forward="false" selection-start-line="74" selection-start-column="20" selection-end-line="74" selection-end-column="20" />
+          <folding>
+            <marker date="1493476986000" expanded="true" signature="416:560" ph="INSERT INTO `user_info`... " />
+            <marker date="1493476986000" expanded="true" signature="835:880" ph="SELECT * FRO... user_info" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/controller/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="84" column="50" lean-forward="false" selection-start-line="84" selection-start-column="50" selection-end-line="84" selection-end-column="50" />
+        <state relative-caret-position="153">
+          <caret line="68" column="33" lean-forward="true" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
           <folding />
         </state>
       </provider>
@@ -1566,7 +1457,7 @@
         <state relative-caret-position="250">
           <caret line="126" column="47" lean-forward="false" selection-start-line="126" selection-start-column="47" selection-end-line="126" selection-end-column="47" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1579,15 +1470,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dao/impl/DishDAOImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/entity/Dish.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="179" column="40" lean-forward="false" selection-start-line="179" selection-start-column="40" selection-end-line="179" selection-end-column="40" />
+        <state relative-caret-position="270">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
-            <marker date="1493636178000" expanded="true" signature="451:600" ph="INSERT INTO `dish`... " />
-            <marker date="1493636178000" expanded="true" signature="875:910" ph="SELECT * FRO... dish" />
-            <marker date="1493636178000" expanded="true" signature="983:1027" ph="SELECT * FRO... dish" />
-            <marker date="1493636178000" expanded="true" signature="1091:1124" ph="DELETE FROM " />
+            <element signature="e#712#713#0" expanded="true" />
+            <element signature="e#743#744#0" expanded="true" />
+            <element signature="e#791#792#0" expanded="true" />
+            <element signature="e#831#832#0" expanded="true" />
           </folding>
         </state>
       </provider>

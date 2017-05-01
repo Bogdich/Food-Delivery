@@ -91,6 +91,8 @@
                  NSError *error;
                  Dish *dish = [MTLJSONAdapter modelOfClass:[Dish class]
                                         fromJSONDictionary:responseDictionary error:&error];
+                 
+                 [dish loadDishImage];
                  success(dish);
                  
              } failure:^(NSURLSessionDataTask *task, NSError *error) {
