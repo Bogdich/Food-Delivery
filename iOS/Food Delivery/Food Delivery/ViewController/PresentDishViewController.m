@@ -36,14 +36,18 @@
     
     [self drawAddToCartButton];
     
-    self.dishCount = [[CartManager sharedManager] getDishesCountForId:self.selectedDish.id_];
-    _countLabel.text = [NSString stringWithFormat:@"%ld шт.", (long)self.dishCount];
     _dishImageView.image = _selectedDish.image;
     _dishNameLabel.text = _selectedDish.name;
     _dishPriceLabel.text = [NSString stringWithFormat:@"%@ BYN", _selectedDish.price];
     _dishDescriptionLabel.text = _selectedDish.description_;
     _dishWeightLabel.text = [NSString stringWithFormat:@"%@ г.", _selectedDish.weight];
-    // Do any additional setup after loading the view.
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    
+    self.dishCount = [[CartManager sharedManager] getDishesCountForId:self.selectedDish.id_];
+    _countStepper.value = self.dishCount;
+    _countLabel.text = [NSString stringWithFormat:@"%ld шт.", (long)self.dishCount];
 }
 
 - (IBAction)stepperClicked:(UIStepper *)sender {
@@ -59,7 +63,7 @@
     
     [[CartManager sharedManager] addDishToCart:self.selectedDish count:self.dishCount];
     
-    [SVProgressHUD dismissWithDelay:2];
+    [SVProgressHUD dismissWithDelay:1];
     
 }
 

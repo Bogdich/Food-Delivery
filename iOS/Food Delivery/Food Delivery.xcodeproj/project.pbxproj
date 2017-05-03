@@ -30,6 +30,14 @@
 		F0608CFD1EB5F185005E3111 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0608CFB1EB5F185005E3111 /* Main.storyboard */; };
 		F0608CFF1EB5F185005E3111 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0608CFE1EB5F185005E3111 /* Assets.xcassets */; };
 		F0608D021EB5F185005E3111 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0608D001EB5F185005E3111 /* LaunchScreen.storyboard */; };
+		F087F6EA1EB93184006F4F89 /* CreateOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F087F6E91EB93184006F4F89 /* CreateOrderViewController.m */; };
+		F087F6F01EB933CC006F4F89 /* TextFieldedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F087F6EE1EB933CC006F4F89 /* TextFieldedTableViewCell.m */; };
+		F087F6F11EB933CC006F4F89 /* TextFieldedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F087F6EF1EB933CC006F4F89 /* TextFieldedTableViewCell.xib */; };
+		F087F6F51EB93723006F4F89 /* SegmentedControlTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F087F6F31EB93723006F4F89 /* SegmentedControlTableViewCell.m */; };
+		F087F6F61EB93723006F4F89 /* SegmentedControlTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F087F6F41EB93723006F4F89 /* SegmentedControlTableViewCell.xib */; };
+		F0C8B77F1EBA6E4900A3BE83 /* NSString+ContainsCyrillic.m in Sources */ = {isa = PBXBuildFile; fileRef = F0C8B77E1EBA6E4900A3BE83 /* NSString+ContainsCyrillic.m */; };
+		F0C8B7821EBA7D3900A3BE83 /* OrderSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = F0C8B7811EBA7D3900A3BE83 /* OrderSectionView.m */; };
+		F0C8B7841EBA7D4B00A3BE83 /* OrderSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0C8B7831EBA7D4B00A3BE83 /* OrderSectionView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +84,19 @@
 		F0608CFE1EB5F185005E3111 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0608D011EB5F185005E3111 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F0608D031EB5F185005E3111 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F087F6E81EB93184006F4F89 /* CreateOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CreateOrderViewController.h; path = ViewController/CreateOrderViewController.h; sourceTree = "<group>"; };
+		F087F6E91EB93184006F4F89 /* CreateOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CreateOrderViewController.m; path = ViewController/CreateOrderViewController.m; sourceTree = "<group>"; };
+		F087F6ED1EB933CC006F4F89 /* TextFieldedTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TextFieldedTableViewCell.h; path = View/TextFieldedTableViewCell.h; sourceTree = "<group>"; };
+		F087F6EE1EB933CC006F4F89 /* TextFieldedTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TextFieldedTableViewCell.m; path = View/TextFieldedTableViewCell.m; sourceTree = "<group>"; };
+		F087F6EF1EB933CC006F4F89 /* TextFieldedTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TextFieldedTableViewCell.xib; path = View/TextFieldedTableViewCell.xib; sourceTree = "<group>"; };
+		F087F6F21EB93723006F4F89 /* SegmentedControlTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SegmentedControlTableViewCell.h; path = View/SegmentedControlTableViewCell.h; sourceTree = "<group>"; };
+		F087F6F31EB93723006F4F89 /* SegmentedControlTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SegmentedControlTableViewCell.m; path = View/SegmentedControlTableViewCell.m; sourceTree = "<group>"; };
+		F087F6F41EB93723006F4F89 /* SegmentedControlTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SegmentedControlTableViewCell.xib; path = View/SegmentedControlTableViewCell.xib; sourceTree = "<group>"; };
+		F0C8B77D1EBA6C5200A3BE83 /* NSString+ContainsCyrillic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ContainsCyrillic.h"; sourceTree = "<group>"; };
+		F0C8B77E1EBA6E4900A3BE83 /* NSString+ContainsCyrillic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ContainsCyrillic.m"; sourceTree = "<group>"; };
+		F0C8B7801EBA7D3900A3BE83 /* OrderSectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OrderSectionView.h; path = View/OrderSectionView.h; sourceTree = "<group>"; };
+		F0C8B7811EBA7D3900A3BE83 /* OrderSectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OrderSectionView.m; path = View/OrderSectionView.m; sourceTree = "<group>"; };
+		F0C8B7831EBA7D4B00A3BE83 /* OrderSectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OrderSectionView.xib; path = View/OrderSectionView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,14 +137,14 @@
 			name = PresentDishViewController;
 			sourceTree = "<group>";
 		};
-		F0390C221EB7B8C700FE9BF4 /* CartCell */ = {
+		F0390C221EB7B8C700FE9BF4 /* CartTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
 				F0390C231EB7B8EE00FE9BF4 /* CartTableViewCell.h */,
 				F0390C241EB7B8EF00FE9BF4 /* CartTableViewCell.m */,
 				F0390C251EB7B8EF00FE9BF4 /* CartTableViewCell.xib */,
 			);
-			name = CartCell;
+			name = CartTableViewCell;
 			sourceTree = "<group>";
 		};
 		F0390C2B1EB7C39300FE9BF4 /* CartViewController */ = {
@@ -222,31 +243,33 @@
 		F040E6811EB680DA00CAA63E /* TableViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				F0390C221EB7B8C700FE9BF4 /* CartCell */,
-				F040E6831EB680EB00CAA63E /* DishesCell */,
-				F040E6821EB680E300CAA63E /* CategoryCell */,
+				F087F6EC1EB9332F006F4F89 /* SegmentControlTableViewCell */,
+				F087F6EB1EB93304006F4F89 /* TextFieldedTableViewCell */,
+				F0390C221EB7B8C700FE9BF4 /* CartTableViewCell */,
+				F040E6831EB680EB00CAA63E /* DishesTableViewCell */,
+				F040E6821EB680E300CAA63E /* CategoryTableViewCell */,
 			);
 			name = TableViewCell;
 			sourceTree = "<group>";
 		};
-		F040E6821EB680E300CAA63E /* CategoryCell */ = {
+		F040E6821EB680E300CAA63E /* CategoryTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
 				F040E6841EB6811800CAA63E /* CategoryTableViewCell.h */,
 				F040E6851EB6811800CAA63E /* CategoryTableViewCell.m */,
 				F040E6861EB6811800CAA63E /* CategoryTableViewCell.xib */,
 			);
-			name = CategoryCell;
+			name = CategoryTableViewCell;
 			sourceTree = "<group>";
 		};
-		F040E6831EB680EB00CAA63E /* DishesCell */ = {
+		F040E6831EB680EB00CAA63E /* DishesTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
 				F0390C191EB7581500FE9BF4 /* DishesTableViewCell.h */,
 				F0390C1A1EB7581500FE9BF4 /* DishesTableViewCell.m */,
 				F0390C1B1EB7581500FE9BF4 /* DishesTableViewCell.xib */,
 			);
-			name = DishesCell;
+			name = DishesTableViewCell;
 			sourceTree = "<group>";
 		};
 		F0608CE61EB5F185005E3111 = {
@@ -288,6 +311,8 @@
 		F0608CF21EB5F185005E3111 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F0C8B77E1EBA6E4900A3BE83 /* NSString+ContainsCyrillic.m */,
+				F0C8B77D1EBA6C5200A3BE83 /* NSString+ContainsCyrillic.h */,
 				F0608CF31EB5F185005E3111 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -296,6 +321,7 @@
 		F0608D091EB5F225005E3111 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				F087F6E71EB93157006F4F89 /* CreateOrderViewController */,
 				F0390C1E1EB768C900FE9BF4 /* PresentDishViewController */,
 				F040E67C1EB66DE000CAA63E /* DishesListTableViewController */,
 				F040E6781EB63C7700CAA63E /* CategoryListTableViewController */,
@@ -319,8 +345,56 @@
 			isa = PBXGroup;
 			children = (
 				F040E6811EB680DA00CAA63E /* TableViewCell */,
+				F0C8B7851EBA7D5200A3BE83 /* CustomViews */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		F087F6E71EB93157006F4F89 /* CreateOrderViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F087F6E81EB93184006F4F89 /* CreateOrderViewController.h */,
+				F087F6E91EB93184006F4F89 /* CreateOrderViewController.m */,
+			);
+			name = CreateOrderViewController;
+			sourceTree = "<group>";
+		};
+		F087F6EB1EB93304006F4F89 /* TextFieldedTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				F087F6ED1EB933CC006F4F89 /* TextFieldedTableViewCell.h */,
+				F087F6EE1EB933CC006F4F89 /* TextFieldedTableViewCell.m */,
+				F087F6EF1EB933CC006F4F89 /* TextFieldedTableViewCell.xib */,
+			);
+			name = TextFieldedTableViewCell;
+			sourceTree = "<group>";
+		};
+		F087F6EC1EB9332F006F4F89 /* SegmentControlTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				F087F6F21EB93723006F4F89 /* SegmentedControlTableViewCell.h */,
+				F087F6F31EB93723006F4F89 /* SegmentedControlTableViewCell.m */,
+				F087F6F41EB93723006F4F89 /* SegmentedControlTableViewCell.xib */,
+			);
+			name = SegmentControlTableViewCell;
+			sourceTree = "<group>";
+		};
+		F0C8B7851EBA7D5200A3BE83 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				F0C8B7861EBA7D5D00A3BE83 /* OrderSectionView */,
+			);
+			name = CustomViews;
+			sourceTree = "<group>";
+		};
+		F0C8B7861EBA7D5D00A3BE83 /* OrderSectionView */ = {
+			isa = PBXGroup;
+			children = (
+				F0C8B7801EBA7D3900A3BE83 /* OrderSectionView.h */,
+				F0C8B7831EBA7D4B00A3BE83 /* OrderSectionView.xib */,
+				F0C8B7811EBA7D3900A3BE83 /* OrderSectionView.m */,
+			);
+			name = OrderSectionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -386,10 +460,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0608D021EB5F185005E3111 /* LaunchScreen.storyboard in Resources */,
+				F0C8B7841EBA7D4B00A3BE83 /* OrderSectionView.xib in Resources */,
 				F040E6881EB6811800CAA63E /* CategoryTableViewCell.xib in Resources */,
+				F087F6F11EB933CC006F4F89 /* TextFieldedTableViewCell.xib in Resources */,
 				F0608CFF1EB5F185005E3111 /* Assets.xcassets in Resources */,
 				F0390C271EB7B8EF00FE9BF4 /* CartTableViewCell.xib in Resources */,
 				F0390C1D1EB7581600FE9BF4 /* DishesTableViewCell.xib in Resources */,
+				F087F6F61EB93723006F4F89 /* SegmentedControlTableViewCell.xib in Resources */,
 				F0608CFD1EB5F185005E3111 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -452,12 +529,15 @@
 				F040E6591EB5F5F300CAA63E /* Dish.m in Sources */,
 				F0390C2A1EB7C38E00FE9BF4 /* CartViewController.m in Sources */,
 				F040E66E1EB60B4600CAA63E /* APIManager.m in Sources */,
+				F0C8B77F1EBA6E4900A3BE83 /* NSString+ContainsCyrillic.m in Sources */,
 				F040E6691EB60A5700CAA63E /* SessionManager.m in Sources */,
+				F087F6F01EB933CC006F4F89 /* TextFieldedTableViewCell.m in Sources */,
 				F040E6621EB606BE00CAA63E /* User.m in Sources */,
 				F040E65E1EB5FBA900CAA63E /* Category.m in Sources */,
 				F040E67F1EB66E0400CAA63E /* DishesListTableViewController.m in Sources */,
 				F0608CF71EB5F185005E3111 /* AppDelegate.m in Sources */,
 				F0608CF41EB5F185005E3111 /* main.m in Sources */,
+				F0C8B7821EBA7D3900A3BE83 /* OrderSectionView.m in Sources */,
 				F0390C211EB7833F00FE9BF4 /* PresentDishViewController.m in Sources */,
 				F040E6651EB608BD00CAA63E /* UserAuthInfo.m in Sources */,
 				F040E6871EB6811800CAA63E /* CategoryTableViewCell.m in Sources */,
@@ -465,6 +545,8 @@
 				F0390C2E1EB7C87800FE9BF4 /* CartManager.m in Sources */,
 				F040E67B1EB63CB600CAA63E /* CategoryListTableViewController.m in Sources */,
 				F0390C1C1EB7581600FE9BF4 /* DishesTableViewCell.m in Sources */,
+				F087F6F51EB93723006F4F89 /* SegmentedControlTableViewCell.m in Sources */,
+				F087F6EA1EB93184006F4F89 /* CreateOrderViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,6 +14,10 @@
 @interface CartViewController () <UITableViewDelegate, UITableViewDataSource, CartTableViewCellDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UILabel *finalCostLabel;
+@property (weak, nonatomic) IBOutlet UIButton *addToOrderButton;
+
+@property (assign, nonatomic) NSInteger finalCost;
 @property (strong, nonatomic) UIImageView *dishPhotoImageView;
 
 @end
@@ -22,6 +26,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.finalCost = 0;
+    
+    [self costForUpperView];
+    [self drawCreateOrderButton];
     // Do any additional setup after loading the view.
 }
 
@@ -76,6 +85,23 @@
     cell.delegate = self;
     
     return cell;
+}
+
+- (void)costForUpperView {
+    
+    self.finalCost = 0;
+    
+    if ([[CartManager sharedManager] getAllDishesCount] > 0) {
+        
+        for (Dish *dish in [[CartManager sharedManager] getAllDishes]) {
+            
+            NSInteger count = [[CartManager sharedManager]getDishesCountForId:dish.id_];
+            
+            self.finalCost += [dish.price integerValue] * count;
+        }
+    }
+    
+    _finalCostLabel.text = [NSString stringWithFormat:@"Итого: %ld BYN", (long)self.finalCost];
 }
 
 
@@ -145,6 +171,15 @@
     Dish *dish = dishes[indexPath.row];
     
     [[CartManager sharedManager] addDishToCart:dish count:value];
+    
+    [self costForUpperView];
+}
+
+- (void)drawCreateOrderButton {
+    
+    _addToOrderButton.layer.cornerRadius = _addToOrderButton.frame.size.height / 2;
+    _addToOrderButton.layer.borderWidth = 1.0f;
+    _addToOrderButton.layer.borderColor = [[UIColor GOLD_COLOR] CGColor];
 }
 
 /*

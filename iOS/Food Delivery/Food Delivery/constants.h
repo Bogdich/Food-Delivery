@@ -19,6 +19,8 @@
 #define CategoryTableViewCellIdentifier @"CategoryTableViewCellIdentifier"
 #define DishTableViewCellIdentifier @"DishTableViewCellIdentifier"
 #define CartTableViewCellIdentifier @"CartTableViewCellIdentifier"
+#define SegmentedControllTableViewCellIdentifier @"SegmentedControllTableViewCellIdentifier"
+#define TextFieldedTableViewCellIdentifier @"TextFieldedTableViewCellIdentifier"
 
 #pragma mark - Colors
 
