@@ -16,7 +16,7 @@ import android.widget.TextView;
 import com.mickeyco.android.fooddelivery.R;
 import com.mickeyco.android.fooddelivery.api.ApiFactory;
 import com.mickeyco.android.fooddelivery.api.RequestInterface;
-import com.mickeyco.android.fooddelivery.api.models.RegistrationResponse;
+import com.mickeyco.android.fooddelivery.api.models.LoginResponse;
 import com.mickeyco.android.fooddelivery.utils.Constants;
 
 import retrofit2.Call;
@@ -96,16 +96,16 @@ public class RegisterFragment extends Fragment implements View.OnClickListener{
                                  String address, String number, String email){
 
         RequestInterface requestInterface = ApiFactory.getService();
-        final Call<RegistrationResponse> response = requestInterface.registration(login, password,
+        final Call<LoginResponse> response = requestInterface.registration(login, password,
                 name, surname, address, number, email
         );
 
 
-        response.enqueue(new Callback<RegistrationResponse>() {
+        response.enqueue(new Callback<LoginResponse>() {
             @Override
-            public void onResponse(Call<RegistrationResponse> call, retrofit2.Response<RegistrationResponse> response) {
+            public void onResponse(Call<LoginResponse> call, retrofit2.Response<LoginResponse> response) {
 
-                RegistrationResponse resp = response.body();
+                LoginResponse resp = response.body();
                 PreferenceManager.getDefaultSharedPreferences(getActivity()).edit().
                         putInt(Constants.PREF_ID, resp.getUserId()).
                         apply();
@@ -114,7 +114,7 @@ public class RegisterFragment extends Fragment implements View.OnClickListener{
             }
 
             @Override
-            public void onFailure(Call<RegistrationResponse> call, Throwable t) {
+            public void onFailure(Call<LoginResponse> call, Throwable t) {
                 progress.setVisibility(View.INVISIBLE);
                 Log.d(Constants.TAG,"failed");
                 Snackbar.make(getView(), "ERROR", Snackbar.LENGTH_LONG).show();

@@ -7,7 +7,7 @@ import com.google.gson.annotations.SerializedName;
  * Created by Softteco on 01.05.2017.
  */
 
-public class RegistrationResponse {
+public class LoginResponse {
     @SerializedName("error")
     @Expose
     private String error;
