@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component name="dataSourceStorage">
   <data-source name="MySQL - food_delivery@localhost" uuid="942592df-e23e-4a91-8b83-dd078555e84d">
+<<<<<<< HEAD
     <database-info product="MySQL" version="5.7.18-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
       <extra-name-characters>#@</extra-name-characters>
       <identifier-quote-string>`</identifier-quote-string>
@@ -236,5 +237,8 @@ user_id</columns>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
     </database-model>
+=======
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+>>>>>>> c9bd400489b5c7e2d3d2e9e5befdff9ecb4846f7
   </data-source>
 </component>

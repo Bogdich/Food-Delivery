@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.mickeyco.android.navigationdrawer">
+          package="com.mickeyco.android.fooddelivery">
 
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
@@ -18,34 +18,32 @@
             android:name=".activities.CategoryActivity"
             android:label="Каталог"
             android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+             <intent-filter>
+             <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
+             <category android:name="android.intent.category.LAUNCHER"/>
+             </intent-filter>
         </activity>
         <activity
-            android:name=".activities.OfferListActivity"
-            android:label="Список блюд"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:name=".activities.DishListActivity"
+            android:label="Список блюд">
         </activity>
         <activity
             android:name=".activities.ContactsActivity"
-            android:label="Контакты"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:label="Контакты">
         </activity>
-        <activity android:name=".activities.OfferActivity"
-                  android:label="Блюдо"
-                  android:theme="@style/AppTheme.NoActionBar">
+        <activity
+            android:name=".activities.DishActivity"
+            android:label="Блюдо">
         </activity>
-
-        <meta-data
-            android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version"/>
-        <meta-data
-            android:name="com.google.android.maps.v2.API_KEY"
-            android:value="AIzaSyBhvPkx1Iw38vmI4GZPyFwNn_fNxdzynRQ"/>
-
+        <activity
+            android:name=".activities.CartActivity"
+            android:label="Корзина">
+        </activity>
+        <activity
+            android:name=".activities.ChangeInfoActivity"
+            android:label="Личные данные">
+        </activity>
     </application>
 
 </manifest>

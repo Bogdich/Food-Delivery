@@ -6,8 +6,20 @@
 
     <android.support.v7.widget.RecyclerView
         xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
         android:id="@+id/crime_recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center"/>
+=======
+        android:id="@+id/category_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ProgressBar
+        android:id="@+id/category_progress_bar"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"/>
+>>>>>>> c9bd400489b5c7e2d3d2e9e5befdff9ecb4846f7
 </RelativeLayout>
