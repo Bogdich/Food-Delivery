@@ -7,6 +7,7 @@
 //
 
 #import "CategoryListTableViewController.h"
+#import <RESideMenu/RESideMenu.h>
 #import "APIManager.h"
 #import <SVProgressHUD/SVProgressHUD.h>
 #import "constants.h"

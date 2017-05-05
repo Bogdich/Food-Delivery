@@ -13,23 +13,30 @@
 #define getUserByID @"/food-delivery/user/getInfo"
 #define getDishByID @"/food-delivery/dish/getInfo"
 #define getDishesByCategoryID @"/food-delivery/dish/getDishes"
-#define registrUser @"/food-delivery/user/insertUser"
+#define registerUser @"/food-delivery/user/insertUser"
 
 @implementation APIManager
 
-- (NSURLSessionDataTask *)addUserWith:(User *)user success:(void (^)(id object))success failure:(void (^)(NSError *error))failure {
-
-    NSMutableDictionary *parameters = [[NSMutableDictionary alloc] initWithObjectsAndKeys: user, @"id",  nil];
+- (NSURLSessionDataTask *)addUserWithLogin:(NSString *)login andPass:(NSString *)pass name:(NSString *)name surname:(NSString *)surname address:(NSString *)address number:(NSString *)number email:(NSString *)email success:(void (^)(id object))success failure:(void (^)(NSError *error))failure {
     
-    return [self POST:registrUser parameters:parameters progress:nil
+    NSMutableDictionary *parameters = [[NSMutableDictionary alloc] initWithObjectsAndKeys:
+                                       login, @"login",
+                                       pass, @"password",
+                                       name, @"name",
+                                       surname, @"surname",
+                                       number, @"number",
+                                       email, @"email",
+                                       address, @"address", nil];
+    
+    return [self POST:registerUser parameters:parameters progress:nil
               success:^(NSURLSessionDataTask *task, id responseObject) {
-        
+                  
                   NSDictionary *responseDictionary = (NSDictionary *)responseObject;
                   
                   id object;
                   
-                  if ([responseDictionary objectForKey:@"responseID"]) {
-                     
+                  if ([[responseDictionary objectForKey:@"error"] isEqualToString:@"OK"]) {
+                      
                       object = [responseDictionary objectForKey:@"responseID"];
                   } else {
                       

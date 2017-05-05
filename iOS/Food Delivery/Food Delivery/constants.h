@@ -9,10 +9,19 @@
 #ifndef constants_h
 #define constants_h
 
+#pragma mark - Storyboard Identifiers
+
+#define ContentViewController @"contentViewController"
+#define OrderHisoryViewController @"OrderHisoryViewControllerIdentifier"
+#define FavoriteViewController @"FavoriteViewControllerIdentifier"
+#define SettingsViewController @"SettingsViewControllerIdentifier"
+
+
 #pragma mark - Segue Identifiers
 
 #define CategoryListToDishListSegue @"CategoryListToDishListSegue"
 #define DishListToPresentDishSegue @"DishListToPresentDishSegue"
+
 
 #pragma mark - Cell Identifiers
 

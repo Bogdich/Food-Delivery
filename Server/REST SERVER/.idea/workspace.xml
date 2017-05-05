@@ -2,21 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="852ddb52-3df8-4643-8b46-688d6e8115e0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/View/SegmentedControlTableViewCell.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/View/SegmentedControlTableViewCell.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/View/SegmentedControlTableViewCell.xib" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/View/TextFieldedTableViewCell.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/View/TextFieldedTableViewCell.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/View/TextFieldedTableViewCell.xib" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/ViewController/CreateOrderViewController.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/ViewController/CreateOrderViewController.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/Assets.xcassets/food_menu.imageset/food-menu.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/Assets.xcassets/food_menu.imageset/food-menu@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/Assets.xcassets/food_menu.imageset/food-menu@3x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/Assets.xcassets/food_menu_selected.imageset/food-menu.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/Assets.xcassets/food_menu_selected.imageset/food-menu@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/Assets.xcassets/food_menu_selected.imageset/food-menu@3x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/Assets.xcassets/food_menu.imageset/Contents.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/Assets.xcassets/food_menu_selected.imageset/Contents.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/RightViewController.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/RightViewController.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/RootMenuViewController.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/RootMenuViewController.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/View/RightMenuTableViewCell.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/View/RightMenuTableViewCell.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/View/RightMenuTableViewCell.xib" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery.xcworkspace/xcuserdata/KirillBudevich.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery.xcworkspace/xcuserdata/KirillBudevich.xcuserdatad/UserInterfaceState.xcuserstate" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery.xcodeproj/project.pbxproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/AppDelegate.m" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/AppDelegate.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/Base.lproj/Main.storyboard" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/Base.lproj/Main.storyboard" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/ViewController/CartViewController.m" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/ViewController/CartViewController.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/ViewController/PresentDishViewController.m" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/ViewController/PresentDishViewController.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/constants.h" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/constants.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../iOS/Food Delivery/Podfile" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Podfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../iOS/Food Delivery/Podfile.lock" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Podfile.lock" />
     </list>
     <ignored path="ReservationSystem.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -120,19 +128,46 @@
       <file leaf-file-name="MainController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/controller/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1875">
+            <state relative-caret-position="1725">
               <caret line="125" column="35" lean-forward="false" selection-start-line="125" selection-start-column="35" selection-end-line="125" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/service/UserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="11" column="41" lean-forward="true" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/service/UserService.java">
+      <file leaf-file-name="console.sql" pinned="false" current-in-tab="true">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/942592df-e23e-4a91-8b83-dd078555e84d/console.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="66" column="9" lean-forward="false" selection-start-line="66" selection-start-column="9" selection-end-line="66" selection-end-column="9" />
+            <state relative-caret-position="0">
+              <caret line="0" column="201" lean-forward="false" selection-start-line="0" selection-start-column="201" selection-end-line="0" selection-end-column="201" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="food_delivery.user" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/89547e8d/942592df-e23e-4a91-8b83-dd078555e84d/food_delivery.user">
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -186,7 +221,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/mysql-connection.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/txtDao/OrderDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/txtDao/TimetableDao.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/942592df-e23e-4a91-8b83-dd078555e84d/console.sql" />
         <option value="$PROJECT_DIR$/src/main/java/com/dao/impl/MySQLUserDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/model/Answer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/service/DAOService.java" />
@@ -211,6 +245,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/service/DishAndCategoryService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/controller/MainController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dao/impl/DishDAOImpl.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/942592df-e23e-4a91-8b83-dd078555e84d/console.sql" />
       </list>
     </option>
   </component>
@@ -283,6 +318,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -510,8 +547,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1149,12 +1184,13 @@
       <workItem from="1493550742719" duration="2422000" />
       <workItem from="1493743744774" duration="19000" />
       <workItem from="1493755807974" duration="1141000" />
-      <workItem from="1493839649209" duration="64000" />
+      <workItem from="1493839649209" duration="251000" />
+      <workItem from="1493931007103" duration="967000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31430000" />
+    <option name="totallyTimeSpent" value="32584000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="702" extended-state="1" />
@@ -1178,11 +1214,12 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20355412" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43114755" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20678514" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1191,7 +1228,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43114755" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1267,7 +1303,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="dbDummy://dbtable:/5f32666d/942592df-e23e-4a91-8b83-dd078555e84d/food_delivery.user_info" />
     <entry file="dbDummy://dbtable:/5f32666d/942592df-e23e-4a91-8b83-dd078555e84d/food_delivery.user_info" />
     <entry file="dbDummy://dbtable:/5f32666d/942592df-e23e-4a91-8b83-dd078555e84d/food_delivery.user" />
     <entry file="dbDummy://dbtable:/5f32666d/942592df-e23e-4a91-8b83-dd078555e84d/food_delivery.user" />
@@ -1396,22 +1431,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/942592df-e23e-4a91-8b83-dd078555e84d/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="44" lean-forward="false" selection-start-line="0" selection-start-column="44" selection-end-line="0" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/89547e8d/942592df-e23e-4a91-8b83-dd078555e84d/food_delivery.dish">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -1490,9 +1518,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/controller/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1875">
+        <state relative-caret-position="1725">
           <caret line="125" column="35" lean-forward="false" selection-start-line="125" selection-start-column="35" selection-end-line="125" selection-end-column="35" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1508,8 +1538,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="66" column="9" lean-forward="false" selection-start-line="66" selection-start-column="9" selection-end-line="66" selection-end-column="9" />
+        <state relative-caret-position="75">
+          <caret line="11" column="41" lean-forward="true" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/89547e8d/942592df-e23e-4a91-8b83-dd078555e84d/food_delivery.user">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/942592df-e23e-4a91-8b83-dd078555e84d/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="201" lean-forward="false" selection-start-line="0" selection-start-column="201" selection-end-line="0" selection-end-column="201" />
           <folding />
         </state>
       </provider>

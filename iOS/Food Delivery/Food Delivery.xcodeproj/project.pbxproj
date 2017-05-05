@@ -25,6 +25,12 @@
 		F040E67F1EB66E0400CAA63E /* DishesListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F040E67E1EB66E0400CAA63E /* DishesListTableViewController.m */; };
 		F040E6871EB6811800CAA63E /* CategoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F040E6851EB6811800CAA63E /* CategoryTableViewCell.m */; };
 		F040E6881EB6811800CAA63E /* CategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F040E6861EB6811800CAA63E /* CategoryTableViewCell.xib */; };
+		F04B0E121EBBCD5000450214 /* RootMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F04B0E111EBBCD5000450214 /* RootMenuViewController.m */; };
+		F04B0E151EBBD0B300450214 /* RightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F04B0E141EBBD0B300450214 /* RightViewController.m */; };
+		F04B0E1B1EBBD3A700450214 /* RightMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F04B0E191EBBD3A700450214 /* RightMenuTableViewCell.m */; };
+		F04B0E1C1EBBD3A700450214 /* RightMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F04B0E1A1EBBD3A700450214 /* RightMenuTableViewCell.xib */; };
+		F04B0E211EBBEF0E00450214 /* ProfileSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = F04B0E1F1EBBEF0E00450214 /* ProfileSectionView.m */; };
+		F04B0E221EBBEF0E00450214 /* ProfileSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F04B0E201EBBEF0E00450214 /* ProfileSectionView.xib */; };
 		F0608CF41EB5F185005E3111 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0608CF31EB5F185005E3111 /* main.m */; };
 		F0608CF71EB5F185005E3111 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F0608CF61EB5F185005E3111 /* AppDelegate.m */; };
 		F0608CFD1EB5F185005E3111 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0608CFB1EB5F185005E3111 /* Main.storyboard */; };
@@ -76,6 +82,16 @@
 		F040E6841EB6811800CAA63E /* CategoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CategoryTableViewCell.h; path = View/CategoryTableViewCell.h; sourceTree = "<group>"; };
 		F040E6851EB6811800CAA63E /* CategoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CategoryTableViewCell.m; path = View/CategoryTableViewCell.m; sourceTree = "<group>"; };
 		F040E6861EB6811800CAA63E /* CategoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CategoryTableViewCell.xib; path = View/CategoryTableViewCell.xib; sourceTree = "<group>"; };
+		F04B0E101EBBCD5000450214 /* RootMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootMenuViewController.h; sourceTree = "<group>"; };
+		F04B0E111EBBCD5000450214 /* RootMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootMenuViewController.m; sourceTree = "<group>"; };
+		F04B0E131EBBD0B300450214 /* RightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightViewController.h; sourceTree = "<group>"; };
+		F04B0E141EBBD0B300450214 /* RightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightViewController.m; sourceTree = "<group>"; };
+		F04B0E181EBBD3A700450214 /* RightMenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RightMenuTableViewCell.h; path = View/RightMenuTableViewCell.h; sourceTree = "<group>"; };
+		F04B0E191EBBD3A700450214 /* RightMenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RightMenuTableViewCell.m; path = View/RightMenuTableViewCell.m; sourceTree = "<group>"; };
+		F04B0E1A1EBBD3A700450214 /* RightMenuTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RightMenuTableViewCell.xib; path = View/RightMenuTableViewCell.xib; sourceTree = "<group>"; };
+		F04B0E1E1EBBEF0E00450214 /* ProfileSectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileSectionView.h; sourceTree = "<group>"; };
+		F04B0E1F1EBBEF0E00450214 /* ProfileSectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileSectionView.m; sourceTree = "<group>"; };
+		F04B0E201EBBEF0E00450214 /* ProfileSectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileSectionView.xib; sourceTree = "<group>"; };
 		F0608CEF1EB5F185005E3111 /* Food Delivery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Food Delivery.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0608CF31EB5F185005E3111 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F0608CF51EB5F185005E3111 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -243,6 +259,7 @@
 		F040E6811EB680DA00CAA63E /* TableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				F04B0E171EBBD37000450214 /* RightMenuTableViewCell */,
 				F087F6EC1EB9332F006F4F89 /* SegmentControlTableViewCell */,
 				F087F6EB1EB93304006F4F89 /* TextFieldedTableViewCell */,
 				F0390C221EB7B8C700FE9BF4 /* CartTableViewCell */,
@@ -272,6 +289,49 @@
 			name = DishesTableViewCell;
 			sourceTree = "<group>";
 		};
+		F04B0E0F1EBBCC9800450214 /* RootMenuViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F04B0E101EBBCD5000450214 /* RootMenuViewController.h */,
+				F04B0E111EBBCD5000450214 /* RootMenuViewController.m */,
+			);
+			name = RootMenuViewController;
+			sourceTree = "<group>";
+		};
+		F04B0E161EBBD0B900450214 /* RightViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F087F6E71EB93157006F4F89 /* CreateOrderViewController */,
+				F0390C1E1EB768C900FE9BF4 /* PresentDishViewController */,
+				F040E67C1EB66DE000CAA63E /* DishesListTableViewController */,
+				F040E6781EB63C7700CAA63E /* CategoryListTableViewController */,
+				F0390C2B1EB7C39300FE9BF4 /* CartViewController */,
+				F04B0E131EBBD0B300450214 /* RightViewController.h */,
+				F04B0E141EBBD0B300450214 /* RightViewController.m */,
+			);
+			name = RightViewController;
+			sourceTree = "<group>";
+		};
+		F04B0E171EBBD37000450214 /* RightMenuTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				F04B0E181EBBD3A700450214 /* RightMenuTableViewCell.h */,
+				F04B0E191EBBD3A700450214 /* RightMenuTableViewCell.m */,
+				F04B0E1A1EBBD3A700450214 /* RightMenuTableViewCell.xib */,
+			);
+			name = RightMenuTableViewCell;
+			sourceTree = "<group>";
+		};
+		F04B0E1D1EBBEEF200450214 /* ProfileSection */ = {
+			isa = PBXGroup;
+			children = (
+				F04B0E1E1EBBEF0E00450214 /* ProfileSectionView.h */,
+				F04B0E1F1EBBEF0E00450214 /* ProfileSectionView.m */,
+				F04B0E201EBBEF0E00450214 /* ProfileSectionView.xib */,
+			);
+			name = ProfileSection;
+			sourceTree = "<group>";
+		};
 		F0608CE61EB5F185005E3111 = {
 			isa = PBXGroup;
 			children = (
@@ -293,9 +353,9 @@
 		F0608CF11EB5F185005E3111 /* Food Delivery */ = {
 			isa = PBXGroup;
 			children = (
+				F0608D091EB5F225005E3111 /* ViewController */,
 				F0608D0B1EB5F233005E3111 /* View */,
 				F0608D0A1EB5F22D005E3111 /* Model */,
-				F0608D091EB5F225005E3111 /* ViewController */,
 				F0608CF51EB5F185005E3111 /* AppDelegate.h */,
 				F0608CF61EB5F185005E3111 /* AppDelegate.m */,
 				F0608CFB1EB5F185005E3111 /* Main.storyboard */,
@@ -321,11 +381,8 @@
 		F0608D091EB5F225005E3111 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				F087F6E71EB93157006F4F89 /* CreateOrderViewController */,
-				F0390C1E1EB768C900FE9BF4 /* PresentDishViewController */,
-				F040E67C1EB66DE000CAA63E /* DishesListTableViewController */,
-				F040E6781EB63C7700CAA63E /* CategoryListTableViewController */,
-				F0390C2B1EB7C39300FE9BF4 /* CartViewController */,
+				F04B0E161EBBD0B900450214 /* RightViewController */,
+				F04B0E0F1EBBCC9800450214 /* RootMenuViewController */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -344,8 +401,8 @@
 		F0608D0B1EB5F233005E3111 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F040E6811EB680DA00CAA63E /* TableViewCell */,
 				F0C8B7851EBA7D5200A3BE83 /* CustomViews */,
+				F040E6811EB680DA00CAA63E /* TableViewCell */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -382,6 +439,7 @@
 		F0C8B7851EBA7D5200A3BE83 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				F04B0E1D1EBBEEF200450214 /* ProfileSection */,
 				F0C8B7861EBA7D5D00A3BE83 /* OrderSectionView */,
 			);
 			name = CustomViews;
@@ -462,10 +520,12 @@
 				F0608D021EB5F185005E3111 /* LaunchScreen.storyboard in Resources */,
 				F0C8B7841EBA7D4B00A3BE83 /* OrderSectionView.xib in Resources */,
 				F040E6881EB6811800CAA63E /* CategoryTableViewCell.xib in Resources */,
+				F04B0E221EBBEF0E00450214 /* ProfileSectionView.xib in Resources */,
 				F087F6F11EB933CC006F4F89 /* TextFieldedTableViewCell.xib in Resources */,
 				F0608CFF1EB5F185005E3111 /* Assets.xcassets in Resources */,
 				F0390C271EB7B8EF00FE9BF4 /* CartTableViewCell.xib in Resources */,
 				F0390C1D1EB7581600FE9BF4 /* DishesTableViewCell.xib in Resources */,
+				F04B0E1C1EBBD3A700450214 /* RightMenuTableViewCell.xib in Resources */,
 				F087F6F61EB93723006F4F89 /* SegmentedControlTableViewCell.xib in Resources */,
 				F0608CFD1EB5F185005E3111 /* Main.storyboard in Resources */,
 			);
@@ -528,6 +588,7 @@
 			files = (
 				F040E6591EB5F5F300CAA63E /* Dish.m in Sources */,
 				F0390C2A1EB7C38E00FE9BF4 /* CartViewController.m in Sources */,
+				F04B0E211EBBEF0E00450214 /* ProfileSectionView.m in Sources */,
 				F040E66E1EB60B4600CAA63E /* APIManager.m in Sources */,
 				F0C8B77F1EBA6E4900A3BE83 /* NSString+ContainsCyrillic.m in Sources */,
 				F040E6691EB60A5700CAA63E /* SessionManager.m in Sources */,
@@ -535,7 +596,9 @@
 				F040E6621EB606BE00CAA63E /* User.m in Sources */,
 				F040E65E1EB5FBA900CAA63E /* Category.m in Sources */,
 				F040E67F1EB66E0400CAA63E /* DishesListTableViewController.m in Sources */,
+				F04B0E1B1EBBD3A700450214 /* RightMenuTableViewCell.m in Sources */,
 				F0608CF71EB5F185005E3111 /* AppDelegate.m in Sources */,
+				F04B0E151EBBD0B300450214 /* RightViewController.m in Sources */,
 				F0608CF41EB5F185005E3111 /* main.m in Sources */,
 				F0C8B7821EBA7D3900A3BE83 /* OrderSectionView.m in Sources */,
 				F0390C211EB7833F00FE9BF4 /* PresentDishViewController.m in Sources */,
@@ -547,6 +610,7 @@
 				F0390C1C1EB7581600FE9BF4 /* DishesTableViewCell.m in Sources */,
 				F087F6F51EB93723006F4F89 /* SegmentedControlTableViewCell.m in Sources */,
 				F087F6EA1EB93184006F4F89 /* CreateOrderViewController.m in Sources */,
+				F04B0E121EBBCD5000450214 /* RootMenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
