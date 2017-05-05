@@ -11,7 +11,7 @@ public interface UserInfoDAO {
 
     void insert(UserInfo info) throws DAOException;
 
-    void update(UserInfo info) throws DAOException;
+    void updateUserInfo(UserInfo info) throws DAOException;
 
     void deleteByUserId(int userId) throws DAOException;
 

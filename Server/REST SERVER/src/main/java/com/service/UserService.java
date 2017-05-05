@@ -4,7 +4,6 @@ import com.dao.UserDAO;
 import com.dao.UserInfoDAO;
 import com.dao.exception.DAOException;
 import com.dao.factory.DAOFactory;
-import com.dao.impl.UserDAOImpl;
 import com.entity.User;
 import com.entity.UserInfo;
 
@@ -52,6 +51,20 @@ public class UserService {
         return id;
     }
 
+    public int login(String login, String password) {
+        DAOFactory factory = DAOFactory.getInstance(DAOFactory.Factories.MYSQL);
+        UserDAO userDAO = factory.getUserDAO();
+
+        int id = 0;
+        try {
+            id = userDAO.login(login, password);
+
+        } catch (DAOException e) {
+            e.printStackTrace();
+        }
+        return id;
+    }
+
     public UserInfo getUserInfo(int userId)/* throws ServiceException*/ {
 
         DAOFactory factory = DAOFactory.getInstance(DAOFactory.Factories.MYSQL);
@@ -66,6 +79,22 @@ public class UserService {
             e.printStackTrace();
         }
         return userInfo;
+    }
+
+    public void updateUserInfo(String login, String password, String name, String surname, String number, String address, String email, int userId){
+
+        DAOFactory factory = DAOFactory.getInstance(DAOFactory.Factories.MYSQL);
+        UserInfoDAO userInfoDAO = factory.getUserInfoDAO();
+
+        try {
+            User user = new User(userId, login, password, false);
+            UserInfo userInfo = new UserInfo(user, name, surname, number, address, email);
+            userInfoDAO.updateUserInfo(userInfo);
+
+        } catch (DAOException e) {
+            e.printStackTrace();
+        }
+//        return userInfo;
     }
 
     public void deleteUser(int id) /* throws ServiceException*/ {

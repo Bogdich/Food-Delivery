@@ -2,6 +2,7 @@ package com.dao;
 
 import com.dao.exception.DAOException;
 import com.entity.User;
+import com.entity.UserInfo;
 
 
 /**
@@ -11,9 +12,11 @@ public interface UserDAO {
 
     int insert(User user) throws DAOException;
 
-//    void update(User user) throws DAOException;
+    void updateUser(UserInfo userInfo) throws DAOException;
 
 //    void updateUserVisits(User user) throws DAOException;
+
+    int login(String login, String pass) throws DAOException;
 
     void delete(int id) throws DAOException;
 

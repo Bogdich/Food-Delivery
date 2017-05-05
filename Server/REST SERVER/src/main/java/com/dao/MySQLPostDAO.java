@@ -16,7 +16,7 @@ public interface MySQLPostDAO<T> {
 //    Logger LOGGER = LogManager.getLogger();
 //    int UNSUPPORTED_PK_INSERT = -1;
 //
-//    void update(T data) throws DAOException;
+//    void updateUserInfo(T data) throws DAOException;
 //    int insert(T data) throws DAOException;
 //    void delete(T data) throws DAOException;
 //

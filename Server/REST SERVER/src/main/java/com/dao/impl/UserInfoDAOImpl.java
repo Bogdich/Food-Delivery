@@ -18,9 +18,15 @@ public class UserInfoDAOImpl implements UserInfoDAO{
             "(`name`, `surname`, `address`, `email`, `number`, `user_id`) " +
             "VALUES (?, ?, ?, ?, ?, ?)";
 
-    private static final String UPDATE_USER_INFO_QUERY = "UPDATE `users` " +
-            "SET `name` = ?, `surname` = ?, `address` = ?, `email` = ?, `number` = ? " +
-            "WHERE `user_id` = ?";
+//    private static final String UPDATE_USER_INFO_QUERY = "UPDATE `users` " +
+//            "SET `name` = ?, `surname` = ?, `address` = ?, `email` = ?, `number` = ? " +
+//            "WHERE `user_id` = ?";
+
+    private static final String UPDATE_USER_INFO_QUERY = "UPDATE user " +
+            "INNER JOIN user_info ON user.id = user_info.user_id " +
+            "SET user.login = ?, user.password = ?, user_info.name = ?, user_info.surname = ?, " +
+            "user_info.address = ?, user_info.email = ?, user_info.number = ? " +
+            "WHERE user.id = ?";
 
     private static final String SELECT_USER_INFO_BY_USER_ID_QUERY = "SELECT * FROM `user_info` WHERE `user_id` = ? ";
 
@@ -62,7 +68,39 @@ public class UserInfoDAOImpl implements UserInfoDAO{
     }
 
     @Override
-    public void update(UserInfo info) throws DAOException {
+    public void updateUserInfo(UserInfo userInfo) throws DAOException {
+        ConnectionPool connectionPool = ConnectionPool.getInstance();
+        Connection connection = null;
+        PreparedStatement preparedStatement = null;
+        try {
+            connection = connectionPool.getConnection();
+            preparedStatement = connection.prepareStatement(UPDATE_USER_INFO_QUERY);
+
+            preparedStatement.setString(1, userInfo.getUser().getLogin());
+            preparedStatement.setString(2, userInfo.getUser().getPassword());
+            preparedStatement.setString(3, userInfo.getName());
+            preparedStatement.setString(4, userInfo.getSurname());
+            preparedStatement.setString(5, userInfo.getAddress());
+            preparedStatement.setString(6, userInfo.getEmail());
+            preparedStatement.setString(7, userInfo.getNumber());
+            preparedStatement.setInt(8, userInfo.getUser().getId());
+
+
+            preparedStatement.executeUpdate();
+        } catch (InterruptedException | ConnectionPoolException e) {
+            //LOGGER.error("Can not get connection from connection pool");
+        } catch (SQLException e) {
+            throw new DAOException("DAO layer: cannot updateUserInfo user", e);
+        } finally {
+            closeStatement(preparedStatement);
+            if (connection != null) {
+                try {
+                    connectionPool.freeConnection(connection);
+                } catch (SQLException | ConnectionPoolException e) {
+                    //LOGGER.error("Can not free connection from connection pool");
+                }
+            }
+        }
 
     }
 

@@ -5,6 +5,7 @@ import com.dao.connectionMySQL.ConnectionPool;
 import com.dao.exception.ConnectionPoolException;
 import com.dao.exception.DAOException;
 import com.entity.User;
+import com.entity.UserInfo;
 
 import java.sql.*;
 
@@ -16,9 +17,6 @@ public class UserDAOImpl implements UserDAO {
             "(`login`, `password`) " +
             "VALUES (?, ?)";
 
-    private static final String UPDATE_USER_QUERY = "UPDATE `users` " +
-            "SET `login` = ?, `password` = ?, `name` = ?, `surname` = ?, `email` = ?, `card_id` = ? " +
-            "WHERE `user_id` = ?";
 
     private static final String UPDATE_VIS_NUMB_BY_USER_ID = "UPDATE `users` SET `visitsNumber` = ? WHERE `user_id` = ?";
 
@@ -73,8 +71,52 @@ public class UserDAOImpl implements UserDAO {
         return id;
     }
 
-//    @Override
-//    public void update(User user) throws DAOException {
+    @Override
+    public int login(String login, String pass) throws DAOException {
+        ConnectionPool connectionPool = ConnectionPool.getInstance();
+        Connection connection = null;
+        PreparedStatement preparedStatement = null;
+        String password = null;
+        int id = 0;
+
+        try {
+            connection = connectionPool.getConnection();
+            preparedStatement = connection.prepareStatement(SELECT_USER_BY_LOGIN_QUERY);
+
+            preparedStatement.setString(1, login);
+
+
+            ResultSet rs = preparedStatement.executeQuery();
+            if (rs == null) {
+                throw new DAOException("DAO layer: no user with this login");
+            }
+            if (rs.next()){
+                id = rs.getInt("id");
+                password = rs.getString("password");
+            }
+            rs.close();
+            if(!pass.equals(password)) {
+                throw new DAOException("DAO layer: incorrect password");
+            }
+        } catch (InterruptedException | ConnectionPoolException e) {
+            //LOGGER.error("Can not get connection from connection pool");
+        } catch (SQLException e) {
+            throw new DAOException("DAO layer: cannot login", e);
+        } finally {
+            closeStatement(preparedStatement);
+            if (connection != null) {
+                try {
+                    connectionPool.freeConnection(connection);
+                } catch (SQLException | ConnectionPoolException e) {
+                    // LOGGER.error("Can not free connection from connection pool");
+                }
+            }
+        }
+        return id;
+    }
+
+    @Override
+    public void updateUser(UserInfo userInfo) throws DAOException {
 //        ConnectionPool connectionPool = ConnectionPool.getInstance();
 //        Connection connection = null;
 //        PreparedStatement preparedStatement = null;
@@ -82,23 +124,21 @@ public class UserDAOImpl implements UserDAO {
 //            connection = connectionPool.getConnection();
 //            preparedStatement = connection.prepareStatement(UPDATE_USER_QUERY);
 //
-//            preparedStatement.setString(1, user.getLogin());
-//            preparedStatement.setString(2, user.getPassword());
-//            preparedStatement.setString(3, user.getUserInfo().getName());
-//            preparedStatement.setString(4, user.getUserInfo().getSurname());
-//            preparedStatement.setString(5, user.getUserInfo().getEmail());
-//            if (user.getCard() == null) {
-//                preparedStatement.setNull(6, Types.INTEGER);
-//            } else {
-//                preparedStatement.setInt(6, user.getCard().getResponseID());
-//            }
-//            preparedStatement.setInt(7, user.getResponseID());
+//            preparedStatement.setString(1, userInfo.getUser().getLogin());
+//            preparedStatement.setString(2, userInfo.getUser().getPassword());
+//            preparedStatement.setString(3, userInfo.getName());
+//            preparedStatement.setString(4, userInfo.getSurname());
+//            preparedStatement.setString(5, userInfo.getAddress());
+//            preparedStatement.setString(6, userInfo.getEmail());
+//            preparedStatement.setString(7, userInfo.getNumber());
+//            preparedStatement.setInt(8, userInfo.getUser().getId());
 //
-//            preparedStatement.executeUpdate();
+//
+//            preparedStatement.executeQuery();
 //        } catch (InterruptedException | ConnectionPoolException e) {
 //            //LOGGER.error("Can not get connection from connection pool");
 //        } catch (SQLException e) {
-//            throw new DAOException("DAO layer: cannot update user", e);
+//            throw new DAOException("DAO layer: cannot updateUserInfo user", e);
 //        } finally {
 //            closeStatement(preparedStatement);
 //            if (connection != null) {
@@ -109,7 +149,7 @@ public class UserDAOImpl implements UserDAO {
 //                }
 //            }
 //        }
-//    }
+    }
 
 //    @Override
 //    public void updateUserVisits(User user) throws DAOException {
@@ -127,7 +167,7 @@ public class UserDAOImpl implements UserDAO {
 //        } catch (InterruptedException | ConnectionPoolException e) {
 //            LOGGER.error("Can not get connection from connection pool");
 //        } catch (SQLException e) {
-//            throw new DAOException("DAO layer: cannot update user visits", e);
+//            throw new DAOException("DAO layer: cannot updateUserInfo user visits", e);
 //        } finally {
 //            closeStatement(preparedStatement);
 //            if (connection != null) {

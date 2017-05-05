@@ -2,7 +2,7 @@ package com.entity;
 
 public class Answer {
 
-    private String error;
+    private String responseMessage;
     private int responseID;
 
     public int getResponseID() {
@@ -13,11 +13,13 @@ public class Answer {
         this.responseID = responseID;
     }
 
-    public String getError() {
-        return error;
+    public String getMessage() {
+        return responseMessage;
     }
 
-    public void setError(String error) {
-        this.error = error;
+    public void setMessage(String responseMessage) {
+        this.responseMessage = responseMessage;
     }
+
+
 }
