@@ -7,11 +7,7 @@
         <item>Каталог</item>
         <item>Контакты</item>
     </string-array>
-<<<<<<< HEAD
-    <string name="action_settings">Settings</string>
-=======
     <string name="action_cart">Корзина</string>
->>>>>>> c9bd400489b5c7e2d3d2e9e5befdff9ecb4846f7
     <string name="first_adress">ул.Октябрьская, д.54</string>
     <string name="second_adress">ул.Ленина, д.13</string>
     <string name="telephone">+375-29-123-45-67</string>

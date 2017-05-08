@@ -1,31 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="?android:attr/listPreferredItemHeight"
-              android:orientation="horizontal"
-              android:layout_marginLeft="12dp"
-              android:layout_marginRight="12dp">
-
-
-    <ImageView
-        android:id="@+id/category_icon"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:src="@drawable/ic_menu_camera" />
-
-    <TextView
-        android:id="@+id/category_name"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_weight="5"
-        android:paddingLeft="50dp"
-        android:paddingTop="15dp"
-        android:textSize="20sp"
-        android:textStyle="bold"/>
-</LinearLayout>
-=======
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
               android:layout_height="172dp">
@@ -50,4 +23,3 @@
         android:textStyle="bold"
         android:textColor="#FFFFFF"/>
 </RelativeLayout>
->>>>>>> c9bd400489b5c7e2d3d2e9e5befdff9ecb4846f7

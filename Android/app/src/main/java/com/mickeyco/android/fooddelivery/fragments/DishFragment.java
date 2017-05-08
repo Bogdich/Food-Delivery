@@ -4,11 +4,9 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
-import android.support.v7.widget.LinearLayoutManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -110,7 +108,7 @@ public class DishFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 if (mAmount != 0) {
-                    CartDishes.getInstance().getDishes().put(mDish, mAmount);
+                    CartDishes.getInstance().addDish(mDish, mAmount);
                     Toast.makeText(getActivity(), "Успешно добавлено в корзину!", Toast.LENGTH_SHORT).show();
                 }
 

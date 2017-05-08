@@ -4,19 +4,22 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_catalog"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Каталог"/>
+            android:icon="@drawable/food_menu"
+            android:title="Меню"/>
         <item
-            android:id="@+id/nav_contacts"
-            android:icon="@drawable/ic_menu_share"
-            android:title="Контакты"/>
-<<<<<<< HEAD
-=======
+            android:id="@+id/nav_history"
+            android:icon="@drawable/order_history_selected"
+            android:title="История заказов"/>
+
+        <item
+            android:id="@+id/nav_favorites"
+            android:icon="@drawable/favorite_selected"
+            android:title="Избранное"/>
+
         <item
             android:id="@+id/nav_change_info"
-            android:icon="@drawable/ic_menu_share"
+            android:icon="@drawable/settings_selected"
             android:title="Личные данные"/>
->>>>>>> c9bd400489b5c7e2d3d2e9e5befdff9ecb4846f7
     </group>
 
 

@@ -9,14 +9,11 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
 import com.mickeyco.android.fooddelivery.R;
-import com.mickeyco.android.fooddelivery.fragments.CartFragment;
 
 public abstract class SingleFragmentActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener{
@@ -44,6 +41,7 @@ public abstract class SingleFragmentActivity extends AppCompatActivity
 //        toggle.syncState();
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+        navigationView.setItemIconTintList(null);
 
         if(fragment == null)
         {
@@ -90,7 +88,7 @@ public abstract class SingleFragmentActivity extends AppCompatActivity
 
         if (id == R.id.nav_catalog) {
             intent = new Intent(this, CategoryActivity.class);
-        } else if (id == R.id.nav_contacts) {
+        } else if (id == R.id.nav_favorites) {
             intent = new Intent(this, ContactsActivity.class);
         } else if (id == R.id.nav_change_info) {
             intent = new Intent(this, ChangeInfoActivity.class);

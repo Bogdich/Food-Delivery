@@ -24,8 +24,6 @@ import com.mickeyco.android.fooddelivery.utils.CartDishes;
 import com.mickeyco.android.fooddelivery.utils.Constants;
 import com.squareup.picasso.Picasso;
 
-import org.w3c.dom.Text;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -56,7 +54,6 @@ public class CartFragment extends Fragment {
         mProgressBar = (ProgressBar) rootView.findViewById(R.id.cart_progress_bar);
         getCategories();
         mCreateOrderBtn = (Button) rootView.findViewById(R.id.create_order_btn);
-        mEmptyText = (TextView) rootView.findViewById(R.id.empty_cart_text);
         return rootView;
     }
 
@@ -117,7 +114,7 @@ public class CartFragment extends Fragment {
                     if (mAmount != 0) {
                         mAmount--;
                         mDishAmount.setText(mAmount + "x");
-                        CartDishes.getInstance().getDishes().put(mDish, mAmount);
+                        CartDishes.getInstance().addDish(mDish, mAmount);
                         mTotalPrice -= mDish.getPrice();
                         mCreateOrderBtn.setText("Итого: " + mTotalPrice + " BYN");
                     }
@@ -130,7 +127,7 @@ public class CartFragment extends Fragment {
                     if (mAmount != 10) {
                         mAmount++;
                         mDishAmount.setText(mAmount + "x");
-                        CartDishes.getInstance().getDishes().put(mDish, mAmount);
+                        CartDishes.getInstance().addDish(mDish, mAmount);
                         mTotalPrice += mDish.getPrice();
                         mCreateOrderBtn.setText("Итого: " + mTotalPrice + " BYN");
                     }

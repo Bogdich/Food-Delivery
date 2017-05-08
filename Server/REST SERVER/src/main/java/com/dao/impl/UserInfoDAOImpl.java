@@ -6,6 +6,7 @@ import com.dao.exception.ConnectionPoolException;
 import com.dao.exception.DAOException;
 import com.entity.User;
 import com.entity.UserInfo;
+import com.mysql.jdbc.log.Log;
 
 import java.sql.*;
 
@@ -140,7 +141,7 @@ public class UserInfoDAOImpl implements UserInfoDAO{
             }
 
         } catch (InterruptedException | ConnectionPoolException e) {
-            //LOGGER.error("Can not get connection from connection pool");
+            e.toString();
         } catch (SQLException e) {
             throw new DAOException("DAO layer: cannot find user by login", e);
         } finally {

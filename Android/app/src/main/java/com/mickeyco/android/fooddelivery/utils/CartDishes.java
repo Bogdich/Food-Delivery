@@ -3,7 +3,6 @@ package com.mickeyco.android.fooddelivery.utils;
 import com.mickeyco.android.fooddelivery.api.models.Dish;
 
 import java.util.HashMap;
-import java.util.Map;
 
 /**
  * Created by Softteco on 02.05.2017.
@@ -26,5 +25,12 @@ public class CartDishes {
 
     public HashMap<Dish, Integer> getDishes() {
         return mDishes;
+    }
+
+    public void addDish(Dish dish, Integer amount) {
+        if (mDishes.containsKey(dish)) {
+            amount += mDishes.get(dish);
+        }
+        mDishes.put(dish, amount);
     }
 }

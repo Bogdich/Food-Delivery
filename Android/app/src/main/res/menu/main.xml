@@ -2,16 +2,9 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
       xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-<<<<<<< HEAD
-        android:id="@+id/action_settings"
-        android:orderInCategory="100"
-        android:title="@string/action_settings"
-        app:showAsAction="never"/>
-=======
         android:id="@+id/action_cart"
         android:orderInCategory="100"
         android:title="@string/action_cart"
         app:showAsAction="always"
         android:icon="@drawable/cart"/>
->>>>>>> c9bd400489b5c7e2d3d2e9e5befdff9ecb4846f7
 </menu>
