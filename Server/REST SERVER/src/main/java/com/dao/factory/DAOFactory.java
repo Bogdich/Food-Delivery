@@ -22,6 +22,8 @@ public abstract class DAOFactory {
 	public abstract DishDAO getDishDAO();
 
 	public abstract CategoryDAO getCategoryDAO();
+
+	public abstract SubscriptionDAO getSubscriptionDAO();
 //
 //	public abstract ReportDAO getReportDAO();
 
