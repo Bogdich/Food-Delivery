@@ -14,11 +14,16 @@
 @interface APIManager : SessionManager
 
 - (NSURLSessionDataTask *)getCategoriesWithSuccess:(void (^)(NSArray *categories))success failure:(void (^)(NSError *error))failure;
+
 - (NSURLSessionDataTask *)getDishesByCategoryId:(NSInteger) _id success:(void (^)(NSArray *dishes))success failure:(void (^)(NSError *error))failure;
 
-- (NSURLSessionDataTask *)addUserWith:(User *)user success:(void (^)(id object))success failure:(void (^)(NSError *error))failure;
+- (NSURLSessionDataTask *)addUserWithLogin:(NSString *)login andPass:(NSString *)pass name:(NSString *)name surname:(NSString *)surname address:(NSString *)address number:(NSString *)number email:(NSString *)email success:(void (^)(id object))success failure:(void (^)(NSError *error))failure;
 
 - (NSURLSessionDataTask *)getUserById:(NSInteger) _id success:(void (^)(User *user))success failure:(void (^)(NSError *error))failure;
 
 - (NSURLSessionDataTask *)getDishById:(NSInteger) _id success:(void (^)(Dish *dish))success failure:(void (^)(NSError *error))failure;
+
+- (NSURLSessionDataTask *)getUserByLogin:(NSString *) login success:(void (^)(BOOL isExist))success failure:(void (^)(NSError *error))failure;
+
+- (NSURLSessionDataTask *)upAutorizationWithLogin:(NSString *)login andPass:(NSString *)pass success:(void (^)(User *user))success failure:(void (^)(NSError *error))failure;
 @end
