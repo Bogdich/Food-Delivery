@@ -14,7 +14,7 @@
 //#import "BTXProfileSectionView.h"
 #import "LoginViewController.h"
 #import "AppDelegate.h"
-#import "User.h"
+#import "Profile.h"
 
 
 @interface RightViewController () <UITableViewDelegate, UITableViewDataSource, RESideMenuDelegate, ProfileSectionViewDelegate,/*BILProfileRegisterLoginViewDelegate,*/ UIAlertViewDelegate>
@@ -201,7 +201,7 @@
 
 - (void)profileClicked {
     
-    if ([User getInstance].authorized) {
+    if ([[Profile sharedInstance] isAuthorized]) {
         
         [self profileScreenOpen];
         
