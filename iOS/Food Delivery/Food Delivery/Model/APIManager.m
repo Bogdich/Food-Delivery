@@ -11,6 +11,8 @@
 
 #define getCategories @"/food-delivery/category/getCategories"
 #define getUserByID @"/food-delivery/user/getInfo"
+#define getIsUserExistByLogin @"/food-delivery/user/checkExist"
+#define upAutorizationUser @"/food-delivery/user/login"
 #define getDishByID @"/food-delivery/dish/getInfo"
 #define getDishesByCategoryID @"/food-delivery/dish/getDishes"
 #define registerUser @"/food-delivery/user/insertUser"
@@ -77,7 +79,7 @@
                  NSDictionary *responseDictionary = (NSDictionary *)responseObject;
                  
                  NSError *error;
-                 User *user = [MTLJSONAdapter modelOfClass:[Category class]
+                 User *user = [MTLJSONAdapter modelOfClass:[User class]
                                                 fromJSONDictionary:responseDictionary error:&error];
                  success(user);
                  
@@ -85,6 +87,45 @@
                  
                  failure(error);
                  
+             }];
+}
+
+- (NSURLSessionDataTask *)getUserByLogin:(NSString *)login success:(void (^)(BOOL isExist))success failure:(void (^)(NSError *error))failure {
+    
+    return [self GET:[NSString stringWithFormat:@"%@/%@", getIsUserExistByLogin, login] parameters:nil progress:nil
+             success:^(NSURLSessionDataTask *task, id responseObject) {
+                 
+                 NSDictionary *responseDictionary = (NSDictionary *)responseObject;
+                 
+                 BOOL isExist = [[responseDictionary objectForKey:@"error"] isEqualToString:@"OK"] ? YES : NO;
+
+                 success(isExist);
+                 
+             } failure:^(NSURLSessionDataTask *task, NSError *error) {
+                 
+                 failure(error);
+             }];
+}
+
+- (NSURLSessionDataTask *)upAutorizationWithLogin:(NSString *)login andPass:(NSString *)pass success:(void (^)(User *user))success failure:(void (^)(NSError *error))failure {
+    
+    NSMutableDictionary *parameters = [[NSMutableDictionary alloc] initWithObjectsAndKeys:
+                                       login, @"login",
+                                       pass, @"password", nil];
+    
+    return [self GET:upAutorizationUser parameters:parameters progress:nil
+             success:^(NSURLSessionDataTask *task, id responseObject) {
+                 
+                 NSDictionary *responseDictionary = (NSDictionary *)responseObject;
+                 
+                 NSError *error;
+                 User *user = [MTLJSONAdapter modelOfClass:[User class]
+                                        fromJSONDictionary:responseDictionary error:&error];
+                 success(user);
+                 
+             } failure:^(NSURLSessionDataTask *task, NSError *error) {
+                 
+                 failure(error);
              }];
 }
 

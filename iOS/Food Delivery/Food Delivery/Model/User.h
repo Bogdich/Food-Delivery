@@ -16,6 +16,7 @@
 @property (strong, nonatomic) NSString *address;
 @property (strong, nonatomic) NSString *number;
 @property (strong, nonatomic) NSString *email;
+@property (strong, nonatomic) NSMutableArray *orders;
 
 @property (nonatomic, getter=isAuthorized) BOOL authorized;
 
@@ -27,6 +28,5 @@
 
 - (NSString *)registrationWithLogin:(NSString *)login andPass:(NSString *)pass name:(NSString *)name surname:(NSString *)surname address:(NSString *)address number:(NSString *)number email:(NSString *)email;
 - (NSString *)upAutorizationWithLogin:(NSString *)login andPass:(NSString *)pass;
-- (BOOL)isLoginExist:(NSString *)login;
 
 @end

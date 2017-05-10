@@ -36,6 +36,10 @@
 		F0608CFD1EB5F185005E3111 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0608CFB1EB5F185005E3111 /* Main.storyboard */; };
 		F0608CFF1EB5F185005E3111 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0608CFE1EB5F185005E3111 /* Assets.xcassets */; };
 		F0608D021EB5F185005E3111 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0608D001EB5F185005E3111 /* LaunchScreen.storyboard */; };
+		F062228F1EC2535700296198 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F062228E1EC2535700296198 /* LoginViewController.m */; };
+		F06222921EC2623D00296198 /* RegistrationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F06222911EC2623D00296198 /* RegistrationTableViewController.m */; };
+		F06222961EC2F1F700296198 /* Order.m in Sources */ = {isa = PBXBuildFile; fileRef = F06222951EC2F1F700296198 /* Order.m */; };
+		F062229A1EC2F2DF00296198 /* OrderHistoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F06222991EC2F2DF00296198 /* OrderHistoryTableViewController.m */; };
 		F087F6EA1EB93184006F4F89 /* CreateOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F087F6E91EB93184006F4F89 /* CreateOrderViewController.m */; };
 		F087F6F01EB933CC006F4F89 /* TextFieldedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F087F6EE1EB933CC006F4F89 /* TextFieldedTableViewCell.m */; };
 		F087F6F11EB933CC006F4F89 /* TextFieldedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F087F6EF1EB933CC006F4F89 /* TextFieldedTableViewCell.xib */; };
@@ -100,6 +104,14 @@
 		F0608CFE1EB5F185005E3111 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0608D011EB5F185005E3111 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F0608D031EB5F185005E3111 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F062228D1EC2535700296198 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = ViewController/LoginViewController.h; sourceTree = "<group>"; };
+		F062228E1EC2535700296198 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = ViewController/LoginViewController.m; sourceTree = "<group>"; };
+		F06222901EC2623D00296198 /* RegistrationTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegistrationTableViewController.h; path = ViewController/RegistrationTableViewController.h; sourceTree = "<group>"; };
+		F06222911EC2623D00296198 /* RegistrationTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegistrationTableViewController.m; path = ViewController/RegistrationTableViewController.m; sourceTree = "<group>"; };
+		F06222941EC2F1F700296198 /* Order.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Order.h; path = Model/Order.h; sourceTree = "<group>"; };
+		F06222951EC2F1F700296198 /* Order.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Order.m; path = Model/Order.m; sourceTree = "<group>"; };
+		F06222981EC2F2DF00296198 /* OrderHistoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OrderHistoryTableViewController.h; path = ViewController/OrderHistoryTableViewController.h; sourceTree = "<group>"; };
+		F06222991EC2F2DF00296198 /* OrderHistoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OrderHistoryTableViewController.m; path = ViewController/OrderHistoryTableViewController.m; sourceTree = "<group>"; };
 		F087F6E81EB93184006F4F89 /* CreateOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CreateOrderViewController.h; path = ViewController/CreateOrderViewController.h; sourceTree = "<group>"; };
 		F087F6E91EB93184006F4F89 /* CreateOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CreateOrderViewController.m; path = ViewController/CreateOrderViewController.m; sourceTree = "<group>"; };
 		F087F6ED1EB933CC006F4F89 /* TextFieldedTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TextFieldedTableViewCell.h; path = View/TextFieldedTableViewCell.h; sourceTree = "<group>"; };
@@ -301,6 +313,7 @@
 		F04B0E161EBBD0B900450214 /* RightViewController */ = {
 			isa = PBXGroup;
 			children = (
+				F062229B1EC2F2E300296198 /* OrderHistoryTableViewController */,
 				F087F6E71EB93157006F4F89 /* CreateOrderViewController */,
 				F0390C1E1EB768C900FE9BF4 /* PresentDishViewController */,
 				F040E67C1EB66DE000CAA63E /* DishesListTableViewController */,
@@ -381,6 +394,7 @@
 		F0608D091EB5F225005E3111 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				F062228C1EC2533400296198 /* LoginViewController */,
 				F04B0E161EBBD0B900450214 /* RightViewController */,
 				F04B0E0F1EBBCC9800450214 /* RootMenuViewController */,
 			);
@@ -394,6 +408,7 @@
 				F040E65F1EB606A600CAA63E /* User */,
 				F040E65B1EB5FB8800CAA63E /* Category */,
 				F040E65A1EB5FB8300CAA63E /* Dish */,
+				F06222971EC2F24A00296198 /* Order */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -405,6 +420,43 @@
 				F040E6811EB680DA00CAA63E /* TableViewCell */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		F062228C1EC2533400296198 /* LoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F06222931EC2F02100296198 /* RegistrationViewController */,
+				F062228D1EC2535700296198 /* LoginViewController.h */,
+				F062228E1EC2535700296198 /* LoginViewController.m */,
+			);
+			name = LoginViewController;
+			sourceTree = "<group>";
+		};
+		F06222931EC2F02100296198 /* RegistrationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F06222901EC2623D00296198 /* RegistrationTableViewController.h */,
+				F06222911EC2623D00296198 /* RegistrationTableViewController.m */,
+			);
+			name = RegistrationViewController;
+			sourceTree = "<group>";
+		};
+		F06222971EC2F24A00296198 /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				F06222941EC2F1F700296198 /* Order.h */,
+				F06222951EC2F1F700296198 /* Order.m */,
+			);
+			name = Order;
+			sourceTree = "<group>";
+		};
+		F062229B1EC2F2E300296198 /* OrderHistoryTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F06222981EC2F2DF00296198 /* OrderHistoryTableViewController.h */,
+				F06222991EC2F2DF00296198 /* OrderHistoryTableViewController.m */,
+			);
+			name = OrderHistoryTableViewController;
 			sourceTree = "<group>";
 		};
 		F087F6E71EB93157006F4F89 /* CreateOrderViewController */ = {
@@ -588,6 +640,7 @@
 			files = (
 				F040E6591EB5F5F300CAA63E /* Dish.m in Sources */,
 				F0390C2A1EB7C38E00FE9BF4 /* CartViewController.m in Sources */,
+				F062228F1EC2535700296198 /* LoginViewController.m in Sources */,
 				F04B0E211EBBEF0E00450214 /* ProfileSectionView.m in Sources */,
 				F040E66E1EB60B4600CAA63E /* APIManager.m in Sources */,
 				F0C8B77F1EBA6E4900A3BE83 /* NSString+ContainsCyrillic.m in Sources */,
@@ -600,9 +653,12 @@
 				F0608CF71EB5F185005E3111 /* AppDelegate.m in Sources */,
 				F04B0E151EBBD0B300450214 /* RightViewController.m in Sources */,
 				F0608CF41EB5F185005E3111 /* main.m in Sources */,
+				F06222921EC2623D00296198 /* RegistrationTableViewController.m in Sources */,
 				F0C8B7821EBA7D3900A3BE83 /* OrderSectionView.m in Sources */,
 				F0390C211EB7833F00FE9BF4 /* PresentDishViewController.m in Sources */,
+				F06222961EC2F1F700296198 /* Order.m in Sources */,
 				F040E6651EB608BD00CAA63E /* UserAuthInfo.m in Sources */,
+				F062229A1EC2F2DF00296198 /* OrderHistoryTableViewController.m in Sources */,
 				F040E6871EB6811800CAA63E /* CategoryTableViewCell.m in Sources */,
 				F0390C261EB7B8EF00FE9BF4 /* CartTableViewCell.m in Sources */,
 				F0390C2E1EB7C87800FE9BF4 /* CartManager.m in Sources */,

@@ -2,29 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="852ddb52-3df8-4643-8b46-688d6e8115e0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/Assets.xcassets/food_menu.imageset/food-menu.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/Assets.xcassets/food_menu.imageset/food-menu@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/Assets.xcassets/food_menu.imageset/food-menu@3x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/Assets.xcassets/food_menu_selected.imageset/food-menu.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/Assets.xcassets/food_menu_selected.imageset/food-menu@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/Assets.xcassets/food_menu_selected.imageset/food-menu@3x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/Assets.xcassets/food_menu.imageset/Contents.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/Assets.xcassets/food_menu_selected.imageset/Contents.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/RightViewController.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/RightViewController.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/RootMenuViewController.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/RootMenuViewController.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/View/RightMenuTableViewCell.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/View/RightMenuTableViewCell.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/View/RightMenuTableViewCell.xib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/Assets.xcassets/food_background.imageset/food_background.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/Assets.xcassets/food_background.imageset/Contents.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/Model/Order.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/Model/Order.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/ViewController/LoginViewController.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/ViewController/LoginViewController.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/ViewController/OrderHistoryTableViewController.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/ViewController/OrderHistoryTableViewController.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/ViewController/RegistrationTableViewController.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/ViewController/RegistrationTableViewController.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery.xcworkspace/xcuserdata/KirillBudevich.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery.xcworkspace/xcuserdata/KirillBudevich.xcuserdatad/UserInterfaceState.xcuserstate" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReservationSystem.iml" afterPath="$PROJECT_DIR$/ReservationSystem.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/controller/MainController.java" afterPath="$PROJECT_DIR$/src/main/java/com/controller/MainController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery.xcodeproj/project.pbxproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/AppDelegate.m" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/AppDelegate.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/Base.lproj/Main.storyboard" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/Base.lproj/Main.storyboard" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/Model/APIManager.h" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/Model/APIManager.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/Model/APIManager.m" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/Model/APIManager.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/Model/User.h" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/Model/User.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/Model/User.m" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/Model/User.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/ProfileSectionView.m" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/ProfileSectionView.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/ProfileSectionView.xib" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/ProfileSectionView.xib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/RightViewController.m" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/RightViewController.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/constants.h" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Food Delivery/constants.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../iOS/Food Delivery/Podfile" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Podfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../iOS/Food Delivery/Podfile.lock" afterPath="$PROJECT_DIR$/../../iOS/Food Delivery/Podfile.lock" />
     </list>
     <ignored path="ReservationSystem.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -104,7 +105,25 @@
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
-        <option name="myItemId" value="dish" />
+        <option name="myItemId" value="order" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="MySQL - food_delivery@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="food_delivery" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="dish_has_order" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
@@ -125,11 +144,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MainController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/controller/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1725">
-              <caret line="125" column="35" lean-forward="false" selection-start-line="125" selection-start-column="35" selection-end-line="125" selection-end-column="35" />
+            <state relative-caret-position="345">
+              <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="false" />
               </folding>
@@ -141,33 +160,25 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/service/UserService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="11" column="41" lean-forward="true" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="console.sql" pinned="false" current-in-tab="true">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/942592df-e23e-4a91-8b83-dd078555e84d/console.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="201" lean-forward="false" selection-start-line="0" selection-start-column="201" selection-end-line="0" selection-end-column="201" />
-              <folding />
+              <caret line="11" column="41" lean-forward="false" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="food_delivery.user" pinned="false" current-in-tab="false">
         <entry file="dbDummy://dbtable:/89547e8d/942592df-e23e-4a91-8b83-dd078555e84d/food_delivery.user">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
           <provider editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -243,9 +254,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/entity/Answer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/entity/Dish.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/service/DishAndCategoryService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/controller/MainController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dao/impl/DishDAOImpl.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/942592df-e23e-4a91-8b83-dd078555e84d/console.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/com/controller/MainController.java" />
       </list>
     </option>
   </component>
@@ -298,9 +309,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="22" />
     <option name="width" value="1280" />
-    <option name="height" value="702" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -318,9 +328,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -557,6 +567,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -1186,14 +1197,18 @@
       <workItem from="1493755807974" duration="1141000" />
       <workItem from="1493839649209" duration="251000" />
       <workItem from="1493931007103" duration="967000" />
+      <workItem from="1493986904704" duration="328000" />
+      <workItem from="1494332052220" duration="2446000" />
+      <workItem from="1494430452925" duration="472000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32584000" />
+    <option name="totallyTimeSpent" value="35830000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1280" height="702" extended-state="1" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1203,23 +1218,21 @@
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16235864" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22778675" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.452459" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32459018" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43114755" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20678514" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26332796" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1227,7 +1240,9 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32459018" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43114755" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1365,7 +1380,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="42" lean-forward="false" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1396,10 +1410,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="26" lean-forward="false" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-          <folding>
-            <element signature="e#212#213#0" expanded="false" />
-            <element signature="e#256#257#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1414,7 +1424,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1422,12 +1431,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1646">
           <caret line="25" column="22" lean-forward="false" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
-          <folding>
-            <marker date="1493476986000" expanded="true" signature="444:508" ph="INSERT INTO `category`... " />
-            <marker date="1493476986000" expanded="true" signature="787:811" ph="SELECT * FRO... category" />
-            <marker date="1493476986000" expanded="true" signature="876:915" ph="SELECT * FRO... category" />
-            <marker date="1493476986000" expanded="true" signature="1100:1137" ph="DELETE FROM " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1447,12 +1450,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="508">
           <caret line="174" column="20" lean-forward="false" selection-start-line="174" selection-start-column="20" selection-end-line="174" selection-end-column="20" />
-          <folding>
-            <marker date="1493636410000" expanded="true" signature="451:600" ph="INSERT INTO `dish`... " />
-            <marker date="1493636410000" expanded="true" signature="875:910" ph="SELECT * FRO... dish" />
-            <marker date="1493636410000" expanded="true" signature="983:1027" ph="SELECT * FRO... dish" />
-            <marker date="1493636410000" expanded="true" signature="1091:1124" ph="DELETE FROM " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1460,10 +1457,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="737">
           <caret line="77" column="22" lean-forward="false" selection-start-line="77" selection-start-column="22" selection-end-line="77" selection-end-column="22" />
-          <folding>
-            <marker date="1493634500000" expanded="true" signature="396:484" ph="INSERT INTO `user`... " />
-            <marker date="1493634500000" expanded="true" signature="1408:1441" ph="DELETE FROM " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1471,10 +1464,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="896">
           <caret line="74" column="20" lean-forward="false" selection-start-line="74" selection-start-column="20" selection-end-line="74" selection-end-column="20" />
-          <folding>
-            <marker date="1493476986000" expanded="true" signature="416:560" ph="INSERT INTO `user_info`... " />
-            <marker date="1493476986000" expanded="true" signature="835:880" ph="SELECT * FRO... user_info" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1499,12 +1488,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="e#712#713#0" expanded="false" />
-            <element signature="e#743#744#0" expanded="false" />
-            <element signature="e#791#792#0" expanded="false" />
-            <element signature="e#831#832#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1516,16 +1499,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/controller/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1725">
-          <caret line="125" column="35" lean-forward="false" selection-start-line="125" selection-start-column="35" selection-end-line="125" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dao/UserInfoDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -1533,14 +1506,6 @@
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="11" column="41" lean-forward="true" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1561,7 +1526,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="201" lean-forward="false" selection-start-line="0" selection-start-column="201" selection-end-line="0" selection-end-column="201" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="11" column="41" lean-forward="false" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/controller/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

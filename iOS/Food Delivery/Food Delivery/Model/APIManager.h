@@ -22,4 +22,8 @@
 - (NSURLSessionDataTask *)getUserById:(NSInteger) _id success:(void (^)(User *user))success failure:(void (^)(NSError *error))failure;
 
 - (NSURLSessionDataTask *)getDishById:(NSInteger) _id success:(void (^)(Dish *dish))success failure:(void (^)(NSError *error))failure;
+
+- (NSURLSessionDataTask *)getUserByLogin:(NSString *) login success:(void (^)(BOOL isExist))success failure:(void (^)(NSError *error))failure;
+
+- (NSURLSessionDataTask *)upAutorizationWithLogin:(NSString *)login andPass:(NSString *)pass success:(void (^)(User *user))success failure:(void (^)(NSError *error))failure;
 @end

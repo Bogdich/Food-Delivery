@@ -35,13 +35,6 @@
                         <constraint firstAttribute="width" constant="40" id="bzB-SQ-VDI"/>
                     </constraints>
                 </imageView>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="two_arrows_down" translatesAutoresizingMaskIntoConstraints="NO" id="E66-gN-mej">
-                    <rect key="frame" x="40" y="48" width="30" height="30"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="30" id="Ga8-C1-FFQ"/>
-                        <constraint firstAttribute="height" constant="30" id="efi-c5-QUa"/>
-                    </constraints>
-                </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AZC-fe-ssD" userLabel="separator">
                     <rect key="frame" x="0.0" y="99" width="110" height="1"/>
                     <color key="backgroundColor" red="0.98823529409999999" green="0.96470588239999999" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -52,8 +45,6 @@
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="E66-gN-mej" firstAttribute="centerX" secondItem="FLH-P4-6eE" secondAttribute="centerX" id="06g-gh-J0D"/>
-                <constraint firstItem="E66-gN-mej" firstAttribute="top" secondItem="FLH-P4-6eE" secondAttribute="bottom" id="5P4-rh-ou0"/>
                 <constraint firstItem="FLH-P4-6eE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="FFq-zC-FMI"/>
                 <constraint firstItem="j4B-NT-eoD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="IZB-Ux-adf"/>
                 <constraint firstItem="j4B-NT-eoD" firstAttribute="centerX" secondItem="FLH-P4-6eE" secondAttribute="centerX" id="bJb-wX-Kxm"/>
@@ -69,13 +60,11 @@
             <connections>
                 <outlet property="iconImageView" destination="FLH-P4-6eE" id="Hmk-Mb-dtF"/>
                 <outlet property="label" destination="j4B-NT-eoD" id="HIr-mE-JGE"/>
-                <outlet property="twoArrowsImageView" destination="E66-gN-mej" id="Rtw-bZ-usU"/>
             </connections>
             <point key="canvasLocation" x="453" y="170"/>
         </view>
     </objects>
     <resources>
-        <image name="two_arrows_down" width="30" height="30"/>
         <image name="user_registred" width="40" height="40"/>
     </resources>
 </document>

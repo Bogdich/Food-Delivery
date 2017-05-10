@@ -12,6 +12,7 @@
 #import "constants.h"
 #import "CategoryListTableViewController.h"
 //#import "BTXProfileSectionView.h"
+#import "LoginViewController.h"
 #import "AppDelegate.h"
 #import "User.h"
 
@@ -25,8 +26,6 @@
 @property (nonatomic, strong) NSArray *images;
 @property (nonatomic, strong) NSArray *links;
 @property (weak, nonatomic) IBOutlet UITableView *_tableView;
-
-@property (strong, nonatomic) UIStoryboard *aviaStoryboard;
 
 //@property (strong, nonatomic) BILProfileRegisterLoginView *registerLoginView;
 
@@ -177,7 +176,7 @@
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
         
-    UIViewController *controller = [self.aviaStoryboard instantiateViewControllerWithIdentifier:[self.links objectAtIndex:indexPath.row]];
+    UIViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:[self.links objectAtIndex:indexPath.row]];
     
     if (indexPath.row == 0) {
         
@@ -211,41 +210,16 @@
     }
     else {
         
-        [self changeRegisterLoginViewState];
+        [self loginScreenOpen];
     }
 }
 
-- (void)changeRegisterLoginViewState {
-    
-//    self.registerLoginView.opened = !self.registerLoginView.opened;
-//    
-//    [self._tableView reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationAutomatic];
-//    
-//    self.profileSection.opened = self.registerLoginView.opened;
-}
-
-#pragma mark - Navigation
-
-//- (void)registrationScreenOpen {
-//    
-//    UINavigationController *nc = [self.storyboard instantiateViewControllerWithIdentifier:BILSearchTicketsStoryboardIdentifier];
-//    BILSearchViewController *vc = (BILSearchViewController *)nc.topViewController;
-//    
-//    vc.registrationType = BILRegistrationLoginTypeReg;
-//    
-//    [self.sideMenuViewController setContentViewController:nc animated:YES];
-//    [self.sideMenuViewController hideMenuViewController];
-//}
-//
 - (void)loginScreenOpen {
     
-//    UINavigationController *nc = [self.storyboard instantiateViewControllerWithIdentifier:BILSearchTicketsStoryboardIdentifier];
-//    BILSearchViewController *vc = (BILSearchViewController *)nc.topViewController;
-//    
-//    vc.registrationType = BILRegistrationLoginTypeLog;
-//    
-//    [self.sideMenuViewController setContentViewController:nc animated:YES];
-//    [self.sideMenuViewController hideMenuViewController];
+    UINavigationController *nc = [self.storyboard instantiateViewControllerWithIdentifier:@"LoginViewController"];
+    
+    [self.sideMenuViewController setContentViewController:nc animated:YES];
+    [self.sideMenuViewController hideMenuViewController];
 }
 
 - (void)profileScreenOpen {
@@ -254,22 +228,6 @@
     UIViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@""];
     [self.sideMenuViewController setContentViewController:controller animated:YES];
     [self.sideMenuViewController hideMenuViewController];
-}
-
-#pragma mark - BILProfileRegisterLoginViewDelegate
-
-- (void)loginButtonPressed {
-    
-    [self changeRegisterLoginViewState];
-    
-    [self loginScreenOpen];
-}
-
-- (void)registerButtonPressed {
-    
-    [self changeRegisterLoginViewState];
-    
-    //[self registrationScreenOpen];
 }
 
 #pragma mark - UIAlertViewDelegate

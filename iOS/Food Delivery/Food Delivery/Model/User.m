@@ -77,7 +77,7 @@ static User *instance = nil;
                                                      }
                                                  }
                                                  failure:^(NSError *error) {
-                                                     NSLog(@"error");
+                                                     NSLog(@"%@", error);
                                                  }];
         });
     } else {
@@ -95,17 +95,32 @@ static User *instance = nil;
     if ([self isLoginExist:login]) {
         
         __weak __typeof__(self) weakSelf = self;
-        __strong __typeof__(weakSelf) strongSelf = weakSelf;
         
-        __block NSInteger newUserId = 0;
+        dispatch_async(dispatch_get_main_queue(), ^{
         
-//        dispatch_async(dispatch_get_main_queue(), ^{
+            [[APIManager sharedManager] upAutorizationWithLogin:login andPass:pass success:^(User *user) {
+                
+                __strong __typeof__(weakSelf) strongSelf = weakSelf;
+
+                strongSelf.name = user.name;
+                strongSelf.surname = user.surname;
+                strongSelf.address = user.address;
+                strongSelf.number = user.number;
+                strongSelf.email = user.email;
+                
+                strongSelf.authorized = YES;
+                
+                answer = @"USER LOGIN";
+                
+            } failure:^(NSError *error) {
+                
+                NSLog(@"%@", error);
+            }];
+        });
         
-         //   [[APIManager sharedManager] ];
-//        });
     } else {
         
-        answer = @"LOGIN EXIST";
+        answer = @"LOGIN NOT EXIST";
     }
     
     return answer;
@@ -113,8 +128,39 @@ static User *instance = nil;
 
 - (BOOL)isLoginExist:(NSString *)login {
     
-    return YES;
+    __block BOOL isUserExist = NO;
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        
+        [[APIManager sharedManager] getUserByLogin:login success:^(BOOL isExist) {
+            
+            isUserExist = isExist;
+        }
+         failure:^(NSError *error) {
+             NSLog(@"error");
+         }];
+    });
+    
+    return isUserExist;
 }
+
+//- (BOOL)isCorrectPassword:(NSString *)password {
+//    
+//    __block BOOL isCorrectPassword = NO;
+//    
+//    dispatch_async(dispatch_get_main_queue(), ^{
+//        
+//        [[APIManager sharedManager] getUserByLogin:login success:^(BOOL isExist) {
+//            
+//            isUserExist = isExist;
+//        }
+//                                           failure:^(NSError *error) {
+//                                               NSLog(@"error");
+//                                           }];
+//    });
+//    
+//    return isCorrectPassword;
+//}
 
 #pragma mark - Logout
 

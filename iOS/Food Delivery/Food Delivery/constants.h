@@ -12,8 +12,8 @@
 #pragma mark - Storyboard Identifiers
 
 #define ContentViewController @"contentViewController"
-#define OrderHisoryViewController @"OrderHisoryViewControllerIdentifier"
-#define FavoriteViewController @"FavoriteViewControllerIdentifier"
+#define OrderHisoryViewController @"OrderHistoryTableViewController"
+#define FavoriteViewController @"FavoritesTableViewController"
 #define SettingsViewController @"SettingsViewControllerIdentifier"
 
 

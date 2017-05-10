@@ -12,7 +12,6 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *label;
 @property (weak, nonatomic) IBOutlet UIImageView *iconImageView;
-@property (weak, nonatomic) IBOutlet UIImageView *twoArrowsImageView;
 
 @end
 
@@ -96,7 +95,6 @@
     
     _nameString = nameString;
     
-    [self.twoArrowsImageView setHidden:YES];
     self.label.text = nameString;
     
     self.iconImageView.image = [UIImage imageNamed:@"user_registred"];
