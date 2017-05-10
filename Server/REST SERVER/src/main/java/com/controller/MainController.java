@@ -1,14 +1,13 @@
 package com.controller;
 
-import com.entity.Answer;
-import com.entity.Category;
-import com.entity.Dish;
-import com.entity.UserInfo;
+import com.entity.*;
 import com.service.DAOService;
 import com.service.DishAndCategoryService;
+import com.service.SubscriptionService;
 import com.service.UserService;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.UnsupportedEncodingException;
 import java.math.BigDecimal;
 import java.util.List;
 
@@ -29,8 +28,8 @@ public class MainController {
         DishAndCategoryService dishAndCategoryService = new DishAndCategoryService();
         int id = dishAndCategoryService.insertCategory(name);
 
-        if (id != 0) answer.setError("OK");
-        else answer.setError("SOMETHING WRONG");
+        if (id != 0) answer.setMessage("OK");
+        else answer.setMessage("SOMETHING WRONG");
 
         return answer;
     }
@@ -48,7 +47,7 @@ public class MainController {
 
         if(categories.isEmpty()){
             Answer answer = new Answer();
-            answer.setError("CATEGORIES NOT EXIST");
+            answer.setMessage("CATEGORIES NOT EXIST");
             return answer;
         }
         return categories;
@@ -67,7 +66,7 @@ public class MainController {
 
         if(dish == null){
             Answer answer = new Answer();
-            answer.setError("DISH NOT EXIST");
+            answer.setMessage("DISH NOT EXIST");
             return answer;
         }
         return dish;
@@ -86,7 +85,7 @@ public class MainController {
 
         if(dishes.isEmpty()){
             Answer answer = new Answer();
-            answer.setError("DISHES FOR THIS CATEGORY NOT EXIST");
+            answer.setMessage("DISHES FOR THIS CATEGORY NOT EXIST");
             return answer;
         }
         return dishes;
@@ -108,8 +107,8 @@ public class MainController {
         int id = dishAndCategoryService.insertDish(name, description, imageURL, weight, price, categoryId);
 
 
-        if (id != 0) answer.setError("OK");
-        else answer.setError("SOMETHING WRONG");
+        if (id != 0) answer.setMessage("OK");
+        else answer.setMessage("SOMETHING WRONG");
 
         return answer;
     }
@@ -127,11 +126,9 @@ public class MainController {
 
         if(userInfo == null){
             Answer answer = new Answer();
-            answer.setError("USER NOT EXIST");
+            answer.setMessage("USER NOT EXIST");
             return answer;
         }
-
-
         return userInfo;
     }
 
@@ -143,10 +140,16 @@ public class MainController {
                              @RequestParam("surname")String surname,
                              @RequestParam("address")String address,
                              @RequestParam("number")String number,
-                             @RequestParam("email")String email) {
+                             @RequestParam("email")String email) throws UnsupportedEncodingException {
 
         daoService.init();
         Answer answer = new Answer();
+
+        login = java.net.URLDecoder.decode(login, "UTF-8");
+        password = java.net.URLDecoder.decode(password, "UTF-8");
+        address = java.net.URLDecoder.decode(address, "UTF-8");
+        name = java.net.URLDecoder.decode(name, "UTF-8");
+        surname = java.net.URLDecoder.decode(surname, "UTF-8");
 
         UserService userService = new UserService();
         int id = userService.insertUser(login, password, name, surname, address, number, email);
@@ -154,10 +157,89 @@ public class MainController {
         if (id != 0) {
 
             answer.setResponseID(id);
-            answer.setError("OK");
+            answer.setMessage("OK");
         }
-        else answer.setError("SOMETHING WRONG");
+        else answer.setMessage("SOMETHING WRONG");
 
         return answer;
     }
+
+    @RequestMapping(value = "/user/login",method = RequestMethod.GET)
+    @ResponseBody
+    public Answer loginUser(@RequestParam("login")String login,
+                           @RequestParam("password")String password) throws UnsupportedEncodingException {
+
+        login = java.net.URLDecoder.decode(login, "UTF-8");
+        password = java.net.URLDecoder.decode(password, "UTF-8");
+
+        daoService.init();
+        Answer answer = new Answer();
+        UserService userService = new UserService();
+        int id = userService.login(login, password);
+
+        if(id == 0){
+            answer.setMessage("USER NOT EXIST");
+            return answer;
+        }
+        answer.setResponseID(id);
+        answer.setMessage("OK");
+        return answer;
+    }
+
+    @RequestMapping(value = "/subscription/addSub",method = RequestMethod.POST)
+    @ResponseBody
+    public Answer addSubscription(
+            @RequestParam("category_id")int categoryId,
+            @RequestParam("user_id") int user_id) {
+
+        daoService.init();
+        Answer answer = new Answer();
+        SubscriptionService subscriptionService = new SubscriptionService();
+        subscriptionService.addSubscription(user_id, categoryId);
+        answer.setMessage("OK");
+        return answer;
+    }
+
+    @RequestMapping(value = "/subscription/deleteSub",method = RequestMethod.POST)
+    @ResponseBody
+    public Answer deleteSubscription(
+            @RequestParam("category_id")int categoryId,
+            @RequestParam("user_id") int user_id) {
+
+        daoService.init();
+        Answer answer = new Answer();
+        SubscriptionService subscriptionService = new SubscriptionService();
+        subscriptionService.deleteSubscription(user_id, categoryId);
+        answer.setMessage("OK");
+        return answer;
+    }
+
+    @RequestMapping(value = "/user/update",method = RequestMethod.POST)
+    @ResponseBody
+    public Answer updateUserInfo(@RequestParam("login")String login,
+                                 @RequestParam("password")String password,
+                                 @RequestParam("name")String name,
+                                 @RequestParam("surname")String surname,
+                                 @RequestParam("address")String address,
+                                 @RequestParam("number")String number,
+                                 @RequestParam("email")String email,
+                                 @RequestParam("user_id")int userId) throws UnsupportedEncodingException {
+
+        login = java.net.URLDecoder.decode(login, "UTF-8");
+        password = java.net.URLDecoder.decode(password, "UTF-8");
+        address = java.net.URLDecoder.decode(address, "UTF-8");
+        name = java.net.URLDecoder.decode(name, "UTF-8");
+        surname = java.net.URLDecoder.decode(surname, "UTF-8");
+
+        daoService.init();
+        Answer answer = new Answer();
+
+        UserService userService = new UserService();
+        userService.updateUserInfo(login, password, name, surname, address, number, email, userId);
+        answer.setMessage("OK");
+
+        return answer;
+    }
+
+
 }
