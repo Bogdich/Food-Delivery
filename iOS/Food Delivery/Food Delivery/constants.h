@@ -9,13 +9,30 @@
 #ifndef constants_h
 #define constants_h
 
+#pragma mark - Storyboard Identifiers
+
+#define ContentViewController @"contentViewController"
+#define OrderHisoryViewController @"OrderHistoryTableViewController"
+#define FavoriteViewController @"FavoritesTableViewController"
+#define SettingsViewController @"SettingsViewControllerIdentifier"
+
+
 #pragma mark - Segue Identifiers
 
 #define CategoryListToDishListSegue @"CategoryListToDishListSegue"
+#define DishListToPresentDishSegue @"DishListToPresentDishSegue"
 
 
 #pragma mark - Cell Identifiers
 
 #define CategoryTableViewCellIdentifier @"CategoryTableViewCellIdentifier"
+#define DishTableViewCellIdentifier @"DishTableViewCellIdentifier"
+#define CartTableViewCellIdentifier @"CartTableViewCellIdentifier"
+#define SegmentedControllTableViewCellIdentifier @"SegmentedControllTableViewCellIdentifier"
+#define TextFieldedTableViewCellIdentifier @"TextFieldedTableViewCellIdentifier"
+
+#pragma mark - Colors
+
+#define GOLD_COLOR colorWithRed:252.0f/255.0f green:245.0f/255.0f blue:155.0f/255.0f alpha:1.0f/1.0f
 
 #endif /* constants_h */

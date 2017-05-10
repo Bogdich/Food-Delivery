@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CartTableViewCellIdentifier" rowHeight="89" id="KGk-i7-Jjw" customClass="CartTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="379" height="89"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="379" height="88"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="category_pizza" translatesAutoresizingMaskIntoConstraints="NO" id="vhR-FW-uWD">
+                        <rect key="frame" x="0.0" y="0.0" width="379" height="88"/>
+                    </imageView>
+                    <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L2P-Ax-sId">
+                        <rect key="frame" x="0.0" y="0.0" width="379" height="88"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сливочная карбонара" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="kfo-a7-q0t">
+                                <rect key="frame" x="8" y="8" width="233" height="57.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minimumValue="1" maximumValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="6xf-g1-H8U">
+                                <rect key="frame" x="264" y="48" width="94" height="29"/>
+                                <color key="tintColor" red="0.98823529409999999" green="0.96470588239999999" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="countStepperValueClicked:" destination="KGk-i7-Jjw" eventType="valueChanged" id="V1G-E0-X7v"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iMT-QF-HaT">
+                                <rect key="frame" x="251" y="8" width="120" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="DzX-Mt-L3S"/>
+                                    <constraint firstAttribute="width" constant="120" id="HaW-Bv-jSK"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="5x">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="21" name=".SFNSDisplay"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="12 BYN">
+                                        <attributes>
+                                            <color key="NSColor" red="0.98823529409999999" green="0.96470588239999999" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="25"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" text="Пицца" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1rb-Pa-5PT">
+                                <rect key="frame" x="8" y="65.5" width="43" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="kfo-a7-q0t" firstAttribute="leading" secondItem="L2P-Ax-sId" secondAttribute="leading" constant="8" id="5kE-OM-20o"/>
+                            <constraint firstItem="iMT-QF-HaT" firstAttribute="leading" secondItem="kfo-a7-q0t" secondAttribute="trailing" constant="10" id="6dk-93-ak6"/>
+                            <constraint firstItem="6xf-g1-H8U" firstAttribute="top" secondItem="iMT-QF-HaT" secondAttribute="bottom" constant="16" id="85P-3B-IxZ"/>
+                            <constraint firstItem="6xf-g1-H8U" firstAttribute="centerX" secondItem="iMT-QF-HaT" secondAttribute="centerX" id="8x1-BJ-38d"/>
+                            <constraint firstAttribute="trailing" secondItem="iMT-QF-HaT" secondAttribute="trailing" constant="8" id="RIN-B3-bLH"/>
+                            <constraint firstItem="kfo-a7-q0t" firstAttribute="top" secondItem="L2P-Ax-sId" secondAttribute="top" constant="8" id="XwP-f6-N4d"/>
+                            <constraint firstItem="1rb-Pa-5PT" firstAttribute="top" secondItem="kfo-a7-q0t" secondAttribute="bottom" id="Y0c-cd-Apy"/>
+                            <constraint firstItem="iMT-QF-HaT" firstAttribute="top" secondItem="kfo-a7-q0t" secondAttribute="top" id="rnv-S5-MNL"/>
+                            <constraint firstItem="1rb-Pa-5PT" firstAttribute="leading" secondItem="kfo-a7-q0t" secondAttribute="leading" id="ywa-P7-tt6"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="nME-Zq-GfK" appends="YES" id="9mI-x3-FPh"/>
+                        </connections>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="vhR-FW-uWD" secondAttribute="trailing" id="6eq-RQ-KaP"/>
+                    <constraint firstAttribute="trailing" secondItem="L2P-Ax-sId" secondAttribute="trailing" id="6y0-lo-Vko"/>
+                    <constraint firstAttribute="bottom" secondItem="L2P-Ax-sId" secondAttribute="bottom" id="Aqd-sL-e8t"/>
+                    <constraint firstItem="vhR-FW-uWD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="BOI-Ea-Hgc"/>
+                    <constraint firstItem="L2P-Ax-sId" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="D1R-T9-6f7"/>
+                    <constraint firstItem="L2P-Ax-sId" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="F9A-fq-UFf"/>
+                    <constraint firstAttribute="bottom" secondItem="vhR-FW-uWD" secondAttribute="bottom" id="fSm-0z-LHO"/>
+                    <constraint firstItem="vhR-FW-uWD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="wDL-c8-OXb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="categoryNameLabel" destination="1rb-Pa-5PT" id="gvy-Ug-Pb2"/>
+                <outlet property="countAndPriceLabel" destination="iMT-QF-HaT" id="Cxj-rO-zrZ"/>
+                <outlet property="countStepper" destination="6xf-g1-H8U" id="yag-Ap-Tmo"/>
+                <outlet property="dishNameLabel" destination="kfo-a7-q0t" id="4cQ-9F-1D5"/>
+            </connections>
+            <point key="canvasLocation" x="63.5" y="76.5"/>
+        </tableViewCell>
+        <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="nME-Zq-GfK">
+            <connections>
+                <action selector="longGestureRecognizerTapped:" destination="KGk-i7-Jjw" id="gz6-gH-3oL"/>
+            </connections>
+        </pongPressGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="category_pizza" width="350" height="233"/>
+    </resources>
+</document>

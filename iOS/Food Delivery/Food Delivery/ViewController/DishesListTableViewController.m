@@ -9,10 +9,14 @@
 #import "DishesListTableViewController.h"
 #import <Mantle/Mantle.h>
 #import "Dish.h"
+#import "DishesTableViewCell.h"
+#import "constants.h"
+#import "PresentDishViewController.h"
 
-@interface DishesListTableViewController ()
+@interface DishesListTableViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) NSIndexPath *selectedIndexPath;
 
 @end
 
@@ -20,7 +24,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-        
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -48,15 +52,30 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"dishesCell" forIndexPath:indexPath];
+    static NSString *reusableId = DishTableViewCellIdentifier;
     
-    NSError *error;
-    Dish *dish = [MTLJSONAdapter modelOfClass:Dish.class fromJSONDictionary:self.dishesArray[indexPath.section] error:&error];
+    Dish *dish = self.dishesArray[indexPath.section];
     
-    cell.textLabel.text = dish.name;
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ BYN", dish.price];
+    DishesTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reusableId];
+    
+    if (cell == nil) {
+        
+        cell = [[DishesTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reusableId];
+    }
+    
+    [cell setDishName:dish.name];
+    [cell setDishPrice:[dish.price integerValue]];
+    [cell setDishImage:dish.image];
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+    self.selectedIndexPath = indexPath;
+    
+    [self performSegueWithIdentifier:DishListToPresentDishSegue sender:self];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -64,14 +83,17 @@
     return tableView.frame.size.height / 3;
 }
 
-/*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    
+    if ([segue.identifier isEqualToString:DishListToPresentDishSegue]) {
+        
+        PresentDishViewController *dishVC = segue.destinationViewController;
+        
+        [dishVC setSelectedDish: self.dishesArray[self.selectedIndexPath.section]];
+    }
 }
-*/
 
 @end

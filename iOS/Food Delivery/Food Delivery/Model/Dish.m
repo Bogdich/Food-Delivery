@@ -18,12 +18,17 @@
              @"description_": @"description",
              @"weight": @"weight",
              @"price": @"price",
-             @"category": @"category"
+             @"category": @"category",
+             @"imageURL": @"imageURL"
              };
 }
 
 + (NSValueTransformer *)categoryJSONTransformer {
     return [MTLJSONAdapter dictionaryTransformerWithModelClass:[Category class]];
+}
+
++ (NSValueTransformer *)imageURLJSONTransformer {
+    return [NSValueTransformer valueTransformerForName:MTLURLValueTransformerName];
 }
 
 - (instancetype)initWithDictionary:(NSDictionary*)dictionary {
@@ -38,6 +43,18 @@
 
     }
     return self;
+}
+
+- (void)loadDishImage {
+    
+    NSData *imageData = [NSData dataWithContentsOfURL:self.imageURL];
+    
+    self.image = [UIImage imageWithData:imageData];
+    
+//    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+//        
+//    
+//    });
 }
 
 @end
