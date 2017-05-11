@@ -162,6 +162,7 @@ public class CategoryDAOImpl implements CategoryDAO {
                 Category category = new Category();
                 category.setId(resultSet.getInt(1));
                 category.setName(resultSet.getString(2));
+                category.setImageURL(resultSet.getString(3));
 
                 categories.add(category);
             }

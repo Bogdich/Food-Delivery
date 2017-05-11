@@ -21,29 +21,29 @@
 
 - (NSURLSessionDataTask *)addUserWithLogin:(NSString *)login andPass:(NSString *)pass name:(NSString *)name surname:(NSString *)surname address:(NSString *)address number:(NSString *)number email:(NSString *)email success:(void (^)(id object))success failure:(void (^)(NSError *error))failure {
     
-//    NSString* encodedName = [name stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-//    NSString* encodedSurname = [surname stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-//    NSString* encodedAddress = [address stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-//    NSString* encodedLogin = [login stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-//    NSString* encodedPass = [pass stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-//    
-//    NSMutableDictionary *parameters = [[NSMutableDictionary alloc] initWithObjectsAndKeys:
-//                                       encodedLogin, @"login",
-//                                       encodedPass, @"password",
-//                                       encodedName, @"name",
-//                                       encodedSurname, @"surname",
-//                                       number, @"number",
-//                                       email, @"email",
-//                                       encodedAddress, @"address", nil];
+    NSString* encodedName = [name stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSString* encodedSurname = [surname stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSString* encodedAddress = [address stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSString* encodedLogin = [login stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSString* encodedPass = [pass stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     
     NSMutableDictionary *parameters = [[NSMutableDictionary alloc] initWithObjectsAndKeys:
-                                       login, @"login",
-                                       pass, @"password",
-                                       name, @"name",
-                                       surname, @"surname",
+                                       encodedLogin, @"login",
+                                       encodedPass, @"password",
+                                       encodedName, @"name",
+                                       encodedSurname, @"surname",
                                        number, @"number",
                                        email, @"email",
-                                       address, @"address", nil];
+                                       encodedAddress, @"address", nil];
+    
+//    NSMutableDictionary *parameters = [[NSMutableDictionary alloc] initWithObjectsAndKeys:
+//                                       login, @"login",
+//                                       pass, @"password",
+//                                       name, @"name",
+//                                       surname, @"surname",
+//                                       number, @"number",
+//                                       email, @"email",
+//                                       address, @"address", nil];
     
     self.requestSerializer = [AFHTTPRequestSerializer serializer];
     [self.requestSerializer setStringEncoding:NSUTF8StringEncoding];

@@ -13,8 +13,21 @@
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
     return @{
              @"id_": @"id",
-             @"name": @"name"
+             @"name": @"name",
+             @"imageURL": @"imageURL"
              };
+}
+
+- (void)loadCategoryImage {
+    
+    NSData *imageData = [NSData dataWithContentsOfURL:self.imageURL];
+    
+    self.image = [UIImage imageWithData:imageData];
+    
+    //    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+    //
+    //
+    //    });
 }
 
 @end

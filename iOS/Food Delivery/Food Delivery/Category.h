@@ -7,10 +7,13 @@
 //
 
 #import <Mantle/Mantle.h>
+#import <UIKit/UIKit.h>
 
 @interface Category : MTLModel <MTLJSONSerializing>
 
 @property (strong, nonatomic) NSString *name;
 @property (strong, nonatomic) NSNumber *id_;
+@property (strong, nonatomic) NSURL *imageURL;
+@property (strong, nonatomic) UIImage *image;
 
 @end
