@@ -7,7 +7,7 @@
 //
 
 #import "OrderHistoryTableViewController.h"
-#import "User.h"
+#import "Profile.h"
 #import <RESideMenu/RESideMenu.h>
 
 
@@ -41,7 +41,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return [[User getInstance].orders count];
+    return [[Profile sharedInstance].orders count];
 }
 
 /*

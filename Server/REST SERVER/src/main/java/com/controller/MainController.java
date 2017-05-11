@@ -4,6 +4,7 @@ import com.entity.*;
 import com.service.*;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.UnsupportedEncodingException;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
@@ -137,10 +138,16 @@ public class MainController {
                              @RequestParam("surname")String surname,
                              @RequestParam("address")String address,
                              @RequestParam("number")String number,
-                             @RequestParam("email")String email) {
+                             @RequestParam("email")String email) throws UnsupportedEncodingException {
 
         daoService.init();
         Answer answer = new Answer();
+
+        login = java.net.URLDecoder.decode(login, "UTF-8");
+        password = java.net.URLDecoder.decode(password, "UTF-8");
+        address = java.net.URLDecoder.decode(address, "UTF-8");
+        name = java.net.URLDecoder.decode(name, "UTF-8");
+        surname = java.net.URLDecoder.decode(surname, "UTF-8");
 
         UserService userService = new UserService();
         int id = userService.insertUser(login, password, name, surname, address, number, email);
@@ -155,10 +162,13 @@ public class MainController {
         return answer;
     }
 
-    @RequestMapping(value= "/user/login",method = RequestMethod.GET)
+    @RequestMapping(value = "/user/login",method = RequestMethod.GET)
     @ResponseBody
     public Answer loginUser(@RequestParam("login")String login,
-                           @RequestParam("password")String password) {
+                           @RequestParam("password")String password) throws UnsupportedEncodingException {
+
+        login = java.net.URLDecoder.decode(login, "UTF-8");
+        password = java.net.URLDecoder.decode(password, "UTF-8");
 
         daoService.init();
         Answer answer = new Answer();
@@ -174,7 +184,7 @@ public class MainController {
         return answer;
     }
 
-    @RequestMapping(value= "/subscription/addSub",method = RequestMethod.POST)
+    @RequestMapping(value = "/subscription/addSub",method = RequestMethod.POST)
     @ResponseBody
     public Answer addSubscription(
             @RequestParam("category_id")int categoryId,
@@ -188,7 +198,7 @@ public class MainController {
         return answer;
     }
 
-    @RequestMapping(value= "/subscription/deleteSub",method = RequestMethod.POST)
+    @RequestMapping(value = "/subscription/deleteSub",method = RequestMethod.POST)
     @ResponseBody
     public Answer deleteSubscription(
             @RequestParam("category_id")int categoryId,
@@ -211,7 +221,13 @@ public class MainController {
                                  @RequestParam("address")String address,
                                  @RequestParam("number")String number,
                                  @RequestParam("email")String email,
-                                 @RequestParam("user_id")int userId) {
+                                 @RequestParam("user_id")int userId) throws UnsupportedEncodingException {
+
+        login = java.net.URLDecoder.decode(login, "UTF-8");
+        password = java.net.URLDecoder.decode(password, "UTF-8");
+        address = java.net.URLDecoder.decode(address, "UTF-8");
+        name = java.net.URLDecoder.decode(name, "UTF-8");
+        surname = java.net.URLDecoder.decode(surname, "UTF-8");
 
         daoService.init();
         Answer answer = new Answer();

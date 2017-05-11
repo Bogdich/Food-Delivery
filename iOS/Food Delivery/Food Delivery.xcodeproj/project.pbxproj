@@ -45,6 +45,7 @@
 		F087F6F11EB933CC006F4F89 /* TextFieldedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F087F6EF1EB933CC006F4F89 /* TextFieldedTableViewCell.xib */; };
 		F087F6F51EB93723006F4F89 /* SegmentedControlTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F087F6F31EB93723006F4F89 /* SegmentedControlTableViewCell.m */; };
 		F087F6F61EB93723006F4F89 /* SegmentedControlTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F087F6F41EB93723006F4F89 /* SegmentedControlTableViewCell.xib */; };
+		F0B119771EC39D7A006F7894 /* Profile.m in Sources */ = {isa = PBXBuildFile; fileRef = F0B119761EC39D7A006F7894 /* Profile.m */; };
 		F0C8B77F1EBA6E4900A3BE83 /* NSString+ContainsCyrillic.m in Sources */ = {isa = PBXBuildFile; fileRef = F0C8B77E1EBA6E4900A3BE83 /* NSString+ContainsCyrillic.m */; };
 		F0C8B7821EBA7D3900A3BE83 /* OrderSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = F0C8B7811EBA7D3900A3BE83 /* OrderSectionView.m */; };
 		F0C8B7841EBA7D4B00A3BE83 /* OrderSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0C8B7831EBA7D4B00A3BE83 /* OrderSectionView.xib */; };
@@ -120,6 +121,8 @@
 		F087F6F21EB93723006F4F89 /* SegmentedControlTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SegmentedControlTableViewCell.h; path = View/SegmentedControlTableViewCell.h; sourceTree = "<group>"; };
 		F087F6F31EB93723006F4F89 /* SegmentedControlTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SegmentedControlTableViewCell.m; path = View/SegmentedControlTableViewCell.m; sourceTree = "<group>"; };
 		F087F6F41EB93723006F4F89 /* SegmentedControlTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SegmentedControlTableViewCell.xib; path = View/SegmentedControlTableViewCell.xib; sourceTree = "<group>"; };
+		F0B119751EC39D7A006F7894 /* Profile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Profile.h; path = Model/Profile.h; sourceTree = "<group>"; };
+		F0B119761EC39D7A006F7894 /* Profile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Profile.m; path = Model/Profile.m; sourceTree = "<group>"; };
 		F0C8B77D1EBA6C5200A3BE83 /* NSString+ContainsCyrillic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ContainsCyrillic.h"; sourceTree = "<group>"; };
 		F0C8B77E1EBA6E4900A3BE83 /* NSString+ContainsCyrillic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ContainsCyrillic.m"; sourceTree = "<group>"; };
 		F0C8B7801EBA7D3900A3BE83 /* OrderSectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OrderSectionView.h; path = View/OrderSectionView.h; sourceTree = "<group>"; };
@@ -405,7 +408,7 @@
 			isa = PBXGroup;
 			children = (
 				F040E66A1EB60B2000CAA63E /* Managers */,
-				F040E65F1EB606A600CAA63E /* User */,
+				F0B119741EC39D55006F7894 /* Profile */,
 				F040E65B1EB5FB8800CAA63E /* Category */,
 				F040E65A1EB5FB8300CAA63E /* Dish */,
 				F06222971EC2F24A00296198 /* Order */,
@@ -486,6 +489,16 @@
 				F087F6F41EB93723006F4F89 /* SegmentedControlTableViewCell.xib */,
 			);
 			name = SegmentControlTableViewCell;
+			sourceTree = "<group>";
+		};
+		F0B119741EC39D55006F7894 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				F040E65F1EB606A600CAA63E /* User */,
+				F0B119751EC39D7A006F7894 /* Profile.h */,
+				F0B119761EC39D7A006F7894 /* Profile.m */,
+			);
+			name = Profile;
 			sourceTree = "<group>";
 		};
 		F0C8B7851EBA7D5200A3BE83 /* CustomViews */ = {
@@ -659,6 +672,7 @@
 				F06222961EC2F1F700296198 /* Order.m in Sources */,
 				F040E6651EB608BD00CAA63E /* UserAuthInfo.m in Sources */,
 				F062229A1EC2F2DF00296198 /* OrderHistoryTableViewController.m in Sources */,
+				F0B119771EC39D7A006F7894 /* Profile.m in Sources */,
 				F040E6871EB6811800CAA63E /* CategoryTableViewCell.m in Sources */,
 				F0390C261EB7B8EF00FE9BF4 /* CartTableViewCell.m in Sources */,
 				F0390C2E1EB7C87800FE9BF4 /* CartManager.m in Sources */,

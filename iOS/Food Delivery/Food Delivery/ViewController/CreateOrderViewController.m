@@ -13,6 +13,7 @@
 #import "NSString+ContainsCyrillic.h"
 #import "constants.h"
 #import "User.h"
+#import "Profile.h"
 #import "OrderSectionView.h"
 
 typedef NS_ENUM(NSInteger, DeliveryType) {
@@ -33,13 +34,9 @@ typedef NS_ENUM(NSInteger, PayType) {
 
 @property (strong, nonatomic) User *user;
 
-@property (strong, nonatomic)NSString *name;
-@property (strong, nonatomic)NSString *surname;
 @property (strong, nonatomic)NSString *cityAdr;
 @property (strong, nonatomic)NSString *streetAdr;
 @property (strong, nonatomic)NSString *houseAdr;
-@property (strong, nonatomic)NSString *number;
-@property (strong, nonatomic)NSString *email;
 
 @property DeliveryType deliveryType;
 @property PayType payType;
@@ -62,7 +59,7 @@ typedef NS_ENUM(NSInteger, PayType) {
 //    self.user.number = @"+3123123";
 //    self.user.email = @"fisak";
     
-    [self loadUserDataFromUser];
+    [self loadUserDataFromProfile];
     
     self.deliveryType = DeliveryTypePickup;
     self.payType = PayTypeCard;
@@ -72,17 +69,19 @@ typedef NS_ENUM(NSInteger, PayType) {
     // Do any additional setup after loading the view.
 }
 
-- (void)loadUserDataFromUser {
+- (void)loadUserDataFromProfile {
+    
+    _user.name = [Profile sharedInstance].name;
+    _user.surname = [Profile sharedInstance].surname;
+    _user.address = [Profile sharedInstance].address;
+    _user.number = [Profile sharedInstance].number;
+    _user.email = [Profile sharedInstance].email;
     
     NSArray *adressArray = [_user.address componentsSeparatedByString:@" "];
-    
-    self.name = _user.name;
-    self.surname = _user.surname;
+
     self.cityAdr = adressArray[0];
     self.streetAdr = adressArray[1];
     self.houseAdr = adressArray[2];
-    self.number = _user.number;
-    self.email = _user.email;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -159,7 +158,7 @@ typedef NS_ENUM(NSInteger, PayType) {
     
     if (indexPath.section == 0) {
         
-        return indexPath.row == 0 ? self.surname : self.name;
+        return indexPath.row == 0 ? _user.surname : _user.name;
         
     } else if(indexPath.section == 3) {
         
@@ -179,7 +178,7 @@ typedef NS_ENUM(NSInteger, PayType) {
             default:
                 break;
         }
-    } else if (indexPath.section == 1) return indexPath.row == 0 ? self.email : self.number;
+    } else if (indexPath.section == 1) return indexPath.row == 0 ? _user.email : _user.number;
 
     return @"";
 }
@@ -337,7 +336,7 @@ typedef NS_ENUM(NSInteger, PayType) {
                     return;
                 }
                 
-                self.surname = textField.text;
+                _user.surname = textField.text;
                 
             }
             else if (indexPath.row == 1) {
@@ -348,7 +347,7 @@ typedef NS_ENUM(NSInteger, PayType) {
                     return;
                 }
                 
-                self.name = textField.text;
+                _user.name = textField.text;
             }
             break;
             
@@ -363,7 +362,7 @@ typedef NS_ENUM(NSInteger, PayType) {
                     return;
                 }
                 
-                self.email = textField.text;
+                _user.email = textField.text;
             }
             else if (indexPath.row == 1) {
                 
@@ -376,7 +375,7 @@ typedef NS_ENUM(NSInteger, PayType) {
                     return;
                 }
                 
-                self.number = textField.text;
+                _user.number = textField.text;
             }
             break;
             
@@ -411,12 +410,12 @@ typedef NS_ENUM(NSInteger, PayType) {
     
     if (indexPath.row == 1 && indexPath.section == 1) {
         
-        if (self.number.length == 0) {
+        if (_user.number.length == 0) {
             
             textField.text = @"+";
         }
         
-        self.number = textField.text;
+        _user.number = textField.text;
     }
 }
 
@@ -426,13 +425,13 @@ typedef NS_ENUM(NSInteger, PayType) {
     
     if (indexPath.row == 1 && indexPath.section == 1) {
         
-        if (self.number.length <= 5) {
+        if (_user.number.length <= 5) {
             
             [self showAlertViewWithMessage:@"Пожалуйста напишите корректный номер телефона"];
             textField.text = [NSString stringWithOutCharacters:textField.text];
         }
         
-        self.number = textField.text;
+        _user.number = textField.text;
     }
 }
 
