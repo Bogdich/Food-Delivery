@@ -61,7 +61,7 @@ public class DishDAOImpl implements DishDAO{
         } catch (InterruptedException | ConnectionPoolException e) {
             //LOGGER.error("Can not get connection from connection pool");
         } catch (SQLException e) {
-            throw new DAOException("DAO layer: cannot insert dish", e);
+            throw new DAOException("DAO layer: cannot insertOrder dish", e);
         } finally {
             closeStatement(preparedStatement);
             if (connection != null) {

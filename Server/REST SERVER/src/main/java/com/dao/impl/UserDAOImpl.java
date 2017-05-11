@@ -56,7 +56,7 @@ public class UserDAOImpl implements UserDAO {
         } catch (InterruptedException | ConnectionPoolException e) {
             //LOGGER.error("Can not get connection from connection pool");
         } catch (SQLException e) {
-            throw new DAOException("DAO layer: cannot insert user", e);
+            throw new DAOException("DAO layer: cannot insertOrder user", e);
         } finally {
             closeStatement(preparedStatement);
             if (connection != null) {

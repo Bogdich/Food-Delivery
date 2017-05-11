@@ -8,18 +8,14 @@ import java.util.Date;
  */
 public class Order {
     private int id;
-    private User user;
-    private Date date;
-    ArrayList<Dish> dish;
+    private int userId;
 
     public Order() {
     }
 
-    public Order(int id, User user, Date date, ArrayList<Dish> dish) {
+    public Order(int id, int userId) {
         this.id = id;
-        this.user = user;
-        this.date = date;
-        this.dish = dish;
+        this.userId = userId;
     }
 
     public int getId() {
@@ -30,27 +26,11 @@ public class Order {
         this.id = id;
     }
 
-    public User getUser() {
-        return user;
+    public int getUserId() {
+        return userId;
     }
 
-    public void setUser(User user) {
-        this.user = user;
-    }
-
-    public Date getDate() {
-        return date;
-    }
-
-    public void setDate(Date date) {
-        this.date = date;
-    }
-
-    public ArrayList<Dish> getDish() {
-        return dish;
-    }
-
-    public void setDish(ArrayList<Dish> dish) {
-        this.dish = dish;
+    public void setUserId(int userId) {
+        this.userId = userId;
     }
 }

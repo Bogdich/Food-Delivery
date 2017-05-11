@@ -56,7 +56,7 @@ public class CategoryDAOImpl implements CategoryDAO {
         } catch (InterruptedException | ConnectionPoolException e) {
             //LOGGER.error("Can not get connection from connection pool");
         } catch (SQLException e) {
-            throw new DAOException("DAO layer: cannot insert category", e);
+            throw new DAOException("DAO layer: cannot insertOrder category", e);
         } finally {
             closeStatement(preparedStatement);
             if (connection != null) {

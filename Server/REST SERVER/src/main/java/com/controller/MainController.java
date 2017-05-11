@@ -1,13 +1,11 @@
 package com.controller;
 
 import com.entity.*;
-import com.service.DAOService;
-import com.service.DishAndCategoryService;
-import com.service.SubscriptionService;
-import com.service.UserService;
+import com.service.*;
 import org.springframework.web.bind.annotation.*;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.List;
 
 @CrossOrigin()
@@ -221,6 +219,25 @@ public class MainController {
         UserService userService = new UserService();
         userService.updateUserInfo(login, password, name, surname, address, number, email, userId);
         answer.setMessage("OK");
+
+        return answer;
+    }
+
+    @RequestMapping(value = "/order/insertOrder",method = RequestMethod.POST)
+    @ResponseBody
+    public Answer createOrder(@RequestParam("userId") int userId,
+                              @RequestBody Dishes dishes) {
+
+        daoService.init();
+        Answer answer = new Answer();
+
+        OrderService orderService = new OrderService();
+        int orderId = orderService.insertOrder(userId);
+        if (orderId != 0) {
+            orderService.insertDishWithOrder(orderId, dishes.getDishesAmounts());
+            answer.setMessage("OK");
+        }
+        else answer.setMessage("SOMETHING WRONG");
 
         return answer;
     }
