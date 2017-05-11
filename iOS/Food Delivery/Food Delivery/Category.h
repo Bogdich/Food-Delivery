@@ -16,4 +16,6 @@
 @property (strong, nonatomic) NSURL *imageURL;
 @property (strong, nonatomic) UIImage *image;
 
+- (void)loadCategoryImage;
+
 @end
