@@ -18,7 +18,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="175"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="category_pizza" translatesAutoresizingMaskIntoConstraints="NO" id="PlE-KB-doH">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="category_pizza" translatesAutoresizingMaskIntoConstraints="NO" id="PlE-KB-doH">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="175"/>
                     </imageView>
                     <view alpha="0.77999997138977095" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="azH-o3-3hT">

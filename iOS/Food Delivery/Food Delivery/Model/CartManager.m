@@ -63,6 +63,11 @@
     return _dishes.count;
 }
 
+- (Dish *)getDishInIndex:(NSInteger)index {
+    
+    return self.dishes[index];
+}
+
 - (void)deleteDishFromCart:(Dish *)dish {
     
     [self.dishes removeObject:dish];

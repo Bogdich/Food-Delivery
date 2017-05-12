@@ -30,9 +30,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    self.categoryImages = @[@"category_pizza", @"category_sushi", @"category_roll", @"category_drinks"];
-    
+        
     self.navigationController.navigationBar.topItem.title = @"";
     self.navigationController.navigationBar.tintColor = [UIColor GOLD_COLOR];
     
@@ -69,11 +67,10 @@
         cell = [[CategoryTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reusableId];
     }
     
-    NSError *error;
-    Category *category = [MTLJSONAdapter modelOfClass:Category.class fromJSONDictionary:self.categories[indexPath.section] error:&error];
+    Category *category = self.categories[indexPath.section];
 
     [cell setCategoryName:category.name];
-    [cell setCategoryImage:[UIImage imageNamed:self.categoryImages[indexPath.section]]];
+    [cell setCategoryImage:category.image];
     
     return cell;
 }
@@ -87,8 +84,7 @@
     
     [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    NSError *error;
-    Category *category = [MTLJSONAdapter modelOfClass:Category.class fromJSONDictionary:self.categories[indexPath.section] error:&error];
+    Category *category = self.categories[indexPath.section];
     
     [SVProgressHUD show];
     
@@ -99,21 +95,10 @@
     
     [[APIManager sharedManager] getCategoriesWithSuccess:^(NSArray *categoryList) {
         
-            self.categories = categoryList;
-//            NSURL *imageURL = [NSURL URLWithString:@"https://home-pizza.com/media/_versions_/%D0%B4%D0%BE%D0%BD_%D0%B1%D0%B5%D0%BA%D0%BE%D0%BD_catalog_product_detail.jpg"];
-        
-//        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
-//            NSData *imageData = [NSData dataWithContentsOfURL:imageURL];
-//            
-//            dispatch_async(dispatch_get_main_queue(), ^{
-//                // Update the UI
-//                self.image = [UIImage imageWithData:imageData];
-//                [self.tableView reloadData];
-//            });
-//        });
+        self.categories = [self categoryArrayWithDictionaryCategoryArray:categoryList];
 
-            [self.tableView reloadData];
-            [SVProgressHUD dismiss];
+        [self.tableView reloadData];
+        [SVProgressHUD dismiss];
         
     }
         failure:^(NSError *error){
@@ -148,12 +133,33 @@
         
         Dish *dish = [MTLJSONAdapter modelOfClass:Dish.class fromJSONDictionary:dict error:&error];
         [dish loadDishImage];
+        dish.category = [self.categories objectAtIndex:[dish.category.id_ integerValue] - 1];
         
         [dishArray addObject:dish];
     }
     
     return dishArray;
 }
+
+- (NSArray *)categoryArrayWithDictionaryCategoryArray:(NSArray *) dictionaryArray {
+    
+    NSMutableArray *categoryArray = [NSMutableArray new];
+    NSError *error;
+    
+    for (NSDictionary *dict in dictionaryArray) {
+        
+        Category *category = [MTLJSONAdapter modelOfClass:Category.class fromJSONDictionary:dict error:&error];
+        [category loadCategoryImage];
+        
+        if (category) {
+            
+            [categoryArray addObject:category];
+        }
+    }
+    
+    return categoryArray;
+}
+
 
 #pragma mark - Navigation
 
