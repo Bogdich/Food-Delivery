@@ -14,6 +14,7 @@
 @property (strong, nonatomic) Dish *dish;
 
 @property (weak, nonatomic) IBOutlet UILabel *dishNameLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *backgroundImageView;
 @property (weak, nonatomic) IBOutlet UILabel *countAndPriceLabel;
 @property (weak, nonatomic) IBOutlet UILabel *categoryNameLabel;
 @property (weak, nonatomic) IBOutlet UIStepper *countStepper;
@@ -105,6 +106,7 @@
 
     _dishNameLabel.text = dish.name;
     _categoryNameLabel.text = dish.category.name;
+    _backgroundImageView.image = dish.category.image;
     _countStepper.value = count;
     
     NSString *titleString = [NSString stringWithFormat:@"%ldx%@ BYN", (long)count, dish.price];

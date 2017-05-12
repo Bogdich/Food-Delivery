@@ -18,7 +18,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="379" height="88"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="category_pizza" translatesAutoresizingMaskIntoConstraints="NO" id="vhR-FW-uWD">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="category_pizza" translatesAutoresizingMaskIntoConstraints="NO" id="vhR-FW-uWD">
                         <rect key="frame" x="0.0" y="0.0" width="379" height="88"/>
                     </imageView>
                     <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L2P-Ax-sId">
@@ -98,6 +98,7 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="backgroundImageView" destination="vhR-FW-uWD" id="jzc-t6-hs5"/>
                 <outlet property="categoryNameLabel" destination="1rb-Pa-5PT" id="gvy-Ug-Pb2"/>
                 <outlet property="countAndPriceLabel" destination="iMT-QF-HaT" id="Cxj-rO-zrZ"/>
                 <outlet property="countStepper" destination="6xf-g1-H8U" id="yag-Ap-Tmo"/>

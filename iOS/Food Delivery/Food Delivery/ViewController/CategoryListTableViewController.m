@@ -133,6 +133,7 @@
         
         Dish *dish = [MTLJSONAdapter modelOfClass:Dish.class fromJSONDictionary:dict error:&error];
         [dish loadDishImage];
+        dish.category = [self.categories objectAtIndex:[dish.category.id_ integerValue] - 1];
         
         [dishArray addObject:dish];
     }

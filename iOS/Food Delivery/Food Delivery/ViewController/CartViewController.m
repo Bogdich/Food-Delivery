@@ -10,12 +10,15 @@
 #import "constants.h"
 #import "CartTableViewCell.h"
 #import "CartManager.h"
+#import "CreateOrderViewController.h"
 
 @interface CartViewController () <UITableViewDelegate, UITableViewDataSource, CartTableViewCellDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UILabel *finalCostLabel;
 @property (weak, nonatomic) IBOutlet UIButton *addToOrderButton;
+
+@property (strong, nonatomic) CartManager *cart;
 
 @property (assign, nonatomic) NSInteger finalCost;
 @property (strong, nonatomic) UIImageView *dishPhotoImageView;
@@ -28,6 +31,8 @@
     [super viewDidLoad];
     
     self.finalCost = 0;
+    
+    self.cart = [CartManager sharedManager];
     
     [self costForUpperView];
     [self drawCreateOrderButton];
@@ -85,6 +90,26 @@
     cell.delegate = self;
     
     return cell;
+}
+
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+
+    return YES;
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        
+        Dish *dish = [self.cart getDishInIndex:indexPath.row];
+        
+        [self.cart deleteDishFromCart:dish];
+        
+        [self costForUpperView];
+        
+        NSIndexSet *set = [NSIndexSet indexSetWithIndex:0];
+        [self.tableView reloadSections:set withRowAnimation:UITableViewRowAnimationAutomatic];
+    }
 }
 
 - (void)costForUpperView {
@@ -182,14 +207,17 @@
     _addToOrderButton.layer.borderColor = [[UIColor GOLD_COLOR] CGColor];
 }
 
-/*
+
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+
+    if ([segue.identifier isEqualToString:CartToCreateOrderSegue]) {
+        
+        CreateOrderViewController *vc = segue.destinationViewController;
+        vc.finalCost = self.finalCost;
+    }
+    
 }
-*/
 
 @end

@@ -17,6 +17,7 @@
 - (void)addDishToCart:(Dish *)dish count:(NSInteger)count;
 
 - (NSArray *)getAllDishes;
+- (Dish *)getDishInIndex:(NSInteger)index;
 
 - (NSInteger)getAllDishesCount;
 - (NSInteger)getDishesCountForId:(NSNumber *)dishId;

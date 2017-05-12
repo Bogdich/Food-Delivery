@@ -14,6 +14,7 @@
 #import "constants.h"
 #import "User.h"
 #import "Profile.h"
+#import "CartManager.h"
 #import "OrderSectionView.h"
 
 typedef NS_ENUM(NSInteger, DeliveryType) {
@@ -33,6 +34,7 @@ typedef NS_ENUM(NSInteger, PayType) {
 @property (weak, nonatomic) IBOutlet UILabel *totalPriceLabel;
 
 @property (strong, nonatomic) User *user;
+@property (strong, nonatomic) CartManager *cart;
 
 @property (strong, nonatomic)NSString *cityAdr;
 @property (strong, nonatomic)NSString *streetAdr;
@@ -51,6 +53,8 @@ typedef NS_ENUM(NSInteger, PayType) {
     self.navigationController.navigationBar.topItem.title = @"";
     
     [self drawTotalButton];
+    
+    self.cart = [CartManager sharedManager];
     
 //    self.user = [[User alloc] init];
 //    self.user.name = @"Имя";
@@ -90,6 +94,18 @@ typedef NS_ENUM(NSInteger, PayType) {
 }
 
 - (IBAction)finishOrderButtonClicked:(UIButton *)sender {
+    
+    NSMutableDictionary *dishesDict = [NSMutableDictionary new];
+    
+    NSArray *dishes = [self.cart getAllDishes];
+    
+    for (int i = 0; i < [self.cart getAllDishesCount]; i++) {
+        
+        Dish *dish = dishes[i];
+        NSDictionary *dishesAndCount = [[NSDictionary alloc] initWithObjectsAndKeys: dish.id_, @"dishID",
+                                        [NSNumber numberWithInteger:[self.cart getDishesCountForId:dish.id_]], @"count", nil];
+        [dishesDict setObject:dishesAndCount forKey:[NSString stringWithFormat:@"%dDish", i + 1]];
+    }
 }
 
 - (void)drawTotalButton {
