@@ -16,33 +16,49 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Food Delivery/ViewController/LoginViewController.m"
-            timestampString = "516144862.79755"
+            filePath = "Food Delivery/ViewController/CreateOrderViewController.m"
+            timestampString = "516267981.149997"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
-            landmarkName = "-endAutorization"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
+            landmarkName = "-finishOrderButtonClicked:"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Food Delivery/Model/APIManager.m"
-            timestampString = "516146190.526372"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
-            landmarkName = "-addUserWithLogin:andPass:name:surname:address:number:email:success:failure:"
-            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[CreateOrderViewController finishOrderButtonClicked:]"
+                  moduleName = "Food Delivery"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/KirillBudevich/Projects/Study/University/Food-delivery/iOS/Food%20Delivery/Food%20Delivery/ViewController/CreateOrderViewController.m"
+                  timestampString = "516269078.062333"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "124"
+                  endingLineNumber = "124"
+                  offsetFromSymbolStart = "819">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__Block_byref_object_dispose_"
+                  moduleName = "Food Delivery"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/KirillBudevich/Projects/Study/University/Food-delivery/iOS/Food%20Delivery/Food%20Delivery/ViewController/CreateOrderViewController.m"
+                  timestampString = "516269078.069821"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "124"
+                  endingLineNumber = "124"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

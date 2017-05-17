@@ -25,6 +25,7 @@
 		F040E67F1EB66E0400CAA63E /* DishesListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F040E67E1EB66E0400CAA63E /* DishesListTableViewController.m */; };
 		F040E6871EB6811800CAA63E /* CategoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F040E6851EB6811800CAA63E /* CategoryTableViewCell.m */; };
 		F040E6881EB6811800CAA63E /* CategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F040E6861EB6811800CAA63E /* CategoryTableViewCell.xib */; };
+		F04A8EFC1EC594FF008C2012 /* DishesAmount.m in Sources */ = {isa = PBXBuildFile; fileRef = F04A8EFB1EC594FF008C2012 /* DishesAmount.m */; };
 		F04B0E121EBBCD5000450214 /* RootMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F04B0E111EBBCD5000450214 /* RootMenuViewController.m */; };
 		F04B0E151EBBD0B300450214 /* RightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F04B0E141EBBD0B300450214 /* RightViewController.m */; };
 		F04B0E1B1EBBD3A700450214 /* RightMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F04B0E191EBBD3A700450214 /* RightMenuTableViewCell.m */; };
@@ -87,6 +88,8 @@
 		F040E6841EB6811800CAA63E /* CategoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CategoryTableViewCell.h; path = View/CategoryTableViewCell.h; sourceTree = "<group>"; };
 		F040E6851EB6811800CAA63E /* CategoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CategoryTableViewCell.m; path = View/CategoryTableViewCell.m; sourceTree = "<group>"; };
 		F040E6861EB6811800CAA63E /* CategoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CategoryTableViewCell.xib; path = View/CategoryTableViewCell.xib; sourceTree = "<group>"; };
+		F04A8EFA1EC594FF008C2012 /* DishesAmount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DishesAmount.h; path = Model/DishesAmount.h; sourceTree = "<group>"; };
+		F04A8EFB1EC594FF008C2012 /* DishesAmount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DishesAmount.m; path = Model/DishesAmount.m; sourceTree = "<group>"; };
 		F04B0E101EBBCD5000450214 /* RootMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootMenuViewController.h; sourceTree = "<group>"; };
 		F04B0E111EBBCD5000450214 /* RootMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootMenuViewController.m; sourceTree = "<group>"; };
 		F04B0E131EBBD0B300450214 /* RightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightViewController.h; sourceTree = "<group>"; };
@@ -449,6 +452,8 @@
 			children = (
 				F06222941EC2F1F700296198 /* Order.h */,
 				F06222951EC2F1F700296198 /* Order.m */,
+				F04A8EFA1EC594FF008C2012 /* DishesAmount.h */,
+				F04A8EFB1EC594FF008C2012 /* DishesAmount.m */,
 			);
 			name = Order;
 			sourceTree = "<group>";
@@ -681,6 +686,7 @@
 				F087F6F51EB93723006F4F89 /* SegmentedControlTableViewCell.m in Sources */,
 				F087F6EA1EB93184006F4F89 /* CreateOrderViewController.m in Sources */,
 				F04B0E121EBBCD5000450214 /* RootMenuViewController.m in Sources */,
+				F04A8EFC1EC594FF008C2012 /* DishesAmount.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

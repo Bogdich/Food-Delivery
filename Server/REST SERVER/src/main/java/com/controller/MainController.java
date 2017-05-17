@@ -241,17 +241,18 @@ public class MainController {
 
     @RequestMapping(value = "/order/insertOrder",method = RequestMethod.POST)
     @ResponseBody
-    public Answer createOrder(@RequestParam("userId") int userId,
+    public Answer createOrder(//@RequestParam("userId") int userId,
                               @RequestBody Dishes dishes) {
 
         daoService.init();
         Answer answer = new Answer();
 
         OrderService orderService = new OrderService();
-        int orderId = orderService.insertOrder(userId);
+        int orderId = orderService.insertOrder(1);
         if (orderId != 0) {
             orderService.insertDishWithOrder(orderId, dishes.getDishesAmounts());
             answer.setMessage("OK");
+            answer.setResponseID(orderId);
         }
         else answer.setMessage("SOMETHING WRONG");
 

@@ -26,4 +26,6 @@
 - (NSURLSessionDataTask *)getUserByLogin:(NSString *) login success:(void (^)(BOOL isExist))success failure:(void (^)(NSError *error))failure;
 
 - (NSURLSessionDataTask *)upAutorizationWithLogin:(NSString *)login andPass:(NSString *)pass success:(void (^)(id object))success failure:(void (^)(NSError *error))failure;
+
+- (NSURLSessionDataTask *)createOrderWithUserId:(NSNumber *)userId andDishes:(NSArray *)dishes success:(void (^)(id object))success failure:(void (^)(NSError *error))failure;
 @end

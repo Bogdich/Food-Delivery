@@ -16,6 +16,7 @@
 #define getDishByID @"/food-delivery/dish/getInfo"
 #define getDishesByCategoryID @"/food-delivery/dish/getDishes"
 #define registerUser @"/food-delivery/user/insertUser"
+#define createOrder @"/food-delivery/order/insertOrder"
 
 @implementation APIManager
 
@@ -49,6 +50,39 @@
     [self.requestSerializer setStringEncoding:NSUTF8StringEncoding];
     
     return [self POST:registerUser parameters:parameters progress:nil
+              success:^(NSURLSessionDataTask *task, id responseObject) {
+                  
+                  NSDictionary *responseDictionary = (NSDictionary *)responseObject;
+                  
+                  id object;
+                  
+                  if ([[responseDictionary objectForKey:@"message"] isEqualToString:@"OK"]) {
+                      
+                      object = [responseDictionary objectForKey:@"responseID"];
+                  } else {
+                      
+                      object = [responseDictionary objectForKey:@"message"];
+                  }
+                  
+                  success(object);
+                  
+              } failure:^(NSURLSessionDataTask *task, NSError *error) {
+                  
+                  failure(error);
+                  
+              }];
+}
+
+- (NSURLSessionDataTask *)createOrderWithUserId:(NSNumber *)userId andDishes:(NSArray *)dishesAmount success:(void (^)(id object))success failure:(void (^)(NSError *error))failure {
+    
+        NSMutableDictionary *parameters = [[NSMutableDictionary alloc] initWithObjectsAndKeys:
+                                           //userId, @"userId",
+                                           dishesAmount, @"dishesAmounts", nil];
+    
+//    self.requestSerializer = [AFHTTPRequestSerializer serializer];
+//    [self.requestSerializer setStringEncoding:NSUTF8StringEncoding];
+    
+    return [self POST:createOrder parameters:parameters progress:nil
               success:^(NSURLSessionDataTask *task, id responseObject) {
                   
                   NSDictionary *responseDictionary = (NSDictionary *)responseObject;

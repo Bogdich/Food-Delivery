@@ -16,6 +16,10 @@
 #import "Profile.h"
 #import "CartManager.h"
 #import "OrderSectionView.h"
+#import <SVProgressHUD.h>
+#import <MTLModel.h>
+#import "APIManager.h"
+#import "DishesAmount.h"
 
 typedef NS_ENUM(NSInteger, DeliveryType) {
     DeliveryTypePickup = 0,
@@ -27,7 +31,7 @@ typedef NS_ENUM(NSInteger, PayType) {
     PayTypeCash = 1
 };
 
-@interface CreateOrderViewController () <UITableViewDelegate, UITableViewDataSource, SegmentedControlTableViewCellDelegate, TextFieldedTableViewCellDelegate>
+@interface CreateOrderViewController () <UITableViewDelegate, UITableViewDataSource, SegmentedControlTableViewCellDelegate, TextFieldedTableViewCellDelegate, MTLJSONSerializing>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UIButton *totalButton;
@@ -95,17 +99,56 @@ typedef NS_ENUM(NSInteger, PayType) {
 
 - (IBAction)finishOrderButtonClicked:(UIButton *)sender {
     
-    NSMutableDictionary *dishesDict = [NSMutableDictionary new];
+    NSMutableArray *dishesArray = [NSMutableArray new];
     
     NSArray *dishes = [self.cart getAllDishes];
+    DishesAmount *dishesAmount;
     
     for (int i = 0; i < [self.cart getAllDishesCount]; i++) {
         
         Dish *dish = dishes[i];
-        NSDictionary *dishesAndCount = [[NSDictionary alloc] initWithObjectsAndKeys: dish.id_, @"dishID",
-                                        [NSNumber numberWithInteger:[self.cart getDishesCountForId:dish.id_]], @"count", nil];
-        [dishesDict setObject:dishesAndCount forKey:[NSString stringWithFormat:@"%dDish", i + 1]];
+        dishesAmount = [[DishesAmount alloc] initWithDishId:dish.id_ amount:[NSNumber numberWithInteger:[self.cart getDishesCountForId:dish.id_]]];
+//        NSDictionary *dishesAndCount = [[NSDictionary alloc] initWithObjectsAndKeys: dish.id_, @"dishID",
+//                                        [NSNumber numberWithInteger:[self.cart getDishesCountForId:dish.id_]], @"count", nil];
+        NSError *error;
+        NSDictionary *json = [MTLJSONAdapter JSONDictionaryFromModel:dishesAmount error:&error];
+        
+        [dishesArray addObject:json];
+        
     }
+
+//    NSError *error;
+//    NSArray *jsonDishes = [MTLJSONAdapter JSONArrayFromModels:dishesArray error:&error];
+    
+    
+    __block NSString *answer = @"ERROR";
+    
+//    __weak __typeof__(self) weakSelf = self;
+    
+//    __block NSInteger newUserId = 0;
+    
+    [[APIManager sharedManager] createOrderWithUserId:[NSNumber numberWithInteger:2] andDishes:dishesArray success:^(id object) {
+        
+//            __strong __typeof__(weakSelf) strongSelf = weakSelf;
+        
+            if ([object integerValue]) {
+                
+                NSInteger orderId = [object integerValue];
+                answer = @"OK";
+                
+                [SVProgressHUD showSuccessWithStatus:@"Ваш заказ оформляется, ждите звонка оператора!"];
+                
+            } else {
+                
+                [SVProgressHUD showErrorWithStatus:@"Что-то пошло не так!"];
+            }
+            
+        
+    } failure:^(NSError *error) {
+        
+            NSLog(@"%@", error);
+            [SVProgressHUD showErrorWithStatus:@"Что-то пошло не так"];
+    }];
 }
 
 - (void)drawTotalButton {
