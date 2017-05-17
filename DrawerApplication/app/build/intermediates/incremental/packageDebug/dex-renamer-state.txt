@@ -1,0 +1,7 @@
+#Fri May 12 11:55:23 MSK 2017
+base.0=C\:\\Users\\Softteco\\Documents\\Food-Delivery\\DrawerApplication\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_abbee8962755a10ccd7f36eb9c8b8bbaf475f5ef
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=C\:\\Users\\Softteco\\Documents\\Food-Delivery\\DrawerApplication\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_6a63b546c7e2b0bf284f8a158ed4339c89559f08\\classes.dex
+base.1=C\:\\Users\\Softteco\\Documents\\Food-Delivery\\DrawerApplication\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_6a63b546c7e2b0bf284f8a158ed4339c89559f08
+file.0=C\:\\Users\\Softteco\\Documents\\Food-Delivery\\DrawerApplication\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_abbee8962755a10ccd7f36eb9c8b8bbaf475f5ef\\classes.dex

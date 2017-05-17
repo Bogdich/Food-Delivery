@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\Softteco\\Documents\\Food-Delivery\\DrawerApplication\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\Softteco\\.android\\build-cache\\183ba9cab2ce6004116306b99ff090d305793873\\output\\res\\layout-v21\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "C:\\Users\\Softteco\\Documents\\Food-Delivery\\DrawerApplication\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\Softteco\\.android\\build-cache\\183ba9cab2ce6004116306b99ff090d305793873\\output\\res\\layout-v21\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "C:\\Users\\Softteco\\Documents\\Food-Delivery\\DrawerApplication\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\Softteco\\.android\\build-cache\\183ba9cab2ce6004116306b99ff090d305793873\\output\\res\\layout-v21\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "C:\\Users\\Softteco\\Documents\\Food-Delivery\\DrawerApplication\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
+        "source": "C:\\Users\\Softteco\\.android\\build-cache\\183ba9cab2ce6004116306b99ff090d305793873\\output\\res\\layout-v21\\notification_action.xml"
+    }
+]
