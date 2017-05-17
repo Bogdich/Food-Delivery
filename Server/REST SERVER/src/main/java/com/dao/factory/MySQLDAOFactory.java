@@ -15,6 +15,7 @@ public class MySQLDAOFactory extends DAOFactory {
     private final PoolDAO poolDAO = new MySQLPoolDAO();
     private final CategoryDAO categoryDAO = new CategoryDAOImpl();
     private final SubscriptionDAOImpl subscriptionDAO = new SubscriptionDAOImpl();
+    private final OrderDAOImpl orderDAO = new OrderDAOImpl();
 
     //private final ReportDAO reportDAO = new MySQLReportDAO();
 
@@ -54,6 +55,13 @@ public class MySQLDAOFactory extends DAOFactory {
     public SubscriptionDAO getSubscriptionDAO() {
         return subscriptionDAO;
     }
+
+    @Override
+    public OrderDAO getOrderDAO() {
+        return orderDAO;
+    }
+
+
 //
 //    @Override
 //    public CarDAO getCarDAO() {

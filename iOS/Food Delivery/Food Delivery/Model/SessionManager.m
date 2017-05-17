@@ -8,7 +8,7 @@
 
 #import "SessionManager.h"
 
-static NSString *const kBaseURL = @"http://localhost:8050";
+static NSString *const kBaseURL = @"http://localhost:8080";
 
 @implementation SessionManager
 

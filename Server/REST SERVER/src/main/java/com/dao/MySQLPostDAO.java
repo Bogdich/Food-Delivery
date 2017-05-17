@@ -17,7 +17,7 @@ public interface MySQLPostDAO<T> {
 //    int UNSUPPORTED_PK_INSERT = -1;
 //
 //    void updateUserInfo(T data) throws DAOException;
-//    int insert(T data) throws DAOException;
+//    int insertOrder(T data) throws DAOException;
 //    void delete(T data) throws DAOException;
 //
 //    default void close(AutoCloseable... resources){

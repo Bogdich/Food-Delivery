@@ -11,7 +11,7 @@
 
 #import "NSString+ContainsCyrillic.h"
 #import "constants.h"
-#import "User.h"
+#import "Profile.h"
 #import <SVProgressHUD/SVProgressHUD.h>
 #import "APIManager.h"
 #import "OrderSectionView.h"
@@ -40,6 +40,8 @@
     
     [self drawRegistrButton];
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(endRegistration) name:@"registrationOK" object:nil];
+
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -47,32 +49,30 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
+- (void)dealloc {
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
+- (void)endRegistration {
+    
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
 - (IBAction)registrationButtonClicked:(UIButton *)sender {
     
-    [SVProgressHUD showWithStatus:@"Идет авторизация"];
+    [SVProgressHUD showWithStatus:@"Идет регистрация"];
     
     if ([self isCorrectData]) {
         
         NSString *address = [NSString stringWithFormat:@"%@ %@ %@", self.cityAdr, self.streetAdr, self.houseAdr];
         
-        NSString *message = [[User getInstance] registrationWithLogin:self.login andPass:self.password name:self.name surname:self.surname address:address number:self.number email:self.email];
-        
-        if ([message isEqualToString:@"OK"]) {
-            
-            [SVProgressHUD showSuccessWithStatus:@"Вы успешно авторизовались"];
-            
-        } else if([message isEqualToString:@"LOGIN EXIST"]) {
-            
-            [SVProgressHUD showErrorWithStatus:@"Такой логин уже существует"];
-        } else {
-            
-            [SVProgressHUD showErrorWithStatus:@"Что-то пошло не так"];
-        }
+        [[Profile sharedInstance] registrationWithLogin:self.login andPass:self.password name:self.name surname:self.surname address:address number:self.number email:self.email];
 
     } else {
         
@@ -80,7 +80,7 @@
     }
 }
 
-- (BOOL) isCorrectData {
+- (BOOL)isCorrectData {
     
     if (self.login.length < 1) {
         return NO;
@@ -406,15 +406,16 @@
         
         self.number = textField.text;
         
-    } else if (indexPath.row == 1 && indexPath.section == 0)
+    } else if (indexPath.row == 1 && indexPath.section == 0) {
         
         if (textField.text.length < 5) {
+            
+            [self showAlertViewWithMessage:@"Пароль должен быть больше 5 символов"];
+            return;
+        }
         
-        [self showAlertViewWithMessage:@"Пароль должен быть больше 5 символов"];
-        return;
+        self.password = textField.text;
     }
-    
-    self.password = textField.text;
 }
 
 #pragma mark - UIAlertView

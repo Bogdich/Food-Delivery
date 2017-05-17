@@ -16,19 +16,38 @@
 #define getDishByID @"/food-delivery/dish/getInfo"
 #define getDishesByCategoryID @"/food-delivery/dish/getDishes"
 #define registerUser @"/food-delivery/user/insertUser"
+#define createOrder @"/food-delivery/order/insertOrder"
 
 @implementation APIManager
 
 - (NSURLSessionDataTask *)addUserWithLogin:(NSString *)login andPass:(NSString *)pass name:(NSString *)name surname:(NSString *)surname address:(NSString *)address number:(NSString *)number email:(NSString *)email success:(void (^)(id object))success failure:(void (^)(NSError *error))failure {
     
+    NSString* encodedName = [name stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSString* encodedSurname = [surname stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSString* encodedAddress = [address stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSString* encodedLogin = [login stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSString* encodedPass = [pass stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    
     NSMutableDictionary *parameters = [[NSMutableDictionary alloc] initWithObjectsAndKeys:
-                                       login, @"login",
-                                       pass, @"password",
-                                       name, @"name",
-                                       surname, @"surname",
+                                       encodedLogin, @"login",
+                                       encodedPass, @"password",
+                                       encodedName, @"name",
+                                       encodedSurname, @"surname",
                                        number, @"number",
                                        email, @"email",
-                                       address, @"address", nil];
+                                       encodedAddress, @"address", nil];
+    
+//    NSMutableDictionary *parameters = [[NSMutableDictionary alloc] initWithObjectsAndKeys:
+//                                       login, @"login",
+//                                       pass, @"password",
+//                                       name, @"name",
+//                                       surname, @"surname",
+//                                       number, @"number",
+//                                       email, @"email",
+//                                       address, @"address", nil];
+    
+    self.requestSerializer = [AFHTTPRequestSerializer serializer];
+    [self.requestSerializer setStringEncoding:NSUTF8StringEncoding];
     
     return [self POST:registerUser parameters:parameters progress:nil
               success:^(NSURLSessionDataTask *task, id responseObject) {
@@ -37,12 +56,45 @@
                   
                   id object;
                   
-                  if ([[responseDictionary objectForKey:@"error"] isEqualToString:@"OK"]) {
+                  if ([[responseDictionary objectForKey:@"message"] isEqualToString:@"OK"]) {
                       
                       object = [responseDictionary objectForKey:@"responseID"];
                   } else {
                       
-                      object = [responseDictionary objectForKey:@"error"];
+                      object = [responseDictionary objectForKey:@"message"];
+                  }
+                  
+                  success(object);
+                  
+              } failure:^(NSURLSessionDataTask *task, NSError *error) {
+                  
+                  failure(error);
+                  
+              }];
+}
+
+- (NSURLSessionDataTask *)createOrderWithUserId:(NSNumber *)userId andDishes:(NSArray *)dishesAmount success:(void (^)(id object))success failure:(void (^)(NSError *error))failure {
+    
+        NSMutableDictionary *parameters = [[NSMutableDictionary alloc] initWithObjectsAndKeys:
+                                           //userId, @"userId",
+                                           dishesAmount, @"dishesAmounts", nil];
+    
+//    self.requestSerializer = [AFHTTPRequestSerializer serializer];
+//    [self.requestSerializer setStringEncoding:NSUTF8StringEncoding];
+    
+    return [self POST:createOrder parameters:parameters progress:nil
+              success:^(NSURLSessionDataTask *task, id responseObject) {
+                  
+                  NSDictionary *responseDictionary = (NSDictionary *)responseObject;
+                  
+                  id object;
+                  
+                  if ([[responseDictionary objectForKey:@"message"] isEqualToString:@"OK"]) {
+                      
+                      object = [responseDictionary objectForKey:@"responseID"];
+                  } else {
+                      
+                      object = [responseDictionary objectForKey:@"message"];
                   }
                   
                   success(object);
@@ -97,7 +149,7 @@
                  
                  NSDictionary *responseDictionary = (NSDictionary *)responseObject;
                  
-                 BOOL isExist = [[responseDictionary objectForKey:@"error"] isEqualToString:@"OK"] ? YES : NO;
+                 BOOL isExist = [[responseDictionary objectForKey:@"message"] isEqualToString:@"OK"] ? YES : NO;
 
                  success(isExist);
                  
@@ -107,7 +159,7 @@
              }];
 }
 
-- (NSURLSessionDataTask *)upAutorizationWithLogin:(NSString *)login andPass:(NSString *)pass success:(void (^)(User *user))success failure:(void (^)(NSError *error))failure {
+- (NSURLSessionDataTask *)upAutorizationWithLogin:(NSString *)login andPass:(NSString *)pass success:(void (^)(id object))success failure:(void (^)(NSError *error))failure {
     
     NSMutableDictionary *parameters = [[NSMutableDictionary alloc] initWithObjectsAndKeys:
                                        login, @"login",
@@ -118,10 +170,17 @@
                  
                  NSDictionary *responseDictionary = (NSDictionary *)responseObject;
                  
-                 NSError *error;
-                 User *user = [MTLJSONAdapter modelOfClass:[User class]
-                                        fromJSONDictionary:responseDictionary error:&error];
-                 success(user);
+                 id object;
+                 
+                 if ([[responseDictionary objectForKey:@"message"] isEqualToString:@"OK"]) {
+                     
+                     object = [responseDictionary objectForKey:@"responseID"];
+                 } else {
+                     
+                     object = [responseDictionary objectForKey:@"message"];
+                 }
+                 
+                 success(object);
                  
              } failure:^(NSURLSessionDataTask *task, NSError *error) {
                  

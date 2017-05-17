@@ -8,15 +8,30 @@ import java.util.ArrayList;
 public class Category {
     private int id;
     private String name;
+    private String imageURL;
 //    private ArrayList<Dish> dishes;
 
     public Category() {
+    }
+
+    public Category(int id, String name, String imageURL) {
+        this.id = id;
+        this.name = name;
+        this.imageURL = imageURL;
     }
 
     public Category(int id, String name) {//, ArrayList<Dish> dishes) {
         this.id = id;
         this.name = name;
 //        this.dishes = dishes;
+    }
+
+    public String getImageURL() {
+        return imageURL;
+    }
+
+    public void setImageURL(String imageURL) {
+        this.imageURL = imageURL;
     }
 
     public int getId() {

@@ -59,12 +59,18 @@
 
 - (IBAction)addToCartButtonClicked:(UIButton *)sender {
     
-    [SVProgressHUD showSuccessWithStatus:@"Успешно добавлено в корзину!"];
-    
-    [[CartManager sharedManager] addDishToCart:self.selectedDish count:self.dishCount];
-    
-    [SVProgressHUD dismissWithDelay:1];
-    
+    if (self.dishCount >= 1) {
+        
+        [SVProgressHUD showSuccessWithStatus:@"Успешно добавлено в корзину!"];
+        
+        [[CartManager sharedManager] addDishToCart:self.selectedDish count:self.dishCount];
+        
+        [SVProgressHUD dismissWithDelay:1];
+    } else {
+        
+        [SVProgressHUD showErrorWithStatus:@"Пожалуйста выберите количество!"];
+        [SVProgressHUD dismissWithDelay:1];
+    }
 }
 
 - (void)didReceiveMemoryWarning {

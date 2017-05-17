@@ -8,7 +8,7 @@
 
 #import "LoginViewController.h"
 #import "APIManager.h"
-#import "User.h"
+#import "Profile.h"
 #import <SVProgressHUD/SVProgressHUD.h>
 
 @interface LoginViewController ()
@@ -46,7 +46,19 @@
         self.view.backgroundColor = [UIColor blackColor];
     }
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(endAutorization) name:@"autorizationOK" object:nil];
+    
     // Do any additional setup after loading the view.
+}
+
+- (void)endAutorization {
+    
+    //open new veiw
+}
+
+- (void)dealloc {
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 - (void)customizeTextFields {
@@ -85,26 +97,8 @@
     
     self.login = _usernameTextField.text;
     self.password = _passwordTextField.text;
-    
-    NSString *answer = [[User getInstance] upAutorizationWithLogin:self.login andPass:self.password];
-    NSString *message;
-    
-    if ([answer isEqualToString:@"USER LOGIN"]) {
-        
-        message = @"Вы успешно авторизовались";
-        [SVProgressHUD showSuccessWithStatus:message];
-        
-    } else if([answer isEqualToString:@"LOGIN NOT EXIST"]) {
-        
-        message = @"Проверьте введеные данные";
-        [SVProgressHUD showErrorWithStatus:message];
-    } else {
-        
-        message = @"Что-то пошло не так";
-        [SVProgressHUD showErrorWithStatus:message];
-    }
-    
-    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+
+    [[Profile sharedInstance] upAutorizationWithLogin:self.login andPass:self.password];
 }
 
 /*
