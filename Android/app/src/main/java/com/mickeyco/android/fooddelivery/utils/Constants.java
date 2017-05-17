@@ -1,8 +1,8 @@
 package com.mickeyco.android.fooddelivery.utils;
 
 public class Constants {
-//    public static final String BASE_URL = "http://192.168.6.106:8050/";
-    public static final String BASE_URL = "http://172.20.10.5:8050/";
+    public static final String BASE_URL = "http://192.168.6.106:8050/";
+//    public static final String BASE_URL = "http://172.20.10.5:8050/";
     public static final String xmlUrl = "http://ufa.farfor.ru/getyml/?key=ukAXxeJYZN";
     public static final String logTag = "FoodService";
 

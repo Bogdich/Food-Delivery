@@ -1,67 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/background_LL"
     android:orientation="vertical"
-    android:layout_marginLeft="40dp"
-    android:layout_marginRight="40dp"
-    android:gravity="center"
+    android:paddingStart="40dp"
+    android:paddingEnd="40dp"
+    android:paddingTop="150dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <android.support.design.widget.TextInputLayout
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
         <EditText
-            android:hint="Электронная почта"
+            android:hint="Логин"
             android:id="@+id/et_email"
-            android:drawableRight="@drawable/ic_email"
             android:inputType="textEmailAddress"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-    </android.support.design.widget.TextInputLayout>
-
-    <android.support.design.widget.TextInputLayout
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+            android:layout_height="35dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:background="@drawable/edit_text_rounded"
+            android:textColor="@color/colorPrimaryDark"/>
 
         <EditText
             android:hint="Пароль"
             android:id="@+id/et_password"
-            android:drawableRight="@drawable/ic_key"
             android:inputType="textPassword"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-    </android.support.design.widget.TextInputLayout>
-
-    <CheckBox
-        android:id="@+id/checkbox_doctor"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Я врач"
-        android:layout_gravity="right"/>
+            android:layout_height="35dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:background="@drawable/edit_text_rounded"
+            android:textColor="@color/colorPrimary"/>
 
     <android.support.v7.widget.AppCompatButton
         android:id="@+id/btn_login"
         android:text="Войти"
-        android:background="@color/colorPrimary"
-        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:textColor="@color/colorAccent"
+        android:background="@drawable/transparent_rounded_corners_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"/>
 
     <TextView
-        android:id="@+id/tv_register"
         android:layout_marginTop="20dp"
-        android:textColor="@color/colorAccent"
-        android:text="Не зарегистрированы? Зарегистрируйтесь сейчас!"
+        android:textColor="@color/colorPrimary"
+        android:text="или"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_register"
+        android:text="Зарегистрироваться"
+        android:textSize="22sp"
+        android:textColor="@color/colorAccent"
+        android:background="@drawable/transparent_rounded_corners_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"/>
 
     <ProgressBar
         style="@style/Base.Widget.AppCompat.ProgressBar"

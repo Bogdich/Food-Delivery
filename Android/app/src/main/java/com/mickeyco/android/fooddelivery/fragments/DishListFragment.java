@@ -4,13 +4,11 @@ import android.content.Context;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
-import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -18,9 +16,7 @@ import com.mickeyco.android.fooddelivery.R;
 
 import com.mickeyco.android.fooddelivery.api.ApiFactory;
 import com.mickeyco.android.fooddelivery.api.RequestInterface;
-import com.mickeyco.android.fooddelivery.api.models.Category;
 import com.mickeyco.android.fooddelivery.api.models.Dish;
-import com.mickeyco.android.fooddelivery.utils.Constants;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;

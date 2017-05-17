@@ -18,11 +18,11 @@
             android:name=".activities.CategoryActivity"
             android:label="Каталог"
             android:theme="@style/AppTheme.NoActionBar">
-             <intent-filter>
-             <action android:name="android.intent.action.MAIN"/>
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN"/>-->
 
-             <category android:name="android.intent.category.LAUNCHER"/>
-             </intent-filter>
+                <!--<category android:name="android.intent.category.LAUNCHER"/>-->
+            <!--</intent-filter>-->
         </activity>
         <activity
             android:name=".activities.DishListActivity"
@@ -44,6 +44,20 @@
             android:name=".activities.ChangeInfoActivity"
             android:label="Личные данные">
         </activity>
+        <activity
+            android:name=".activities.OrderAcceptActivity"
+            android:label="Заказ">
+        </activity>
+        <activity android:name=".activities.RegisterActivity">
+        </activity>
+        <activity android:name=".activities.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
     </application>
 
 </manifest>

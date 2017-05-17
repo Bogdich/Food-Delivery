@@ -8,19 +8,15 @@ import com.google.gson.annotations.SerializedName;
  */
 
 public class LoginResponse {
-    @SerializedName("error")
+    @SerializedName("message")
     @Expose
-    private String error;
+    private String message;
     @SerializedName("responseID")
     @Expose
     private Integer userId;
 
-    public String getError() {
-        return error;
-    }
-
-    public void setError(String error) {
-        this.error = error;
+    public String getMessage() {
+        return message;
     }
 
     public Integer getUserId() {

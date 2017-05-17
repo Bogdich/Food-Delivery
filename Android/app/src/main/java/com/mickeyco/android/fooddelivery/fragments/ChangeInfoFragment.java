@@ -1,5 +1,8 @@
 package com.mickeyco.android.fooddelivery.fragments;
 
+import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.design.widget.Snackbar;
@@ -17,6 +20,7 @@ import com.mickeyco.android.fooddelivery.R;
 import com.mickeyco.android.fooddelivery.api.ApiFactory;
 import com.mickeyco.android.fooddelivery.api.RequestInterface;
 import com.mickeyco.android.fooddelivery.api.models.UserInfo;
+import com.mickeyco.android.fooddelivery.utils.BlurBuilder;
 import com.mickeyco.android.fooddelivery.utils.Constants;
 
 import retrofit2.Call;
@@ -36,13 +40,16 @@ public class ChangeInfoFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-
         View view = inflater.inflate(R.layout.fragment_register,container,false);
         initViews(view);
         return view;
     }
 
     private void initViews(View view){
+        Drawable drawable = new BitmapDrawable(getResources(), BlurBuilder.blur(getActivity(),
+                BitmapFactory.decodeResource(getResources(), R.drawable.change_data_background)));
+        view.findViewById(R.id.background_RL).setBackground(drawable);
+
         btn_update = (AppCompatButton)view.findViewById(R.id.bottom_btn);
         btn_update.setText("Обновить данные");
 
@@ -66,13 +73,16 @@ public class ChangeInfoFragment extends Fragment {
     }
 
     private void updateViews() {
-        et_login.setText(mUserInfo.getUser().getLogin());
-        et_password.setText(mUserInfo.getUser().getPass());
+        if (mUserInfo.getUser() != null) {
+            et_login.setText(mUserInfo.getUser().getLogin());
+            et_password.setText(mUserInfo.getUser().getPass());
+        }
         et_name.setText(mUserInfo.getName());
         et_surname.setText(mUserInfo.getSurname());
         et_address.setText(mUserInfo.getAddress());
         et_number.setText(mUserInfo.getNumber());
         et_email.setText(mUserInfo.getEmail());
+
     }
 
     private void updateInfo() {

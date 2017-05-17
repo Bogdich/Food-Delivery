@@ -1,6 +1,10 @@
 package com.mickeyco.android.fooddelivery.fragments;
 
 
+import android.content.Intent;
+import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.design.widget.Snackbar;
@@ -14,9 +18,11 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import com.mickeyco.android.fooddelivery.R;
+import com.mickeyco.android.fooddelivery.activities.LoginActivity;
 import com.mickeyco.android.fooddelivery.api.ApiFactory;
 import com.mickeyco.android.fooddelivery.api.RequestInterface;
 import com.mickeyco.android.fooddelivery.api.models.LoginResponse;
+import com.mickeyco.android.fooddelivery.utils.BlurBuilder;
 import com.mickeyco.android.fooddelivery.utils.Constants;
 
 import retrofit2.Call;
@@ -31,13 +37,16 @@ public class RegisterFragment extends Fragment implements View.OnClickListener{
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-
         View view = inflater.inflate(R.layout.fragment_register,container,false);
         initViews(view);
         return view;
     }
 
     private void initViews(View view){
+
+        Drawable drawable = new BitmapDrawable(getResources(), BlurBuilder.blur(getActivity(),
+                BitmapFactory.decodeResource(getResources(), R.drawable.login_bg)));
+        view.findViewById(R.id.background_RL).setBackground(drawable);
 
         btn_register = (AppCompatButton)view.findViewById(R.id.bottom_btn);
         btn_register.setText("Зарегистрироваться");
@@ -52,8 +61,8 @@ public class RegisterFragment extends Fragment implements View.OnClickListener{
         et_number = (EditText) view.findViewById(R.id.et_number);
         et_email = (EditText)view.findViewById(R.id.et_email);
 
-        progress = (ProgressBar)view.findViewById(R.id.progress);
-
+        progress = (ProgressBar)view.findViewById(R.id.register_progress_bar);
+        progress.setVisibility(View.INVISIBLE);
         btn_register.setOnClickListener(this);
         tv_login.setOnClickListener(this);
     }
@@ -83,8 +92,9 @@ public class RegisterFragment extends Fragment implements View.OnClickListener{
                     progress.setVisibility(View.VISIBLE);
                     registerProcess(login, password, name, surname, address, number, email);
 
+
                 } else {
-                    Snackbar.make(getView(), "Fields are empty !", Snackbar.LENGTH_LONG).show();
+                    Snackbar.make(getView(), "Не все поля заполнены!", Snackbar.LENGTH_LONG).show();
                 }
                 break;
 
@@ -124,10 +134,7 @@ public class RegisterFragment extends Fragment implements View.OnClickListener{
     }
 
     private void goToLogin(){
-
-//        Fragment login = new LoginFragment();
-//        FragmentTransaction ft = getFragmentManager().beginTransaction();
-//        ft.replace(R.id.fragmentContainer,login);
-//        ft.commit();
+        startActivity(new Intent(getActivity(), LoginActivity.class));
+        getActivity().finish();
     }
 }

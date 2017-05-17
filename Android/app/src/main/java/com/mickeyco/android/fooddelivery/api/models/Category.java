@@ -16,6 +16,9 @@ public class Category implements Parcelable {
     @SerializedName("name")
     private String mName;
 
+    @SerializedName("image_URL")
+    private String mImageUrl;
+
     public int getId() {
         return mId;
     }
@@ -32,6 +35,14 @@ public class Category implements Parcelable {
         mName = name;
     }
 
+    public String getImageUrl() {
+        return mImageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        mImageUrl = imageUrl;
+    }
+
     @Override
     public int describeContents() {
         return 0;
@@ -41,6 +52,7 @@ public class Category implements Parcelable {
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeInt(this.mId);
         dest.writeString(this.mName);
+        dest.writeString(this.mImageUrl);
     }
 
     public Category() {
@@ -49,9 +61,10 @@ public class Category implements Parcelable {
     protected Category(Parcel in) {
         this.mId = in.readInt();
         this.mName = in.readString();
+        this.mImageUrl = in.readString();
     }
 
-    public static final Parcelable.Creator<Category> CREATOR = new Parcelable.Creator<Category>() {
+    public static final Creator<Category> CREATOR = new Creator<Category>() {
         @Override
         public Category createFromParcel(Parcel source) {
             return new Category(source);

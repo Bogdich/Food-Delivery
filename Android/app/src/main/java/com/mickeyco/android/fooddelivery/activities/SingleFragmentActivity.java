@@ -2,6 +2,7 @@ package com.mickeyco.android.fooddelivery.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.annotation.LayoutRes;
 import android.support.annotation.Nullable;
 import android.support.design.widget.NavigationView;
@@ -14,6 +15,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.mickeyco.android.fooddelivery.R;
+import com.mickeyco.android.fooddelivery.utils.Constants;
 
 public abstract class SingleFragmentActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener{
@@ -92,6 +94,11 @@ public abstract class SingleFragmentActivity extends AppCompatActivity
             intent = new Intent(this, ContactsActivity.class);
         } else if (id == R.id.nav_change_info) {
             intent = new Intent(this, ChangeInfoActivity.class);
+        } else if (id == R.id.nav_logout) {
+            PreferenceManager.getDefaultSharedPreferences(this).edit().
+                    putBoolean(Constants.IS_LOGGED_IN, false).apply();
+            intent = new Intent(this, LoginActivity.class);
+
         }
         startActivity(intent);
         finish();

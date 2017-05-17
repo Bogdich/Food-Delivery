@@ -22,4 +22,13 @@
         android:textSize="28sp"
         android:textStyle="bold"
         android:textColor="#FFFFFF"/>
+
+    <ImageView
+        android:id="@+id/favorite_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/star_selected"
+        android:paddingBottom="10dp"/>
 </RelativeLayout>

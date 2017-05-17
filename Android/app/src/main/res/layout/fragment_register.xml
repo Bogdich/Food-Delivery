@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/background_RL"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <ScrollView
@@ -14,122 +15,97 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <android.support.design.widget.TextInputLayout
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="8dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
             <EditText
                 android:hint="Login"
                 android:id="@+id/et_login"
-                android:drawableRight="@drawable/ic_key"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-
-            </android.support.design.widget.TextInputLayout>
-
-            <android.support.design.widget.TextInputLayout
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="8dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="35dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/edit_text_rounded"
+                android:textColor="@color/colorPrimary"/>
 
                 <EditText
                     android:hint="Password"
                     android:id="@+id/et_password"
-                    android:drawableRight="@drawable/ic_key"
                     android:inputType="textPassword"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:background="@drawable/edit_text_rounded"
+                    android:textColor="@color/colorPrimary"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-
-            </android.support.design.widget.TextInputLayout>
-
-            <android.support.design.widget.TextInputLayout
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="8dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                    android:layout_height="35dp"
+                    android:layout_marginTop="24dp"/>
 
                 <EditText
                     android:hint="Name"
                     android:id="@+id/et_name"
-                    android:drawableRight="@drawable/ic_person"
                     android:inputType="textPersonName"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:background="@drawable/edit_text_rounded"
+                    android:textColor="@color/colorPrimary"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-
-            </android.support.design.widget.TextInputLayout>
-
-            <android.support.design.widget.TextInputLayout
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="8dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                    android:layout_height="35dp"
+                    android:layout_marginTop="24dp"/>
 
                 <EditText
                     android:hint="Surname"
                     android:id="@+id/et_surname"
-                    android:drawableRight="@drawable/ic_person"
                     android:inputType="textPersonName"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:background="@drawable/edit_text_rounded"
+                    android:textColor="@color/colorPrimary"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-
-            </android.support.design.widget.TextInputLayout>
-
-            <android.support.design.widget.TextInputLayout
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="8dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                    android:layout_height="35dp"
+                    android:layout_marginTop="24dp"/>
 
                 <EditText
                     android:hint="Email"
                     android:id="@+id/et_email"
-                    android:drawableRight="@drawable/ic_email"
                     android:inputType="textEmailAddress"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:background="@drawable/edit_text_rounded"
+                    android:textColor="@color/colorPrimary"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="35dp"
+                    android:layout_marginTop="24dp"/>
 
-            </android.support.design.widget.TextInputLayout>
-
-            <android.support.design.widget.TextInputLayout
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="8dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
 
                 <EditText
                     android:hint="Address"
                     android:id="@+id/et_address"
-                    android:drawableRight="@drawable/ic_email"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:background="@drawable/edit_text_rounded"
+                    android:textColor="@color/colorPrimary"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-
-            </android.support.design.widget.TextInputLayout>
-
-            <android.support.design.widget.TextInputLayout
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="8dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                    android:layout_height="35dp"
+                    android:layout_marginTop="24dp"/>
 
                 <EditText
                     android:hint="Phone number"
                     android:id="@+id/et_number"
-                    android:drawableRight="@drawable/ic_email"
                     android:inputType="phone"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:background="@drawable/edit_text_rounded"
+                    android:textColor="@color/colorPrimary"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-
-            </android.support.design.widget.TextInputLayout>
+                    android:layout_height="35dp"
+                    android:layout_marginTop="24dp"/>
 
         <android.support.v7.widget.AppCompatButton
             android:id="@+id/bottom_btn"
-            android:background="@color/colorPrimary"
-            android:textColor="@android:color/white"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="24dp"
+            android:textColor="@color/colorAccent"
+            android:background="@drawable/transparent_rounded_corners_button"/>
 
         <TextView
             android:id="@+id/tv_login"
@@ -139,8 +115,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:visibility="invisible"/>
-
-
 
         </LinearLayout>
     </ScrollView>

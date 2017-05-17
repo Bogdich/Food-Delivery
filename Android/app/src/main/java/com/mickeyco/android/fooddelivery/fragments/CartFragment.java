@@ -1,5 +1,6 @@
 package com.mickeyco.android.fooddelivery.fragments;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.Snackbar;
@@ -41,6 +42,23 @@ public class CartFragment extends Fragment {
     private Button mCreateOrderBtn;
     private int mTotalPrice;
     private TextView mEmptyText;
+    private Callbacks mCallbacks;
+
+    public interface Callbacks {
+        void onButtonClicked(int totalPrice);
+    }
+
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        mCallbacks = (Callbacks) context;
+    }
+
+    @Override
+    public void onDetach() {
+        super.onDetach();
+        mCallbacks = null;
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -54,6 +72,13 @@ public class CartFragment extends Fragment {
         mProgressBar = (ProgressBar) rootView.findViewById(R.id.cart_progress_bar);
         getCategories();
         mCreateOrderBtn = (Button) rootView.findViewById(R.id.create_order_btn);
+        mEmptyText = (TextView) rootView.findViewById(R.id.empty_cart_text);
+        (rootView.findViewById(R.id.create_order_btn)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mCallbacks.onButtonClicked(mTotalPrice);
+            }
+        });
         return rootView;
     }
 
@@ -61,7 +86,6 @@ public class CartFragment extends Fragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setRetainInstance(true);
-
     }
 
     private void getCategories() {
@@ -116,7 +140,7 @@ public class CartFragment extends Fragment {
                         mDishAmount.setText(mAmount + "x");
                         CartDishes.getInstance().addDish(mDish, mAmount);
                         mTotalPrice -= mDish.getPrice();
-                        mCreateOrderBtn.setText("Итого: " + mTotalPrice + " BYN");
+                        mCreateOrderBtn.setText("Итого: " + mTotalPrice + " BYN\nОформить заказ");
                     }
                 }
             });
@@ -129,7 +153,7 @@ public class CartFragment extends Fragment {
                         mDishAmount.setText(mAmount + "x");
                         CartDishes.getInstance().addDish(mDish, mAmount);
                         mTotalPrice += mDish.getPrice();
-                        mCreateOrderBtn.setText("Итого: " + mTotalPrice + " BYN");
+                        mCreateOrderBtn.setText("Итого: " + mTotalPrice + " BYN\nОформить заказ");
                     }
                 }
             });
@@ -142,14 +166,13 @@ public class CartFragment extends Fragment {
             for (Category category: mCategories) {
                 if (category.getId() - 1 == mDish.getCategoryId()) {
                     mCategoryName.setText(category.getName());
-//                    category.getUrl
-                    Picasso.with(getActivity()).load(Constants.CATEGORY_IMAGE_URL).fit().into(mBgImage);
+                    Picasso.with(getActivity()).load(category.getImageUrl()).fit().into(mBgImage);
                 }
             }
             mDishAmount.setText(mAmount + "x");
             mDishPrice.setText(mDish.getPrice() + " BYN");
             mTotalPrice += dish.getPrice() * amount;
-            mCreateOrderBtn.setText("Итого: " + mTotalPrice + " BYN");
+            mCreateOrderBtn.setText("Итого: " + mTotalPrice + " BYN\nОформить заказ");
         }
     }
 
@@ -161,6 +184,10 @@ public class CartFragment extends Fragment {
         public CartAdapter(HashMap<Dish, Integer> dishes) {
             mDishesMap = dishes;
             mDishesList = new ArrayList<>(dishes.keySet());
+            if (mDishesList.isEmpty()) {
+                mEmptyText.setVisibility(View.VISIBLE);
+                mCreateOrderBtn.setVisibility(View.INVISIBLE);
+            }
         }
 
         @Override

@@ -8,18 +8,23 @@
             android:title="Меню"/>
         <item
             android:id="@+id/nav_history"
-            android:icon="@drawable/order_history_selected"
+            android:icon="@drawable/order_history"
             android:title="История заказов"/>
 
         <item
             android:id="@+id/nav_favorites"
-            android:icon="@drawable/favorite_selected"
+            android:icon="@drawable/favorite"
             android:title="Избранное"/>
 
         <item
             android:id="@+id/nav_change_info"
-            android:icon="@drawable/settings_selected"
+            android:icon="@drawable/settings"
             android:title="Личные данные"/>
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/settings"
+            android:title="Выйти"/>
     </group>
 
 

@@ -19,7 +19,7 @@
         </categories>
         <offers>
             <offer id="10117">
-                <url>http://ufa.farfor.ru/pizza/gavaiskaya-40-spec/</url>
+                <imageUrl>http://ufa.farfor.ru/pizza/gavaiskaya-40-spec/</imageUrl>
                 <name>Гавайская 40см</name>
                 <price>440.00</price>
                 <description>
@@ -33,7 +33,7 @@
                 <param name="Вес">1015.00 гр</param>
             </offer>
             <offer id="10128">
-                <url>http://ufa.farfor.ru/pizza/gavaiskaya-30sm-spec/</url>
+                <imageUrl>http://ufa.farfor.ru/pizza/gavaiskaya-30sm-spec/</imageUrl>
                 <name>Гавайская 30см</name>
                 <price>240.00</price>
                 <description>
@@ -47,7 +47,7 @@
                 <param name="Вес">610.00 гр</param>
             </offer>
             <offer id="7616">
-                <url>http://ufa.farfor.ru/set-constructor/double-pizza/</url>
+                <imageUrl>http://ufa.farfor.ru/set-constructor/double-pizza/</imageUrl>
                 <name>ДаблПицца</name>
                 <price>390.00</price>
                 <description>
@@ -57,7 +57,7 @@
                 <categoryId>25</categoryId>
             </offer>
             <offer id="2950">
-                <url>http://ufa.farfor.ru/dessert/shoko_muffin/</url>
+                <imageUrl>http://ufa.farfor.ru/dessert/shoko_muffin/</imageUrl>
                 <name>Маффин шоколадный</name>
                 <price>50.00</price>
                 <description>Шоколадный маффин</description>
@@ -72,7 +72,7 @@
                 <param name="Углеводы">0.432</param>
             </offer>
             <offer id="3220">
-                <url>http://ufa.farfor.ru/zakuski/chesnochnyie-grenki/</url>
+                <imageUrl>http://ufa.farfor.ru/zakuski/chesnochnyie-grenki/</imageUrl>
                 <name>Чесночные гренки</name>
                 <price>90.00</price>
                 <description>
@@ -89,7 +89,7 @@
                 <param name="Углеводы">38.813</param>
             </offer>
             <offer id="1892">
-                <url>http://ufa.farfor.ru/lapsha/1/</url>
+                <imageUrl>http://ufa.farfor.ru/lapsha/1/</imageUrl>
                 <name>Фунчоза с овощами под соусом Кинг</name>
                 <price>180.00</price>
                 <description>
@@ -106,7 +106,7 @@
                 <param name="Углеводы">58.912</param>
             </offer>
             <offer id="5797">
-                <url>http://ufa.farfor.ru/set-constructor/unlim/</url>
+                <imageUrl>http://ufa.farfor.ru/set-constructor/unlim/</imageUrl>
                 <name>Unlim</name>
                 <price>1990.00</price>
                 <description>роллы+пицца+салат</description>
@@ -114,7 +114,7 @@
                 <categoryId>25</categoryId>
             </offer>
             <offer id="1972">
-                <url>http://ufa.farfor.ru/dessert/pirog_clubnika/</url>
+                <imageUrl>http://ufa.farfor.ru/dessert/pirog_clubnika/</imageUrl>
                 <name>Клубничный пирог</name>
                 <price>150.00</price>
                 <description/>
@@ -129,7 +129,7 @@
                 <param name="Углеводы">0.0</param>
             </offer>
             <offer id="1941">
-                <url>http://ufa.farfor.ru/japan/sushi/sushi_s_lososem/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/sushi/sushi_s_lososem/</imageUrl>
                 <name>Суси с лососем</name>
                 <price>70.00</price>
                 <description>Нежный норвежский лосось</description>
@@ -144,7 +144,7 @@
                 <param name="Углеводы">16.989</param>
             </offer>
             <offer id="2099">
-                <url>http://ufa.farfor.ru/japan/rolly/roll_s_ogurcom/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/roll_s_ogurcom/</imageUrl>
                 <name>Ролл с огурцом</name>
                 <price>79.00</price>
                 <description>
@@ -161,9 +161,9 @@
                 <param name="Углеводы">26.93</param>
             </offer>
             <offer id="8897">
-                <url>
+                <imageUrl>
                     http://ufa.farfor.ru/japan/sety/superset-po-telefonu/
-                </url>
+                </imageUrl>
                 <name>Суперсет.</name>
                 <price>850.00</price>
                 <description>
@@ -177,7 +177,7 @@
                 <param name="Вес">1290.00 гр</param>
             </offer>
             <offer id="5019">
-                <url>http://ufa.farfor.ru/dobawky/vasabi/</url>
+                <imageUrl>http://ufa.farfor.ru/dobawky/vasabi/</imageUrl>
                 <name>Васаби</name>
                 <price>10.00</price>
                 <description>
@@ -194,9 +194,9 @@
                 <param name="Углеводы">40.0</param>
             </offer>
             <offer id="1939">
-                <url>
+                <imageUrl>
                     http://ufa.farfor.ru/japan/sushi/susi_s_kopchenym_lososem/
-                </url>
+                </imageUrl>
                 <name>Суси с копченым лососем</name>
                 <price>70.00</price>
                 <description>Вкуснейший копченый лосось</description>
@@ -211,7 +211,7 @@
                 <param name="Углеводы">16.989</param>
             </offer>
             <offer id="2107">
-                <url>http://ufa.farfor.ru/japan/rolly/roll_kappoejra/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/roll_kappoejra/</imageUrl>
                 <name>Каппоэйра</name>
                 <price>89.00</price>
                 <description>Классический ролл с огурцом и сливочным сыром.</description>
@@ -226,7 +226,7 @@
                 <param name="Углеводы">32.518</param>
             </offer>
             <offer id="8244">
-                <url>http://ufa.farfor.ru/japan/sety/superset/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/sety/superset/</imageUrl>
                 <name>Суперсет</name>
                 <price>750.00</price>
                 <description>
@@ -240,7 +240,7 @@
                 <param name="Вес">1290.00 гр</param>
             </offer>
             <offer id="3130">
-                <url>http://ufa.farfor.ru/dobawky/soevyij_sous/</url>
+                <imageUrl>http://ufa.farfor.ru/dobawky/soevyij_sous/</imageUrl>
                 <name>Соевый соус</name>
                 <price>20.00</price>
                 <description>
@@ -257,7 +257,7 @@
                 <param name="Углеводы">43.0</param>
             </offer>
             <offer id="2112">
-                <url>http://ufa.farfor.ru/zakuski/fri-kart/</url>
+                <imageUrl>http://ufa.farfor.ru/zakuski/fri-kart/</imageUrl>
                 <name>Картофель Фри</name>
                 <price>90.00</price>
                 <description>
@@ -274,7 +274,7 @@
                 <param name="Углеводы">19.273</param>
             </offer>
             <offer id="1888">
-                <url>http://ufa.farfor.ru/lapsha/2/</url>
+                <imageUrl>http://ufa.farfor.ru/lapsha/2/</imageUrl>
                 <name>Соба с курицей в остро-сладком соусе</name>
                 <price>190.00</price>
                 <description>
@@ -291,7 +291,7 @@
                 <param name="Углеводы">40.811</param>
             </offer>
             <offer id="3233">
-                <url>http://ufa.farfor.ru/salaty/grecheskiy/</url>
+                <imageUrl>http://ufa.farfor.ru/salaty/grecheskiy/</imageUrl>
                 <name>Салат Греческий</name>
                 <price>190.00</price>
                 <description>
@@ -308,7 +308,7 @@
                 <param name="Углеводы">5.566</param>
             </offer>
             <offer id="1957">
-                <url>http://ufa.farfor.ru/japan/teploe/tyahon_ovoshi/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/teploe/tyahon_ovoshi/</imageUrl>
                 <name>Тяхан с овощами</name>
                 <price>160.00</price>
                 <description>
@@ -325,7 +325,7 @@
                 <param name="Углеводы">15.379</param>
             </offer>
             <offer id="8908">
-                <url>http://ufa.farfor.ru/pizza/chicken-cheese-30/</url>
+                <imageUrl>http://ufa.farfor.ru/pizza/chicken-cheese-30/</imageUrl>
                 <name>Чикен Чиз 30см</name>
                 <price>290.00</price>
                 <description>
@@ -339,7 +339,7 @@
                 <param name="Вес">590.00 гр</param>
             </offer>
             <offer id="1942">
-                <url>http://ufa.farfor.ru/japan/sushi/susi_s_tuncom/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/sushi/susi_s_tuncom/</imageUrl>
                 <name>Суси с тунцом</name>
                 <price>70.00</price>
                 <description>Нежнейший тунец</description>
@@ -354,7 +354,7 @@
                 <param name="Углеводы">16.989</param>
             </offer>
             <offer id="2101">
-                <url>http://ufa.farfor.ru/japan/rolly/roll_s_krevetkoj/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/roll_s_krevetkoj/</imageUrl>
                 <name>Ролл с креветкой</name>
                 <price>129.00</price>
                 <description>Классический ролл с тигровой креветкой.</description>
@@ -369,7 +369,7 @@
                 <param name="Углеводы">26.264</param>
             </offer>
             <offer id="9645">
-                <url>http://ufa.farfor.ru/japan/sety/superset2/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/sety/superset2/</imageUrl>
                 <name>Суперсет 2</name>
                 <price>990.00</price>
                 <description>
@@ -387,7 +387,7 @@
                 <param name="Углеводы">14.808</param>
             </offer>
             <offer id="5028">
-                <url>http://ufa.farfor.ru/dobawky/imbir/</url>
+                <imageUrl>http://ufa.farfor.ru/dobawky/imbir/</imageUrl>
                 <name>Имбирь</name>
                 <price>25.00</price>
                 <description>
@@ -404,7 +404,7 @@
                 <param name="Углеводы">27.65</param>
             </offer>
             <offer id="2115">
-                <url>http://ufa.farfor.ru/zakuski/fri-dolkami/</url>
+                <imageUrl>http://ufa.farfor.ru/zakuski/fri-dolkami/</imageUrl>
                 <name>Картофель дольками</name>
                 <price>90.00</price>
                 <description>
@@ -421,7 +421,7 @@
                 <param name="Углеводы">19.273</param>
             </offer>
             <offer id="1889">
-                <url>http://ufa.farfor.ru/lapsha/7/</url>
+                <imageUrl>http://ufa.farfor.ru/lapsha/7/</imageUrl>
                 <name>Удон с курицей в остро-сладком соусе</name>
                 <price>190.00</price>
                 <description>
@@ -438,7 +438,7 @@
                 <param name="Углеводы">33.074</param>
             </offer>
             <offer id="1944">
-                <url>http://ufa.farfor.ru/japan/supy/miso/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/supy/miso/</imageUrl>
                 <name>Мисо-суп</name>
                 <price>100.00</price>
                 <description>
@@ -455,7 +455,7 @@
                 <param name="Углеводы">13.987</param>
             </offer>
             <offer id="3236">
-                <url>http://ufa.farfor.ru/salaty/salat-tsezar/</url>
+                <imageUrl>http://ufa.farfor.ru/salaty/salat-tsezar/</imageUrl>
                 <name>Салат Цезарь</name>
                 <price>190.00</price>
                 <description>
@@ -472,7 +472,7 @@
                 <param name="Углеводы">19.0</param>
             </offer>
             <offer id="8919">
-                <url>http://ufa.farfor.ru/pizza/chicken-cheese-40/</url>
+                <imageUrl>http://ufa.farfor.ru/pizza/chicken-cheese-40/</imageUrl>
                 <name>Чикен Чиз 40см</name>
                 <price>490.00</price>
                 <description>
@@ -486,7 +486,7 @@
                 <param name="Вес">1010.00 гр</param>
             </offer>
             <offer id="1943">
-                <url>http://ufa.farfor.ru/japan/sushi/susi_s_ugrem/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/sushi/susi_s_ugrem/</imageUrl>
                 <name>Суси с угрём</name>
                 <price>90.00</price>
                 <description>Нежнейший копченый речной угорь</description>
@@ -501,7 +501,7 @@
                 <param name="Углеводы">22.563</param>
             </offer>
             <offer id="2100">
-                <url>http://ufa.farfor.ru/japan/rolly/roll_s_lososem/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/roll_s_lososem/</imageUrl>
                 <name>Ролл с лососем</name>
                 <price>129.00</price>
                 <description>Классический ролл с лососем.</description>
@@ -516,7 +516,7 @@
                 <param name="Углеводы">26.264</param>
             </offer>
             <offer id="9655">
-                <url>http://ufa.farfor.ru/japan/sety/superset3/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/sety/superset3/</imageUrl>
                 <name>Суперсет 3</name>
                 <price>1390.00</price>
                 <description>
@@ -534,9 +534,9 @@
                 <param name="Углеводы">13.926</param>
             </offer>
             <offer id="5032">
-                <url>
+                <imageUrl>
                     http://ufa.farfor.ru/dobawky/firmennyij-tomatnyij-sous/
-                </url>
+                </imageUrl>
                 <name>Фирменный томатный соус</name>
                 <price>30.00</price>
                 <description>
@@ -549,7 +549,7 @@
                 <param name="Вес">40.00 гр</param>
             </offer>
             <offer id="1887">
-                <url>http://ufa.farfor.ru/lapsha/6/</url>
+                <imageUrl>http://ufa.farfor.ru/lapsha/6/</imageUrl>
                 <name>Соба с говядиной в соусе Кинг</name>
                 <price>220.00</price>
                 <description>
@@ -566,7 +566,7 @@
                 <param name="Углеводы">45.878</param>
             </offer>
             <offer id="1945">
-                <url>http://ufa.farfor.ru/japan/supy/miso-syake/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/supy/miso-syake/</imageUrl>
                 <name>Мисо-сяке</name>
                 <price>130.00</price>
                 <description>
@@ -583,7 +583,7 @@
                 <param name="Углеводы">13.955</param>
             </offer>
             <offer id="1965">
-                <url>http://ufa.farfor.ru/napitki/coca-cola-zero/</url>
+                <imageUrl>http://ufa.farfor.ru/napitki/coca-cola-zero/</imageUrl>
                 <name>Coca-cola (Zero) 0,5л</name>
                 <price>60.00</price>
                 <description/>
@@ -594,7 +594,7 @@
                 <param name="Вес">500.00 гр</param>
             </offer>
             <offer id="3235">
-                <url>http://ufa.farfor.ru/salaty/funchoza/</url>
+                <imageUrl>http://ufa.farfor.ru/salaty/funchoza/</imageUrl>
                 <name>Салат с фунчозой</name>
                 <price>120.00</price>
                 <description>
@@ -611,7 +611,7 @@
                 <param name="Углеводы">27.273</param>
             </offer>
             <offer id="1890">
-                <url>http://ufa.farfor.ru/lapsha/3/</url>
+                <imageUrl>http://ufa.farfor.ru/lapsha/3/</imageUrl>
                 <name>Удон с морепродуктами в соусе Терияки</name>
                 <price>220.00</price>
                 <description>
@@ -628,7 +628,7 @@
                 <param name="Углеводы">31.587</param>
             </offer>
             <offer id="8930">
-                <url>http://ufa.farfor.ru/pizza/pizza-margarita-30/</url>
+                <imageUrl>http://ufa.farfor.ru/pizza/pizza-margarita-30/</imageUrl>
                 <name>Маргарита 30см</name>
                 <price>250.00</price>
                 <description>
@@ -642,7 +642,7 @@
                 <param name="Вес">585.00 гр</param>
             </offer>
             <offer id="3217">
-                <url>http://ufa.farfor.ru/zakuski/naggetsyi/</url>
+                <imageUrl>http://ufa.farfor.ru/zakuski/naggetsyi/</imageUrl>
                 <name>Куриные наггетсы</name>
                 <price>160.00</price>
                 <description>Кусочки куриного филе, обжаренные во фритюре.</description>
@@ -657,7 +657,7 @@
                 <param name="Углеводы">2.8</param>
             </offer>
             <offer id="1940">
-                <url>http://ufa.farfor.ru/japan/sushi/susi_s_krevetkoi/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/sushi/susi_s_krevetkoi/</imageUrl>
                 <name>Суси с креветкой</name>
                 <price>90.00</price>
                 <description>Вареная королевская креветка</description>
@@ -672,7 +672,7 @@
                 <param name="Углеводы">16.989</param>
             </offer>
             <offer id="5808">
-                <url>http://ufa.farfor.ru/set-constructor/xxxl/</url>
+                <imageUrl>http://ufa.farfor.ru/set-constructor/xxxl/</imageUrl>
                 <name>XXXL</name>
                 <price>1490.00</price>
                 <description>роллы+пицца+паста</description>
@@ -680,7 +680,7 @@
                 <categoryId>25</categoryId>
             </offer>
             <offer id="2102">
-                <url>http://ufa.farfor.ru/japan/rolly/roll_s_tuncom/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/roll_s_tuncom/</imageUrl>
                 <name>Ролл с тунцом</name>
                 <price>129.00</price>
                 <description>Классический ролл с тунцом.</description>
@@ -695,7 +695,7 @@
                 <param name="Углеводы">26.264</param>
             </offer>
             <offer id="1976">
-                <url>http://ufa.farfor.ru/dessert/chizkejk-nyu-jork/</url>
+                <imageUrl>http://ufa.farfor.ru/dessert/chizkejk-nyu-jork/</imageUrl>
                 <name>Чизкейк Нью-Йорк</name>
                 <price>150.00</price>
                 <description>
@@ -710,9 +710,9 @@
                 <param name="Углеводы">0.0</param>
             </offer>
             <offer id="5035">
-                <url>
+                <imageUrl>
                     http://ufa.farfor.ru/dobawky/firmennyij-majoneznyij-sous/
-                </url>
+                </imageUrl>
                 <name>Фирменный майонезный соус</name>
                 <price>30.00</price>
                 <description>
@@ -725,7 +725,7 @@
                 <param name="Вес">40.00 гр</param>
             </offer>
             <offer id="1955">
-                <url>http://ufa.farfor.ru/japan/teploe/tyahon_chiken/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/teploe/tyahon_chiken/</imageUrl>
                 <name>Тяхан с курицей</name>
                 <price>190.00</price>
                 <description>
@@ -742,7 +742,7 @@
                 <param name="Углеводы">15.379</param>
             </offer>
             <offer id="2103">
-                <url>http://ufa.farfor.ru/japan/rolly/roll_s_ugrem/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/roll_s_ugrem/</imageUrl>
                 <name>Ролл с угрём</name>
                 <price>129.00</price>
                 <description>
@@ -759,9 +759,9 @@
                 <param name="Углеводы">27.275</param>
             </offer>
             <offer id="1977">
-                <url>
+                <imageUrl>
                     http://ufa.farfor.ru/dessert/chizkejk-nyu-jork-vishnya/
-                </url>
+                </imageUrl>
                 <name>Чизкейк Нью-Йорк (вишня)</name>
                 <price>150.00</price>
                 <description>
@@ -776,7 +776,7 @@
                 <param name="Углеводы">0.0</param>
             </offer>
             <offer id="3160">
-                <url>http://ufa.farfor.ru/dobawky/syirnyij_sous/</url>
+                <imageUrl>http://ufa.farfor.ru/dobawky/syirnyij_sous/</imageUrl>
                 <name>Соус Сырный</name>
                 <price>30.00</price>
                 <description>
@@ -793,7 +793,7 @@
                 <param name="Углеводы">5.5</param>
             </offer>
             <offer id="1953">
-                <url>http://ufa.farfor.ru/japan/teploe/karavai/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/teploe/karavai/</imageUrl>
                 <name>Каравай</name>
                 <price>200.00</price>
                 <description>
@@ -810,7 +810,7 @@
                 <param name="Углеводы">12.841</param>
             </offer>
             <offer id="1946">
-                <url>http://ufa.farfor.ru/japan/supy/miso-unagi/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/supy/miso-unagi/</imageUrl>
                 <name>Мисо-унаги</name>
                 <price>150.00</price>
                 <description>
@@ -827,7 +827,7 @@
                 <param name="Углеводы">13.955</param>
             </offer>
             <offer id="1964">
-                <url>http://ufa.farfor.ru/napitki/coca-cola/</url>
+                <imageUrl>http://ufa.farfor.ru/napitki/coca-cola/</imageUrl>
                 <name>Coca-cola 0.5л</name>
                 <price>60.00</price>
                 <description/>
@@ -839,7 +839,7 @@
                 <param name="Вес">500.00 гр</param>
             </offer>
             <offer id="1951">
-                <url>http://ufa.farfor.ru/salaty/chuka/</url>
+                <imageUrl>http://ufa.farfor.ru/salaty/chuka/</imageUrl>
                 <name>Салат Чука</name>
                 <price>120.00</price>
                 <description>
@@ -856,7 +856,7 @@
                 <param name="Углеводы">0.555</param>
             </offer>
             <offer id="1891">
-                <url>http://ufa.farfor.ru/lapsha/5/</url>
+                <imageUrl>http://ufa.farfor.ru/lapsha/5/</imageUrl>
                 <name>Удон со свининой в остро-сладком соусе</name>
                 <price>220.00</price>
                 <description>
@@ -873,7 +873,7 @@
                 <param name="Углеводы">33.555</param>
             </offer>
             <offer id="8941">
-                <url>http://ufa.farfor.ru/pizza/pizza-margarita-40/</url>
+                <imageUrl>http://ufa.farfor.ru/pizza/pizza-margarita-40/</imageUrl>
                 <name>Маргарита 40см</name>
                 <price>390.00</price>
                 <description>
@@ -887,7 +887,7 @@
                 <param name="Вес">965.00 гр</param>
             </offer>
             <offer id="2116">
-                <url>http://ufa.farfor.ru/zakuski/kolca_kalmarov/</url>
+                <imageUrl>http://ufa.farfor.ru/zakuski/kolca_kalmarov/</imageUrl>
                 <name>Кольца кальмаров</name>
                 <price>170.00</price>
                 <description>
@@ -904,7 +904,7 @@
                 <param name="Углеводы">5.867</param>
             </offer>
             <offer id="5817">
-                <url>http://ufa.farfor.ru/set-constructor/xxl/</url>
+                <imageUrl>http://ufa.farfor.ru/set-constructor/xxl/</imageUrl>
                 <name>XXL</name>
                 <price>1290.00</price>
                 <description>пятничный роллы+закуска+пицца</description>
@@ -912,7 +912,7 @@
                 <categoryId>25</categoryId>
             </offer>
             <offer id="9677">
-                <url>http://ufa.farfor.ru/japan/rolly/minion/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/minion/</imageUrl>
                 <name>Миньон</name>
                 <price>149.00</price>
                 <description>
@@ -925,9 +925,9 @@
                 <param name="Вес">160.00 гр</param>
             </offer>
             <offer id="1978">
-                <url>
+                <imageUrl>
                     http://ufa.farfor.ru/dessert/chizkejk-nyu-jork-karamel/
-                </url>
+                </imageUrl>
                 <name>Чизкейк Нью-Йорк (карамель)</name>
                 <price>150.00</price>
                 <description>
@@ -942,7 +942,7 @@
                 <param name="Углеводы">0.0</param>
             </offer>
             <offer id="3131">
-                <url>http://ufa.farfor.ru/dobawky/spajsi_sous/</url>
+                <imageUrl>http://ufa.farfor.ru/dobawky/spajsi_sous/</imageUrl>
                 <name>Соус Спайси</name>
                 <price>30.00</price>
                 <description>
@@ -959,7 +959,7 @@
                 <param name="Углеводы">5.5</param>
             </offer>
             <offer id="4973">
-                <url>http://ufa.farfor.ru/shashlyk/myasnoe-assorti/</url>
+                <imageUrl>http://ufa.farfor.ru/shashlyk/myasnoe-assorti/</imageUrl>
                 <name>Овощи - гриль</name>
                 <price>160.00</price>
                 <description>
@@ -972,7 +972,7 @@
                 <param name="Вес">270.00 гр</param>
             </offer>
             <offer id="1947">
-                <url>http://ufa.farfor.ru/japan/supy/miso-ebi/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/supy/miso-ebi/</imageUrl>
                 <name>Мисо-эби</name>
                 <price>150.00</price>
                 <description>
@@ -989,7 +989,7 @@
                 <param name="Углеводы">13.955</param>
             </offer>
             <offer id="1966">
-                <url>http://ufa.farfor.ru/napitki/coca-cola1/</url>
+                <imageUrl>http://ufa.farfor.ru/napitki/coca-cola1/</imageUrl>
                 <name>Coca-cola 1л</name>
                 <price>80.00</price>
                 <description/>
@@ -1001,7 +1001,7 @@
                 <param name="Вес">1000.00 гр</param>
             </offer>
             <offer id="1949">
-                <url>http://ufa.farfor.ru/salaty/shiitaki/</url>
+                <imageUrl>http://ufa.farfor.ru/salaty/shiitaki/</imageUrl>
                 <name>Салат Шиитаке Сарада</name>
                 <price>190.00</price>
                 <description>
@@ -1018,7 +1018,7 @@
                 <param name="Углеводы">13.797</param>
             </offer>
             <offer id="1893">
-                <url>http://ufa.farfor.ru/lapsha/4/</url>
+                <imageUrl>http://ufa.farfor.ru/lapsha/4/</imageUrl>
                 <name>Фунчоза со свининой в соусе Терияки</name>
                 <price>220.00</price>
                 <description>
@@ -1031,9 +1031,9 @@
                 <param name="Вес">300.00 гр</param>
             </offer>
             <offer id="1935">
-                <url>
+                <imageUrl>
                     http://ufa.farfor.ru/japan/sushi/gunkan_s_lososem_ostryj/
-                </url>
+                </imageUrl>
                 <name>Гункан с лососем (острый)</name>
                 <price>110.00</price>
                 <description>
@@ -1050,7 +1050,7 @@
                 <param name="Углеводы">19.731</param>
             </offer>
             <offer id="8974">
-                <url>http://ufa.farfor.ru/pizza/4-sezona-30/</url>
+                <imageUrl>http://ufa.farfor.ru/pizza/4-sezona-30/</imageUrl>
                 <name>Четыре сезона 30см</name>
                 <price>290.00</price>
                 <description>
@@ -1064,7 +1064,7 @@
                 <param name="Вес">560.00 гр</param>
             </offer>
             <offer id="3219">
-                <url>http://ufa.farfor.ru/zakuski/syirnyie-palochki/</url>
+                <imageUrl>http://ufa.farfor.ru/zakuski/syirnyie-palochki/</imageUrl>
                 <name>Сырные палочки</name>
                 <price>190.00</price>
                 <description>
@@ -1081,9 +1081,9 @@
                 <param name="Углеводы">0.0</param>
             </offer>
             <offer id="1936">
-                <url>
+                <imageUrl>
                     http://ufa.farfor.ru/japan/sushi/gunkan_s_tuncom_ostryj/
-                </url>
+                </imageUrl>
                 <name>Гункан с тунцом (острый)</name>
                 <price>110.00</price>
                 <description>
@@ -1100,7 +1100,7 @@
                 <param name="Углеводы">19.731</param>
             </offer>
             <offer id="5826">
-                <url>http://ufa.farfor.ru/set-constructor/xl/</url>
+                <imageUrl>http://ufa.farfor.ru/set-constructor/xl/</imageUrl>
                 <name>XL</name>
                 <price>990.00</price>
                 <description>СЛС роллы+паста+салат</description>
@@ -1108,7 +1108,7 @@
                 <categoryId>25</categoryId>
             </offer>
             <offer id="8985">
-                <url>http://ufa.farfor.ru/pizza/4-sezona-40/</url>
+                <imageUrl>http://ufa.farfor.ru/pizza/4-sezona-40/</imageUrl>
                 <name>Четыре сезона 40см</name>
                 <price>430.00</price>
                 <description>
@@ -1122,9 +1122,9 @@
                 <param name="Вес">970.00 гр</param>
             </offer>
             <offer id="2104">
-                <url>
+                <imageUrl>
                     http://ufa.farfor.ru/japan/rolly/syake_kunsej-krim/
-                </url>
+                </imageUrl>
                 <name>Сяке кунсей-крим</name>
                 <price>149.00</price>
                 <description>
@@ -1141,9 +1141,9 @@
                 <param name="Углеводы">23.312</param>
             </offer>
             <offer id="1979">
-                <url>
+                <imageUrl>
                     http://ufa.farfor.ru/dessert/chizkejk-nyu-jork-clubnika/
-                </url>
+                </imageUrl>
                 <name>Чизкейк Нью-Йорк (клубника)</name>
                 <price>150.00</price>
                 <description>
@@ -1158,7 +1158,7 @@
                 <param name="Углеводы">0.0</param>
             </offer>
             <offer id="1967">
-                <url>http://ufa.farfor.ru/napitki/coca-cola2/</url>
+                <imageUrl>http://ufa.farfor.ru/napitki/coca-cola2/</imageUrl>
                 <name>Coca-cola 2л</name>
                 <price>100.00</price>
                 <description/>
@@ -1170,7 +1170,7 @@
                 <param name="Вес">2000.00 гр</param>
             </offer>
             <offer id="2113">
-                <url>http://ufa.farfor.ru/zakuski/chiken_panko/</url>
+                <imageUrl>http://ufa.farfor.ru/zakuski/chiken_panko/</imageUrl>
                 <name>Куриные крылышки</name>
                 <price>190.00</price>
                 <description>
@@ -1187,7 +1187,7 @@
                 <param name="Углеводы">2.648</param>
             </offer>
             <offer id="5835">
-                <url>http://ufa.farfor.ru/set-constructor/l/</url>
+                <imageUrl>http://ufa.farfor.ru/set-constructor/l/</imageUrl>
                 <name>L</name>
                 <price>890.00</price>
                 <description>48уд роллы+салат</description>
@@ -1195,7 +1195,7 @@
                 <categoryId>25</categoryId>
             </offer>
             <offer id="8952">
-                <url>http://ufa.farfor.ru/pizza/pizza-myasnaya-30/</url>
+                <imageUrl>http://ufa.farfor.ru/pizza/pizza-myasnaya-30/</imageUrl>
                 <name>Мясная 30см</name>
                 <price>310.00</price>
                 <description>
@@ -1209,7 +1209,7 @@
                 <param name="Вес">520.00 гр</param>
             </offer>
             <offer id="1956">
-                <url>http://ufa.farfor.ru/japan/teploe/tyahon_losos/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/teploe/tyahon_losos/</imageUrl>
                 <name>Тяхан с лососем</name>
                 <price>240.00</price>
                 <description>
@@ -1226,7 +1226,7 @@
                 <param name="Углеводы">15.379</param>
             </offer>
             <offer id="3145">
-                <url>http://ufa.farfor.ru/dobawky/sous-gamadari/</url>
+                <imageUrl>http://ufa.farfor.ru/dobawky/sous-gamadari/</imageUrl>
                 <name>Соус Гамадари</name>
                 <price>30.00</price>
                 <description>
@@ -1243,7 +1243,7 @@
                 <param name="Углеводы">9.52</param>
             </offer>
             <offer id="2106">
-                <url>http://ufa.farfor.ru/japan/rolly/roll_syakekrim/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/roll_syakekrim/</imageUrl>
                 <name>Сяке-крим</name>
                 <price>149.00</price>
                 <description>
@@ -1260,7 +1260,7 @@
                 <param name="Углеводы">23.312</param>
             </offer>
             <offer id="1980">
-                <url>http://ufa.farfor.ru/dessert/chizkejk-shokolad/</url>
+                <imageUrl>http://ufa.farfor.ru/dessert/chizkejk-shokolad/</imageUrl>
                 <name>Чизкейк Шоколадный</name>
                 <price>150.00</price>
                 <description>
@@ -1275,7 +1275,7 @@
                 <param name="Углеводы">0.0</param>
             </offer>
             <offer id="1963">
-                <url>http://ufa.farfor.ru/napitki/nestea/</url>
+                <imageUrl>http://ufa.farfor.ru/napitki/nestea/</imageUrl>
                 <name>Nestea</name>
                 <price>80.00</price>
                 <description/>
@@ -1286,9 +1286,9 @@
                 <param name="Вес">500.00 гр</param>
             </offer>
             <offer id="1937">
-                <url>
+                <imageUrl>
                     http://ufa.farfor.ru/japan/sushi/gunkan_s_ugrm_ostryj/
-                </url>
+                </imageUrl>
                 <name>Гункан с угрём (острый)</name>
                 <price>110.00</price>
                 <description>
@@ -1305,7 +1305,7 @@
                 <param name="Углеводы">19.731</param>
             </offer>
             <offer id="2117">
-                <url>http://ufa.farfor.ru/zakuski/midii_v_ostrom_soyse/</url>
+                <imageUrl>http://ufa.farfor.ru/zakuski/midii_v_ostrom_soyse/</imageUrl>
                 <name>Мидии в остром соусе</name>
                 <price>190.00</price>
                 <description>
@@ -1322,7 +1322,7 @@
                 <param name="Углеводы">14.984</param>
             </offer>
             <offer id="5844">
-                <url>http://ufa.farfor.ru/set-constructor/m/</url>
+                <imageUrl>http://ufa.farfor.ru/set-constructor/m/</imageUrl>
                 <name>M</name>
                 <price>790.00</price>
                 <description/>
@@ -1330,7 +1330,7 @@
                 <categoryId>25</categoryId>
             </offer>
             <offer id="8963">
-                <url>http://ufa.farfor.ru/pizza/pizza-myasnaya-40/</url>
+                <imageUrl>http://ufa.farfor.ru/pizza/pizza-myasnaya-40/</imageUrl>
                 <name>Мясная 40см</name>
                 <price>490.00</price>
                 <description>
@@ -1344,9 +1344,9 @@
                 <param name="Вес">980.00 гр</param>
             </offer>
             <offer id="4969">
-                <url>
+                <imageUrl>
                     http://ufa.farfor.ru/shashlyk/file-kurinoj-grudki-/
-                </url>
+                </imageUrl>
                 <name>Шашлык из куриного филе</name>
                 <price>290.00</price>
                 <description>
@@ -1359,7 +1359,7 @@
                 <param name="Вес">480.00 гр</param>
             </offer>
             <offer id="3239">
-                <url>http://ufa.farfor.ru/japan/teploe/pasta-karbonare/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/teploe/pasta-karbonare/</imageUrl>
                 <name>Паста Карбонара</name>
                 <price>270.00</price>
                 <description>
@@ -1376,7 +1376,7 @@
                 <param name="Углеводы">44.837</param>
             </offer>
             <offer id="3184">
-                <url>http://ufa.farfor.ru/dobawky/sous_hondashi/</url>
+                <imageUrl>http://ufa.farfor.ru/dobawky/sous_hondashi/</imageUrl>
                 <name>Соус Хондаши</name>
                 <price>30.00</price>
                 <description>
@@ -1393,7 +1393,7 @@
                 <param name="Углеводы">4.8</param>
             </offer>
             <offer id="2105">
-                <url>http://ufa.farfor.ru/japan/rolly/roll_unagi-krim/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/roll_unagi-krim/</imageUrl>
                 <name>Унаги-крим</name>
                 <price>149.00</price>
                 <description>
@@ -1410,7 +1410,7 @@
                 <param name="Углеводы">24.011</param>
             </offer>
             <offer id="2089">
-                <url>http://ufa.farfor.ru/japan/rolly/roll_hendroll/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/roll_hendroll/</imageUrl>
                 <name>Хендролл</name>
                 <price>149.00</price>
                 <description>
@@ -1427,9 +1427,9 @@
                 <param name="Углеводы">40.106</param>
             </offer>
             <offer id="1934">
-                <url>
+                <imageUrl>
                     http://ufa.farfor.ru/japan/sushi/gunkan_s_krevetkoj_ostryj/
-                </url>
+                </imageUrl>
                 <name>Гункан с креветкой (острый)</name>
                 <price>110.00</price>
                 <description>
@@ -1446,7 +1446,7 @@
                 <param name="Углеводы">19.731</param>
             </offer>
             <offer id="2118">
-                <url>http://ufa.farfor.ru/zakuski/midii_v_syrnom_souse/</url>
+                <imageUrl>http://ufa.farfor.ru/zakuski/midii_v_syrnom_souse/</imageUrl>
                 <name>Мидии в сырном соусе</name>
                 <price>190.00</price>
                 <description>
@@ -1463,7 +1463,7 @@
                 <param name="Углеводы">17.839</param>
             </offer>
             <offer id="4970">
-                <url>http://ufa.farfor.ru/shashlyk/svinaya-sheya/</url>
+                <imageUrl>http://ufa.farfor.ru/shashlyk/svinaya-sheya/</imageUrl>
                 <name>Шашлык из свиной шеи</name>
                 <price>390.00</price>
                 <description>
@@ -1476,9 +1476,9 @@
                 <param name="Вес">480.00 гр</param>
             </offer>
             <offer id="3240">
-                <url>
+                <imageUrl>
                     http://ufa.farfor.ru/japan/teploe/fetuchchini-s-ugryom/
-                </url>
+                </imageUrl>
                 <name>Фетучини с угрём</name>
                 <price>290.00</price>
                 <description>
@@ -1495,7 +1495,7 @@
                 <param name="Углеводы">48.635</param>
             </offer>
             <offer id="3192">
-                <url>http://ufa.farfor.ru/dobawky/sous-chesnochnyij/</url>
+                <imageUrl>http://ufa.farfor.ru/dobawky/sous-chesnochnyij/</imageUrl>
                 <name>Соус Чесночный</name>
                 <price>30.00</price>
                 <description>
@@ -1512,7 +1512,7 @@
                 <param name="Углеводы">9.1</param>
             </offer>
             <offer id="3176">
-                <url>http://ufa.farfor.ru/dobawky/sous-teriyaki/</url>
+                <imageUrl>http://ufa.farfor.ru/dobawky/sous-teriyaki/</imageUrl>
                 <name>Соус Терияки</name>
                 <price>30.00</price>
                 <description>
@@ -1529,7 +1529,7 @@
                 <param name="Углеводы">0.0</param>
             </offer>
             <offer id="2094">
-                <url>http://ufa.farfor.ru/japan/rolly/roll_ebikrim/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/roll_ebikrim/</imageUrl>
                 <name>Эби-крим</name>
                 <price>149.00</price>
                 <description>
@@ -1546,7 +1546,7 @@
                 <param name="Углеводы">23.756</param>
             </offer>
             <offer id="2029">
-                <url>http://ufa.farfor.ru/japan/rolly/fenix/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/fenix/</imageUrl>
                 <name>Феникс</name>
                 <price>149.00</price>
                 <description>
@@ -1563,7 +1563,7 @@
                 <param name="Углеводы">23.202</param>
             </offer>
             <offer id="5774">
-                <url>http://ufa.farfor.ru/set-constructor/s/</url>
+                <imageUrl>http://ufa.farfor.ru/set-constructor/s/</imageUrl>
                 <name>S</name>
                 <price>690.00</price>
                 <description>для офиса</description>
@@ -1571,7 +1571,7 @@
                 <categoryId>25</categoryId>
             </offer>
             <offer id="9062">
-                <url>http://ufa.farfor.ru/pizza/derevenskaya-30/</url>
+                <imageUrl>http://ufa.farfor.ru/pizza/derevenskaya-30/</imageUrl>
                 <name>Деревенская 30см</name>
                 <price>340.00</price>
                 <description>
@@ -1585,7 +1585,7 @@
                 <param name="Вес">660.00 гр</param>
             </offer>
             <offer id="9073">
-                <url>http://ufa.farfor.ru/pizza/derevenskaya-40/</url>
+                <imageUrl>http://ufa.farfor.ru/pizza/derevenskaya-40/</imageUrl>
                 <name>Деревенская 40см</name>
                 <price>540.00</price>
                 <description>
@@ -1599,9 +1599,9 @@
                 <param name="Вес">1110.00 гр</param>
             </offer>
             <offer id="4965">
-                <url>
+                <imageUrl>
                     http://ufa.farfor.ru/shashlyk/losos-gril-s-kartofelem-/
-                </url>
+                </imageUrl>
                 <name>Лосось гриль с картофелем</name>
                 <price>690.00</price>
                 <description>Лосось жареный на гриле с картофелем</description>
@@ -1612,7 +1612,7 @@
                 <param name="Вес">380.00 гр</param>
             </offer>
             <offer id="1961">
-                <url>http://ufa.farfor.ru/napitki/sok_1litr/</url>
+                <imageUrl>http://ufa.farfor.ru/napitki/sok_1litr/</imageUrl>
                 <name>Сок</name>
                 <price>90.00</price>
                 <description/>
@@ -1623,7 +1623,7 @@
                 <param name="Вес">1000.00 гр</param>
             </offer>
             <offer id="1855">
-                <url>http://ufa.farfor.ru/japan/sety/set_hodovoj/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/sety/set_hodovoj/</imageUrl>
                 <name>Сет Ходовой</name>
                 <price>650.00</price>
                 <description>
@@ -1641,7 +1641,7 @@
                 <param name="Углеводы">17.913</param>
             </offer>
             <offer id="9040">
-                <url>http://ufa.farfor.ru/pizza/govyadina-chili-30/</url>
+                <imageUrl>http://ufa.farfor.ru/pizza/govyadina-chili-30/</imageUrl>
                 <name>Говядина чили 30см</name>
                 <price>340.00</price>
                 <description>
@@ -1655,7 +1655,7 @@
                 <param name="Вес">610.00 гр</param>
             </offer>
             <offer id="4529">
-                <url>http://ufa.farfor.ru/japan/rolly/shahmatyi/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/shahmatyi/</imageUrl>
                 <name>Шахматы</name>
                 <price>149.00</price>
                 <description>
@@ -1672,7 +1672,7 @@
                 <param name="Углеводы">28.801</param>
             </offer>
             <offer id="1848">
-                <url>http://ufa.farfor.ru/japan/sety/best-best-set/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/sety/best-best-set/</imageUrl>
                 <name>Самый Лучший Сет</name>
                 <price>980.00</price>
                 <description>
@@ -1690,7 +1690,7 @@
                 <param name="Углеводы">22.464</param>
             </offer>
             <offer id="9051">
-                <url>http://ufa.farfor.ru/pizza/govyadina-chili-40/</url>
+                <imageUrl>http://ufa.farfor.ru/pizza/govyadina-chili-40/</imageUrl>
                 <name>Говядина чили 40см</name>
                 <price>590.00</price>
                 <description>
@@ -1704,7 +1704,7 @@
                 <param name="Вес">1040.00 гр</param>
             </offer>
             <offer id="4504">
-                <url>http://ufa.farfor.ru/japan/rolly/monomah/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/monomah/</imageUrl>
                 <name>Мономах</name>
                 <price>149.00</price>
                 <description>Сливочный сыр, зеленый лук, грибной соус.</description>
@@ -1719,7 +1719,7 @@
                 <param name="Углеводы">22.113</param>
             </offer>
             <offer id="4231">
-                <url>http://ufa.farfor.ru/japan/rolly/patriot/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/patriot/</imageUrl>
                 <name>Патриот</name>
                 <price>149.00</price>
                 <description>
@@ -1732,7 +1732,7 @@
                 <param name="Вес">205.00 гр</param>
             </offer>
             <offer id="1870">
-                <url>http://ufa.farfor.ru/japan/sety/set_gurman/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/sety/set_gurman/</imageUrl>
                 <name>Сет Гурман</name>
                 <price>850.00</price>
                 <description>
@@ -1750,9 +1750,9 @@
                 <param name="Углеводы">21.192</param>
             </offer>
             <offer id="9018">
-                <url>
+                <imageUrl>
                     http://ufa.farfor.ru/pizza/barbeku-po-bolgarski-30/
-                </url>
+                </imageUrl>
                 <name>Барбекю по-болгарски 30см</name>
                 <price>340.00</price>
                 <description>
@@ -1766,7 +1766,7 @@
                 <param name="Вес">600.00 гр</param>
             </offer>
             <offer id="4221">
-                <url>http://ufa.farfor.ru/japan/rolly/shtirlits/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/shtirlits/</imageUrl>
                 <name>Штирлиц</name>
                 <price>149.00</price>
                 <description>
@@ -1779,7 +1779,7 @@
                 <param name="Вес">180.00 гр</param>
             </offer>
             <offer id="1850">
-                <url>http://ufa.farfor.ru/japan/sety/set_mafiya/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/sety/set_mafiya/</imageUrl>
                 <name>Сет Мафия</name>
                 <price>1450.00</price>
                 <description>
@@ -1797,9 +1797,9 @@
                 <param name="Углеводы">21.971</param>
             </offer>
             <offer id="9029">
-                <url>
+                <imageUrl>
                     http://ufa.farfor.ru/pizza/barbeku-po-bolgarski-40/
-                </url>
+                </imageUrl>
                 <name>Барбекю по-болгарски 40см</name>
                 <price>540.00</price>
                 <description>
@@ -1813,7 +1813,7 @@
                 <param name="Вес">1010.00 гр</param>
             </offer>
             <offer id="9084">
-                <url>http://ufa.farfor.ru/pizza/kurica-po-dijonski-30/</url>
+                <imageUrl>http://ufa.farfor.ru/pizza/kurica-po-dijonski-30/</imageUrl>
                 <name>Курица по-дижонски 30см</name>
                 <price>290.00</price>
                 <description>
@@ -1827,7 +1827,7 @@
                 <param name="Вес">630.00 гр</param>
             </offer>
             <offer id="9688">
-                <url>http://ufa.farfor.ru/japan/rolly/adel-farfor/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/adel-farfor/</imageUrl>
                 <name>Адель</name>
                 <price>189.00</price>
                 <description>
@@ -1840,7 +1840,7 @@
                 <param name="Вес">230.00 гр</param>
             </offer>
             <offer id="2121">
-                <url>http://ufa.farfor.ru/japan/sety/all-inclusive/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/sety/all-inclusive/</imageUrl>
                 <name>Всё включено</name>
                 <price>940.00</price>
                 <description>
@@ -1857,7 +1857,7 @@
                 <param name="Углеводы">17.913</param>
             </offer>
             <offer id="9095">
-                <url>http://ufa.farfor.ru/pizza/kurica-po-dijonski-40/</url>
+                <imageUrl>http://ufa.farfor.ru/pizza/kurica-po-dijonski-40/</imageUrl>
                 <name>Курица по-дижонски 40см</name>
                 <price>390.00</price>
                 <description>
@@ -1871,7 +1871,7 @@
                 <param name="Вес">1070.00 гр</param>
             </offer>
             <offer id="9710">
-                <url>http://ufa.farfor.ru/japan/rolly/naomi-farfor/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/naomi-farfor/</imageUrl>
                 <name>Наоми</name>
                 <price>189.00</price>
                 <description>Сливочный сыр, помидор, омлет, белый кунжут.</description>
@@ -1882,7 +1882,7 @@
                 <param name="Вес">160.00 гр</param>
             </offer>
             <offer id="3237">
-                <url>http://ufa.farfor.ru/japan/sety/pivnoj-set/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/sety/pivnoj-set/</imageUrl>
                 <name>Пивной сет</name>
                 <price>590.00</price>
                 <description>
@@ -1899,7 +1899,7 @@
                 <param name="Углеводы">17.762</param>
             </offer>
             <offer id="9721">
-                <url>http://ufa.farfor.ru/japan/rolly/syrnyi/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/syrnyi/</imageUrl>
                 <name>Ролл Сырный</name>
                 <price>189.00</price>
                 <description>
@@ -1912,7 +1912,7 @@
                 <param name="Вес">160.00 гр</param>
             </offer>
             <offer id="9117">
-                <url>http://ufa.farfor.ru/pizza/mr-cherry-30/</url>
+                <imageUrl>http://ufa.farfor.ru/pizza/mr-cherry-30/</imageUrl>
                 <name>Мистер Черри 30см</name>
                 <price>290.00</price>
                 <description>
@@ -1926,7 +1926,7 @@
                 <param name="Вес">660.00 гр</param>
             </offer>
             <offer id="9732">
-                <url>http://ufa.farfor.ru/japan/rolly/roll-guru/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/roll-guru/</imageUrl>
                 <name>Гуру</name>
                 <price>189.00</price>
                 <description>
@@ -1939,7 +1939,7 @@
                 <param name="Вес">160.00 гр</param>
             </offer>
             <offer id="9107">
-                <url>http://ufa.farfor.ru/pizza/mr-cherry-40/</url>
+                <imageUrl>http://ufa.farfor.ru/pizza/mr-cherry-40/</imageUrl>
                 <name>Мистер Черри 40см</name>
                 <price>440.00</price>
                 <description>
@@ -1953,7 +1953,7 @@
                 <param name="Вес">1110.00 гр</param>
             </offer>
             <offer id="9135">
-                <url>http://ufa.farfor.ru/pizza/provanskaya-30/</url>
+                <imageUrl>http://ufa.farfor.ru/pizza/provanskaya-30/</imageUrl>
                 <name>Прованская 30см</name>
                 <price>290.00</price>
                 <description>
@@ -1967,7 +1967,7 @@
                 <param name="Вес">600.00 гр</param>
             </offer>
             <offer id="1852">
-                <url>http://ufa.farfor.ru/japan/sety/set_mini/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/sety/set_mini/</imageUrl>
                 <name>Сет Мини</name>
                 <price>590.00</price>
                 <description>Морской волк, Адель, Калифорния с лососем, Цезарь.</description>
@@ -1983,9 +1983,9 @@
                 <param name="Углеводы">15.845</param>
             </offer>
             <offer id="2028">
-                <url>
+                <imageUrl>
                     http://ufa.farfor.ru/japan/rolly/filadelfiya-light/
-                </url>
+                </imageUrl>
                 <name>Филадельфия Лайт</name>
                 <price>189.00</price>
                 <description>
@@ -2002,7 +2002,7 @@
                 <param name="Углеводы">19.239</param>
             </offer>
             <offer id="9145">
-                <url>http://ufa.farfor.ru/pizza/provanskaya-40/</url>
+                <imageUrl>http://ufa.farfor.ru/pizza/provanskaya-40/</imageUrl>
                 <name>Прованская 40см</name>
                 <price>440.00</price>
                 <description>
@@ -2016,9 +2016,9 @@
                 <param name="Вес">1010.00 гр</param>
             </offer>
             <offer id="5785">
-                <url>
+                <imageUrl>
                     http://ufa.farfor.ru/japan/sety/set-ponyat-i-prostit/
-                </url>
+                </imageUrl>
                 <name>Сет "Понять и простить"</name>
                 <price>390.00</price>
                 <description>Фокус, Мономах.</description>
@@ -2030,7 +2030,7 @@
                 <param name="Вес">400.00 гр</param>
             </offer>
             <offer id="2038">
-                <url>http://ufa.farfor.ru/japan/rolly/morskoi_volk/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/morskoi_volk/</imageUrl>
                 <name>Запеченный Морской волк</name>
                 <price>189.00</price>
                 <description>
@@ -2047,7 +2047,7 @@
                 <param name="Углеводы">23.084</param>
             </offer>
             <offer id="9217">
-                <url>http://ufa.farfor.ru/pizza/griboedov-30/</url>
+                <imageUrl>http://ufa.farfor.ru/pizza/griboedov-30/</imageUrl>
                 <name>Грибоедов 30см</name>
                 <price>340.00</price>
                 <description>
@@ -2061,7 +2061,7 @@
                 <param name="Вес">580.00 гр</param>
             </offer>
             <offer id="2062">
-                <url>http://ufa.farfor.ru/japan/rolly/vsadnik/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/vsadnik/</imageUrl>
                 <name>Всадник</name>
                 <price>189.00</price>
                 <description>
@@ -2078,7 +2078,7 @@
                 <param name="Углеводы">21.574</param>
             </offer>
             <offer id="2096">
-                <url>http://ufa.farfor.ru/japan/rolly/everest/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/everest/</imageUrl>
                 <name>Эверест</name>
                 <price>189.00</price>
                 <description>
@@ -2095,7 +2095,7 @@
                 <param name="Углеводы">20.405</param>
             </offer>
             <offer id="9227">
-                <url>http://ufa.farfor.ru/pizza/griboedov-40/</url>
+                <imageUrl>http://ufa.farfor.ru/pizza/griboedov-40/</imageUrl>
                 <name>Грибоедов 40см</name>
                 <price>490.00</price>
                 <description>
@@ -2109,7 +2109,7 @@
                 <param name="Вес">980.00 гр</param>
             </offer>
             <offer id="3065">
-                <url>http://ufa.farfor.ru/japan/rolly/kanaryi/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/kanaryi/</imageUrl>
                 <name>Канары</name>
                 <price>189.00</price>
                 <description>
@@ -2126,7 +2126,7 @@
                 <param name="Углеводы">21.293</param>
             </offer>
             <offer id="9175">
-                <url>http://ufa.farfor.ru/pizza/pepperoni-30/</url>
+                <imageUrl>http://ufa.farfor.ru/pizza/pepperoni-30/</imageUrl>
                 <name>Пепперони 30см</name>
                 <price>390.00</price>
                 <description>
@@ -2140,7 +2140,7 @@
                 <param name="Вес">660.00 гр</param>
             </offer>
             <offer id="9185">
-                <url>http://ufa.farfor.ru/pizza/pepperoni-40/</url>
+                <imageUrl>http://ufa.farfor.ru/pizza/pepperoni-40/</imageUrl>
                 <name>Пепперони 40см</name>
                 <price>590.00</price>
                 <description>
@@ -2154,7 +2154,7 @@
                 <param name="Вес">1090.00 гр</param>
             </offer>
             <offer id="9155">
-                <url>http://ufa.farfor.ru/pizza/ciplenok-barbeku-30/</url>
+                <imageUrl>http://ufa.farfor.ru/pizza/ciplenok-barbeku-30/</imageUrl>
                 <name>Цыпленок барбекю 30см</name>
                 <price>340.00</price>
                 <description>
@@ -2168,7 +2168,7 @@
                 <param name="Вес">645.00 гр</param>
             </offer>
             <offer id="4216">
-                <url>http://ufa.farfor.ru/japan/rolly/t-34/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/t-34/</imageUrl>
                 <name>Т-34</name>
                 <price>189.00</price>
                 <description>
@@ -2181,7 +2181,7 @@
                 <param name="Вес">210.00 гр</param>
             </offer>
             <offer id="9165">
-                <url>http://ufa.farfor.ru/pizza/ciplenok-barbeku-40/</url>
+                <imageUrl>http://ufa.farfor.ru/pizza/ciplenok-barbeku-40/</imageUrl>
                 <name>Цыпленок барбекю 40см</name>
                 <price>490.00</price>
                 <description>
@@ -2195,7 +2195,7 @@
                 <param name="Вес">1090.00 гр</param>
             </offer>
             <offer id="4518">
-                <url>http://ufa.farfor.ru/japan/rolly/robin-gud/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/robin-gud/</imageUrl>
                 <name>Робин Гуд</name>
                 <price>189.00</price>
                 <description>
@@ -2212,7 +2212,7 @@
                 <param name="Углеводы">23.604</param>
             </offer>
             <offer id="4489">
-                <url>http://ufa.farfor.ru/japan/rolly/amazonka/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/amazonka/</imageUrl>
                 <name>Амазонка</name>
                 <price>189.00</price>
                 <description>
@@ -2229,9 +2229,9 @@
                 <param name="Углеводы">18.878</param>
             </offer>
             <offer id="9197">
-                <url>
+                <imageUrl>
                     http://ufa.farfor.ru/pizza/s-telyarinoi-i-brynzoi-30/
-                </url>
+                </imageUrl>
                 <name>С телятиной и брынзой 30см</name>
                 <price>340.00</price>
                 <description>
@@ -2245,7 +2245,7 @@
                 <param name="Вес">620.00 гр</param>
             </offer>
             <offer id="4528">
-                <url>http://ufa.farfor.ru/japan/rolly/tsusima/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/tsusima/</imageUrl>
                 <name>Цусима</name>
                 <price>189.00</price>
                 <description>
@@ -2262,7 +2262,7 @@
                 <param name="Углеводы">28.094</param>
             </offer>
             <offer id="1857">
-                <url>http://ufa.farfor.ru/japan/sety/set_nindzya/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/sety/set_nindzya/</imageUrl>
                 <name>Сет Ниндзя</name>
                 <price>750.00</price>
                 <description>Фудзияма, Капоэйра, Аркаим, Цезарь, Хендролл.</description>
@@ -2278,9 +2278,9 @@
                 <param name="Углеводы">26.667</param>
             </offer>
             <offer id="9207">
-                <url>
+                <imageUrl>
                     http://ufa.farfor.ru/pizza/s-telyarinoi-i-brynzoi-40/
-                </url>
+                </imageUrl>
                 <name>С телятиной и брынзой 40см</name>
                 <price>540.00</price>
                 <description>
@@ -2294,7 +2294,7 @@
                 <param name="Вес">1060.00 гр</param>
             </offer>
             <offer id="4503">
-                <url>http://ufa.farfor.ru/japan/rolly/mister-grin-/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/mister-grin-/</imageUrl>
                 <name>Мистер Грин</name>
                 <price>189.00</price>
                 <description>
@@ -2311,7 +2311,7 @@
                 <param name="Углеводы">22.482</param>
             </offer>
             <offer id="4502">
-                <url>http://ufa.farfor.ru/japan/rolly/miledi/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/miledi/</imageUrl>
                 <name>Миледи</name>
                 <price>189.00</price>
                 <description>Масляная рыба, сливочный сыр, огурец.</description>
@@ -2326,7 +2326,7 @@
                 <param name="Углеводы">20.431</param>
             </offer>
             <offer id="1856">
-                <url>http://ufa.farfor.ru/japan/sety/set_yaponika/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/sety/set_yaponika/</imageUrl>
                 <name>Сет Японика</name>
                 <price>790.00</price>
                 <description>
@@ -2344,7 +2344,7 @@
                 <param name="Углеводы">26.796</param>
             </offer>
             <offer id="1861">
-                <url>http://ufa.farfor.ru/japan/sety/set_udacha/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/sety/set_udacha/</imageUrl>
                 <name>Сет Удача</name>
                 <price>790.00</price>
                 <description>
@@ -2362,7 +2362,7 @@
                 <param name="Углеводы">23.365</param>
             </offer>
             <offer id="9666">
-                <url>http://ufa.farfor.ru/japan/rolly/koralovyi-rif/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/koralovyi-rif/</imageUrl>
                 <name>Коралловый риф</name>
                 <price>229.00</price>
                 <description>
@@ -2375,7 +2375,7 @@
                 <param name="Вес">190.00 гр</param>
             </offer>
             <offer id="9743">
-                <url>http://ufa.farfor.ru/japan/rolly/roll-joker/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/roll-joker/</imageUrl>
                 <name>Джокер</name>
                 <price>229.00</price>
                 <description>
@@ -2388,7 +2388,7 @@
                 <param name="Вес">240.00 гр</param>
             </offer>
             <offer id="1841">
-                <url>http://ufa.farfor.ru/pizza/chetyre_syra/</url>
+                <imageUrl>http://ufa.farfor.ru/pizza/chetyre_syra/</imageUrl>
                 <name>Четыре сыра 40см</name>
                 <price>430.00</price>
                 <description>
@@ -2406,7 +2406,7 @@
                 <param name="Углеводы">58.627</param>
             </offer>
             <offer id="1864">
-                <url>http://ufa.farfor.ru/japan/sety/set_hot/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/sety/set_hot/</imageUrl>
                 <name>Сет Хот</name>
                 <price>760.00</price>
                 <description>Фокус, ролл Темпурный, Хоккайдо, Подпевас.</description>
@@ -2422,7 +2422,7 @@
                 <param name="Углеводы">19.208</param>
             </offer>
             <offer id="9699">
-                <url>http://ufa.farfor.ru/japan/rolly/aiowa/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/aiowa/</imageUrl>
                 <name>Айова</name>
                 <price>229.00</price>
                 <description>
@@ -2435,7 +2435,7 @@
                 <param name="Вес">200.00 гр</param>
             </offer>
             <offer id="1842">
-                <url>http://ufa.farfor.ru/pizza/chetyre_syra-30sm/</url>
+                <imageUrl>http://ufa.farfor.ru/pizza/chetyre_syra-30sm/</imageUrl>
                 <name>Четыре сыра 30см</name>
                 <price>290.00</price>
                 <description>
@@ -2453,7 +2453,7 @@
                 <param name="Углеводы">70.143</param>
             </offer>
             <offer id="1863">
-                <url>http://ufa.farfor.ru/japan/sety/set_okinava/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/sety/set_okinava/</imageUrl>
                 <name>Сет Окинава</name>
                 <price>790.00</price>
                 <description>
@@ -2471,7 +2471,7 @@
                 <param name="Углеводы">25.021</param>
             </offer>
             <offer id="2058">
-                <url>http://ufa.farfor.ru/japan/rolly/roll_bonito/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/roll_bonito/</imageUrl>
                 <name>Бонито</name>
                 <price>229.00</price>
                 <description>
@@ -2488,9 +2488,9 @@
                 <param name="Углеводы">19.693</param>
             </offer>
             <offer id="1865">
-                <url>
+                <imageUrl>
                     http://ufa.farfor.ru/japan/sety/set_serdce_samuraya/
-                </url>
+                </imageUrl>
                 <name>Сет Сердце самурая</name>
                 <price>840.00</price>
                 <description>
@@ -2508,7 +2508,7 @@
                 <param name="Углеводы">21.179</param>
             </offer>
             <offer id="2047">
-                <url>http://ufa.farfor.ru/japan/rolly/roll_vulkan/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/roll_vulkan/</imageUrl>
                 <name>Запеченный Вулкан</name>
                 <price>229.00</price>
                 <description>
@@ -2525,7 +2525,7 @@
                 <param name="Углеводы">21.464</param>
             </offer>
             <offer id="2098">
-                <url>http://ufa.farfor.ru/japan/rolly/roll_in-yan/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/roll_in-yan/</imageUrl>
                 <name>Инь-ян</name>
                 <price>229.00</price>
                 <description>
@@ -2542,9 +2542,9 @@
                 <param name="Углеводы">29.181</param>
             </offer>
             <offer id="2063">
-                <url>
+                <imageUrl>
                     http://ufa.farfor.ru/japan/rolly/roll_kaliforniya_s_lososem/
-                </url>
+                </imageUrl>
                 <name>Калифорния с лососем</name>
                 <price>229.00</price>
                 <description>
@@ -2561,7 +2561,7 @@
                 <param name="Углеводы">20.364</param>
             </offer>
             <offer id="2051">
-                <url>http://ufa.farfor.ru/japan/rolly/roll_majami/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/roll_majami/</imageUrl>
                 <name>Запеченный Майами</name>
                 <price>229.00</price>
                 <description>
@@ -2578,7 +2578,7 @@
                 <param name="Углеводы">22.145</param>
             </offer>
             <offer id="2080">
-                <url>http://ufa.farfor.ru/japan/rolly/tamago/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/tamago/</imageUrl>
                 <name>Тамаго</name>
                 <price>229.00</price>
                 <description>
@@ -2595,7 +2595,7 @@
                 <param name="Углеводы">20.234</param>
             </offer>
             <offer id="2090">
-                <url>http://ufa.farfor.ru/japan/rolly/roll_hokkaido/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/roll_hokkaido/</imageUrl>
                 <name>Хоккайдо</name>
                 <price>229.00</price>
                 <description>
@@ -2612,7 +2612,7 @@
                 <param name="Углеводы">20.201</param>
             </offer>
             <offer id="2091">
-                <url>http://ufa.farfor.ru/japan/rolly/roll_cezar/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/roll_cezar/</imageUrl>
                 <name>Цезарь</name>
                 <price>229.00</price>
                 <description>
@@ -2629,9 +2629,9 @@
                 <param name="Углеводы">21.357</param>
             </offer>
             <offer id="1849">
-                <url>
+                <imageUrl>
                     http://ufa.farfor.ru/japan/sety/set_48_udovolstvij/
-                </url>
+                </imageUrl>
                 <name>Сет 48 удовольствий</name>
                 <price>890.00</price>
                 <description>
@@ -2649,7 +2649,7 @@
                 <param name="Углеводы">16.745</param>
             </offer>
             <offer id="2093">
-                <url>http://ufa.farfor.ru/japan/rolly/shanghai/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/shanghai/</imageUrl>
                 <name>Шанхай</name>
                 <price>229.00</price>
                 <description>
@@ -2666,7 +2666,7 @@
                 <param name="Углеводы">20.016</param>
             </offer>
             <offer id="2039">
-                <url>http://ufa.farfor.ru/japan/rolly/grib_rain/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/grib_rain/</imageUrl>
                 <name>Запеченный Грибной дождь</name>
                 <price>229.00</price>
                 <description>
@@ -2683,7 +2683,7 @@
                 <param name="Углеводы">31.108</param>
             </offer>
             <offer id="2030">
-                <url>http://ufa.farfor.ru/japan/rolly/roll-fokus/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/roll-fokus/</imageUrl>
                 <name>Фокус</name>
                 <price>229.00</price>
                 <description>
@@ -2700,7 +2700,7 @@
                 <param name="Углеводы">21.177</param>
             </offer>
             <offer id="1873">
-                <url>http://ufa.farfor.ru/japan/sety/set_legengy_oseni/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/sety/set_legengy_oseni/</imageUrl>
                 <name>Сет Легенды Осени</name>
                 <price>1050.00</price>
                 <description>
@@ -2718,7 +2718,7 @@
                 <param name="Углеводы">25.964</param>
             </offer>
             <offer id="2040">
-                <url>http://ufa.farfor.ru/japan/rolly/arkaim/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/arkaim/</imageUrl>
                 <name>Запеченный Аркаим</name>
                 <price>229.00</price>
                 <description>
@@ -2735,7 +2735,7 @@
                 <param name="Углеводы">20.625</param>
             </offer>
             <offer id="2037">
-                <url>http://ufa.farfor.ru/japan/rolly/rassvet/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/rassvet/</imageUrl>
                 <name>Запеченный Рассвет</name>
                 <price>229.00</price>
                 <description>
@@ -2752,7 +2752,7 @@
                 <param name="Углеводы">21.309</param>
             </offer>
             <offer id="2078">
-                <url>http://ufa.farfor.ru/japan/rolly/sochi/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/sochi/</imageUrl>
                 <name>Запеченный Сочи</name>
                 <price>229.00</price>
                 <description>
@@ -2769,7 +2769,7 @@
                 <param name="Углеводы">19.442</param>
             </offer>
             <offer id="1875">
-                <url>http://ufa.farfor.ru/japan/sety/set_edem/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/sety/set_edem/</imageUrl>
                 <name>Сет Эдем</name>
                 <price>1090.00</price>
                 <description>
@@ -2787,7 +2787,7 @@
                 <param name="Углеводы">19.418</param>
             </offer>
             <offer id="2073">
-                <url>http://ufa.farfor.ru/japan/rolly/neznakomka/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/neznakomka/</imageUrl>
                 <name>Незнакомка</name>
                 <price>229.00</price>
                 <description>
@@ -2804,7 +2804,7 @@
                 <param name="Углеводы">19.574</param>
             </offer>
             <offer id="1877">
-                <url>http://ufa.farfor.ru/japan/sety/set_red_dragon/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/sety/set_red_dragon/</imageUrl>
                 <name>Сет Красный Дракон</name>
                 <price>1250.00</price>
                 <description>
@@ -2822,9 +2822,9 @@
                 <param name="Углеводы">21.577</param>
             </offer>
             <offer id="8229">
-                <url>
+                <imageUrl>
                     http://ufa.farfor.ru/japan/sety/zhenshina-vsegda-prava/
-                </url>
+                </imageUrl>
                 <name>Женщина всегда права</name>
                 <price>1190.00</price>
                 <description>
@@ -2842,7 +2842,7 @@
                 <param name="Углеводы">19.276</param>
             </offer>
             <offer id="3113">
-                <url>http://ufa.farfor.ru/japan/rolly/chernomor/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/chernomor/</imageUrl>
                 <name>Черномор</name>
                 <price>229.00</price>
                 <description>
@@ -2859,7 +2859,7 @@
                 <param name="Углеводы">19.867</param>
             </offer>
             <offer id="3081">
-                <url>http://ufa.farfor.ru/japan/rolly/monako/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/monako/</imageUrl>
                 <name>Монако</name>
                 <price>229.00</price>
                 <description>
@@ -2876,7 +2876,7 @@
                 <param name="Углеводы">22.929</param>
             </offer>
             <offer id="1879">
-                <url>http://ufa.farfor.ru/japan/sety/set_hit/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/sety/set_hit/</imageUrl>
                 <name>Сет Хит</name>
                 <price>1450.00</price>
                 <description>
@@ -2894,9 +2894,9 @@
                 <param name="Углеводы">21.0</param>
             </offer>
             <offer id="1880">
-                <url>
+                <imageUrl>
                     http://ufa.farfor.ru/japan/sety/set_vostochnoe_solnce/
-                </url>
+                </imageUrl>
                 <name>Сет Восточное солнце</name>
                 <price>1490.00</price>
                 <description>
@@ -2914,9 +2914,9 @@
                 <param name="Углеводы">15.189</param>
             </offer>
             <offer id="4522">
-                <url>
+                <imageUrl>
                     http://ufa.farfor.ru/japan/rolly/tempurnyij-s-kalmarom/
-                </url>
+                </imageUrl>
                 <name>Темпурный с кальмаром</name>
                 <price>229.00</price>
                 <description>
@@ -2933,9 +2933,9 @@
                 <param name="Углеводы">25.058</param>
             </offer>
             <offer id="5711">
-                <url>
+                <imageUrl>
                     http://ufa.farfor.ru/japan/rolly/slivochnyij-losos/
-                </url>
+                </imageUrl>
                 <name>Сливочный с лососем</name>
                 <price>229.00</price>
                 <description>
@@ -2948,7 +2948,7 @@
                 <param name="Вес">180.00 гр</param>
             </offer>
             <offer id="5712">
-                <url>http://ufa.farfor.ru/japan/rolly/slivochnyij-ugor/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/slivochnyij-ugor/</imageUrl>
                 <name>Сливочный с угрем</name>
                 <price>229.00</price>
                 <description>
@@ -2961,9 +2961,9 @@
                 <param name="Вес">180.00 гр</param>
             </offer>
             <offer id="5710">
-                <url>
+                <imageUrl>
                     http://ufa.farfor.ru/japan/rolly/slivochnaya-krevetka/
-                </url>
+                </imageUrl>
                 <name>Сливочный с креветкой</name>
                 <price>229.00</price>
                 <description>
@@ -2976,7 +2976,7 @@
                 <param name="Вес">180.00 гр</param>
             </offer>
             <offer id="1823">
-                <url>http://ufa.farfor.ru/pizza/ohotnichya/</url>
+                <imageUrl>http://ufa.farfor.ru/pizza/ohotnichya/</imageUrl>
                 <name>Охотничья 40см</name>
                 <price>490.00</price>
                 <description>
@@ -2994,7 +2994,7 @@
                 <param name="Углеводы">24.427</param>
             </offer>
             <offer id="6508">
-                <url>http://ufa.farfor.ru/japan/rolly/kofejnyij/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/kofejnyij/</imageUrl>
                 <name>Ролл Кофейный</name>
                 <price>229.00</price>
                 <description>
@@ -3007,9 +3007,9 @@
                 <param name="Вес">210.00 гр</param>
             </offer>
             <offer id="1883">
-                <url>
+                <imageUrl>
                     http://ufa.farfor.ru/japan/sety/set_bolshaya_mafiya/
-                </url>
+                </imageUrl>
                 <name>Сет Большая Мафия</name>
                 <price>2090.00</price>
                 <description>
@@ -3027,7 +3027,7 @@
                 <param name="Углеводы">21.077</param>
             </offer>
             <offer id="1824">
-                <url>http://ufa.farfor.ru/pizza/ohotnichya-30sm/</url>
+                <imageUrl>http://ufa.farfor.ru/pizza/ohotnichya-30sm/</imageUrl>
                 <name>Охотничья 30см</name>
                 <price>340.00</price>
                 <description>
@@ -3045,7 +3045,7 @@
                 <param name="Углеводы">22.526</param>
             </offer>
             <offer id="5951">
-                <url>http://ufa.farfor.ru/pizza/siciliya/</url>
+                <imageUrl>http://ufa.farfor.ru/pizza/siciliya/</imageUrl>
                 <name>Сицилия 40см</name>
                 <price>590.00</price>
                 <description>
@@ -3059,7 +3059,7 @@
                 <param name="Вес">1080.00 гр</param>
             </offer>
             <offer id="6519">
-                <url>http://ufa.farfor.ru/japan/rolly/myatnyij/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/myatnyij/</imageUrl>
                 <name>Фрешролл</name>
                 <price>229.00</price>
                 <description>
@@ -3072,7 +3072,7 @@
                 <param name="Вес">240.00 гр</param>
             </offer>
             <offer id="1851">
-                <url>http://ufa.farfor.ru/japan/sety/set_hochuka/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/sety/set_hochuka/</imageUrl>
                 <name>Сет Хочука</name>
                 <price>2190.00</price>
                 <description>
@@ -3090,7 +3090,7 @@
                 <param name="Углеводы">20.541</param>
             </offer>
             <offer id="5961">
-                <url>http://ufa.farfor.ru/pizza/siciliya-30sm/</url>
+                <imageUrl>http://ufa.farfor.ru/pizza/siciliya-30sm/</imageUrl>
                 <name>Сицилия 30см</name>
                 <price>390.00</price>
                 <description>
@@ -3104,9 +3104,9 @@
                 <param name="Вес">630.00 гр</param>
             </offer>
             <offer id="1884">
-                <url>
+                <imageUrl>
                     http://ufa.farfor.ru/japan/sety/zapechenyie-sushi-1/
-                </url>
+                </imageUrl>
                 <name>Запеченные суши №1</name>
                 <price>390.00</price>
                 <description>
@@ -3120,9 +3120,9 @@
                 <param name="Вес">305.00 гр</param>
             </offer>
             <offer id="1885">
-                <url>
+                <imageUrl>
                     http://ufa.farfor.ru/japan/sety/zapechenyie-sushi-2/
-                </url>
+                </imageUrl>
                 <name>Запеченные суши №2</name>
                 <price>390.00</price>
                 <description>
@@ -3136,7 +3136,7 @@
                 <param name="Вес">305.00 гр</param>
             </offer>
             <offer id="5929">
-                <url>http://ufa.farfor.ru/pizza/juliette/</url>
+                <imageUrl>http://ufa.farfor.ru/pizza/juliette/</imageUrl>
                 <name>Джульетта 40см</name>
                 <price>590.00</price>
                 <description>
@@ -3150,7 +3150,7 @@
                 <param name="Вес">1130.00 гр</param>
             </offer>
             <offer id="7752">
-                <url>http://ufa.farfor.ru/japan/rolly/Akira/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/Akira/</imageUrl>
                 <name>Акира</name>
                 <price>229.00</price>
                 <description>
@@ -3163,7 +3163,7 @@
                 <param name="Вес">180.00 гр</param>
             </offer>
             <offer id="5940">
-                <url>http://ufa.farfor.ru/pizza/juliette-30/</url>
+                <imageUrl>http://ufa.farfor.ru/pizza/juliette-30/</imageUrl>
                 <name>Джульетта 30см</name>
                 <price>390.00</price>
                 <description>
@@ -3177,7 +3177,7 @@
                 <param name="Вес">670.00 гр</param>
             </offer>
             <offer id="7877">
-                <url>http://ufa.farfor.ru/japan/rolly/flamingo/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/flamingo/</imageUrl>
                 <name>Фламинго</name>
                 <price>229.00</price>
                 <description>
@@ -3190,9 +3190,9 @@
                 <param name="Вес">225.00 гр</param>
             </offer>
             <offer id="2046">
-                <url>
+                <imageUrl>
                     http://ufa.farfor.ru/japan/rolly/roll_goryachee_serdce_samuraya/
-                </url>
+                </imageUrl>
                 <name>Запеченное Горячее сердце самурая</name>
                 <price>249.00</price>
                 <description>
@@ -3209,7 +3209,7 @@
                 <param name="Углеводы">24.476</param>
             </offer>
             <offer id="2050">
-                <url>http://ufa.farfor.ru/japan/rolly/roll_sensei/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/roll_sensei/</imageUrl>
                 <name>Запеченный Сенсей</name>
                 <price>249.00</price>
                 <description>
@@ -3226,7 +3226,7 @@
                 <param name="Углеводы">24.468</param>
             </offer>
             <offer id="2052">
-                <url>http://ufa.farfor.ru/japan/rolly/roll_tempurnyi/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/roll_tempurnyi/</imageUrl>
                 <name>Ролл Темпурный</name>
                 <price>249.00</price>
                 <description>
@@ -3243,9 +3243,9 @@
                 <param name="Углеводы">17.642</param>
             </offer>
             <offer id="2086">
-                <url>
+                <imageUrl>
                     http://ufa.farfor.ru/japan/rolly/roll_filadelfiya-one/
-                </url>
+                </imageUrl>
                 <name>Филадельфия-One</name>
                 <price>249.00</price>
                 <description>
@@ -3262,7 +3262,7 @@
                 <param name="Углеводы">17.579</param>
             </offer>
             <offer id="2087">
-                <url>http://ufa.farfor.ru/japan/rolly/roll_fudziyama/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/roll_fudziyama/</imageUrl>
                 <name>Фудзияма</name>
                 <price>249.00</price>
                 <description>
@@ -3279,7 +3279,7 @@
                 <param name="Углеводы">20.314</param>
             </offer>
             <offer id="2060">
-                <url>http://ufa.farfor.ru/japan/rolly/vendetta/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/vendetta/</imageUrl>
                 <name>Вендетта</name>
                 <price>249.00</price>
                 <description>
@@ -3296,7 +3296,7 @@
                 <param name="Углеводы">21.701</param>
             </offer>
             <offer id="3089">
-                <url>http://ufa.farfor.ru/japan/rolly/podpevas/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/podpevas/</imageUrl>
                 <name>Подпевас</name>
                 <price>249.00</price>
                 <description>Сливочный сыр, бекон, помидор, сырный соус.</description>
@@ -3311,7 +3311,7 @@
                 <param name="Углеводы">17.629</param>
             </offer>
             <offer id="3105">
-                <url>http://ufa.farfor.ru/japan/rolly/raj/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/raj/</imageUrl>
                 <name>Рай</name>
                 <price>249.00</price>
                 <description>
@@ -3328,7 +3328,7 @@
                 <param name="Углеводы">22.203</param>
             </offer>
             <offer id="3073">
-                <url>http://ufa.farfor.ru/japan/rolly/krasava/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/krasava/</imageUrl>
                 <name>Красава</name>
                 <price>249.00</price>
                 <description>
@@ -3345,9 +3345,9 @@
                 <param name="Углеводы">20.434</param>
             </offer>
             <offer id="6475">
-                <url>
+                <imageUrl>
                     http://ufa.farfor.ru/japan/rolly/snezhnaya-koroleva/
-                </url>
+                </imageUrl>
                 <name>Снежная королева</name>
                 <price>249.00</price>
                 <description>
@@ -3360,7 +3360,7 @@
                 <param name="Вес">215.00 гр</param>
             </offer>
             <offer id="2072">
-                <url>http://ufa.farfor.ru/japan/rolly/roll_nezhnost/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/roll_nezhnost/</imageUrl>
                 <name>Нежность</name>
                 <price>269.00</price>
                 <description>
@@ -3377,9 +3377,9 @@
                 <param name="Углеводы">17.18</param>
             </offer>
             <offer id="2085">
-                <url>
+                <imageUrl>
                     http://ufa.farfor.ru/japan/rolly/roll_filadelfiya-maxi/
-                </url>
+                </imageUrl>
                 <name>Филадельфия-Maxi</name>
                 <price>279.00</price>
                 <description>
@@ -3396,7 +3396,7 @@
                 <param name="Углеводы">15.486</param>
             </offer>
             <offer id="2064">
-                <url>http://ufa.farfor.ru/japan/rolly/roll_kanada/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/roll_kanada/</imageUrl>
                 <name>Канада</name>
                 <price>289.00</price>
                 <description>
@@ -3413,7 +3413,7 @@
                 <param name="Углеводы">18.544</param>
             </offer>
             <offer id="2066">
-                <url>http://ufa.farfor.ru/japan/rolly/roll_lava/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/roll_lava/</imageUrl>
                 <name>Лава Классик</name>
                 <price>289.00</price>
                 <description>
@@ -3430,9 +3430,9 @@
                 <param name="Углеводы">16.887</param>
             </offer>
             <offer id="2084">
-                <url>
+                <imageUrl>
                     http://ufa.farfor.ru/japan/rolly/roll_filadelfiya_classic/
-                </url>
+                </imageUrl>
                 <name>Филадельфия-Classic</name>
                 <price>289.00</price>
                 <description>
@@ -3449,7 +3449,7 @@
                 <param name="Углеводы">14.998</param>
             </offer>
             <offer id="2036">
-                <url>http://ufa.farfor.ru/japan/rolly/kaliforniya_hot/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/kaliforniya_hot/</imageUrl>
                 <name>Запеченная Калифорния</name>
                 <price>289.00</price>
                 <description>
@@ -3466,9 +3466,9 @@
                 <param name="Углеводы">17.692</param>
             </offer>
             <offer id="2044">
-                <url>
+                <imageUrl>
                     http://ufa.farfor.ru/japan/rolly/niyama-zapechennaya/
-                </url>
+                </imageUrl>
                 <name>Запеченная Нияма</name>
                 <price>299.00</price>
                 <description>
@@ -3485,7 +3485,7 @@
                 <param name="Углеводы">18.248</param>
             </offer>
             <offer id="2035">
-                <url>http://ufa.farfor.ru/japan/rolly/roll_sikoku/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/roll_sikoku/</imageUrl>
                 <name>Ролл Сикоку</name>
                 <price>300.00</price>
                 <description>
@@ -3502,7 +3502,7 @@
                 <param name="Углеводы">20.641</param>
             </offer>
             <offer id="2056">
-                <url>http://ufa.farfor.ru/japan/rolly/roll_samuraiskii/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/roll_samuraiskii/</imageUrl>
                 <name>Темпурный Самурайский</name>
                 <price>329.00</price>
                 <description>
@@ -3519,9 +3519,9 @@
                 <param name="Углеводы">20.521</param>
             </offer>
             <offer id="2042">
-                <url>
+                <imageUrl>
                     http://ufa.farfor.ru/japan/rolly/roll_filadelfiya-hot/
-                </url>
+                </imageUrl>
                 <name>Запеченная Филадельфия</name>
                 <price>329.00</price>
                 <description>
@@ -3538,9 +3538,9 @@
                 <param name="Углеводы">14.455</param>
             </offer>
             <offer id="2053">
-                <url>
+                <imageUrl>
                     http://ufa.farfor.ru/japan/rolly/filadelfiya_tempura/
-                </url>
+                </imageUrl>
                 <name>Темпурная Филадельфия</name>
                 <price>329.00</price>
                 <description>
@@ -3557,7 +3557,7 @@
                 <param name="Углеводы">17.732</param>
             </offer>
             <offer id="2048">
-                <url>http://ufa.farfor.ru/japan/rolly/roll_dzedo/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/roll_dzedo/</imageUrl>
                 <name>Запеченный Дзедо</name>
                 <price>339.00</price>
                 <description>
@@ -3574,9 +3574,9 @@
                 <param name="Углеводы">18.034</param>
             </offer>
             <offer id="2083">
-                <url>
+                <imageUrl>
                     http://ufa.farfor.ru/japan/rolly/roll_filadelfiya_pod_ugrem/
-                </url>
+                </imageUrl>
                 <name>Филадельфия под угрём</name>
                 <price>339.00</price>
                 <description>Обжаренный копченый угорь, авокадо, сливочный сыр.</description>
@@ -3591,9 +3591,9 @@
                 <param name="Углеводы">19.344</param>
             </offer>
             <offer id="2082">
-                <url>
+                <imageUrl>
                     http://ufa.farfor.ru/japan/rolly/filadelfiya-delux/
-                </url>
+                </imageUrl>
                 <name>Филадельфия Делюкс</name>
                 <price>339.00</price>
                 <description>
@@ -3610,9 +3610,9 @@
                 <param name="Углеводы">13.119</param>
             </offer>
             <offer id="4180">
-                <url>
+                <imageUrl>
                     http://ufa.farfor.ru/japan/rolly/filadelfiya-light-1-2/
-                </url>
+                </imageUrl>
                 <name>Филадельфия-Лайт 1/2 порции</name>
                 <price>109.00</price>
                 <description>Лосось охлажденный, огурец, сыр сливочный.</description>
@@ -3624,9 +3624,9 @@
                 <param name="Вес">95.00 гр</param>
             </offer>
             <offer id="4490">
-                <url>
+                <imageUrl>
                     http://ufa.farfor.ru/japan/rolly/bonito-12-portsii/
-                </url>
+                </imageUrl>
                 <name>Бонито 1/2 порции</name>
                 <price>129.00</price>
                 <description>
@@ -3640,9 +3640,9 @@
                 <param name="Вес">82.00 гр</param>
             </offer>
             <offer id="4496">
-                <url>
+                <imageUrl>
                     http://ufa.farfor.ru/japan/rolly/zapechenyie-sochi-12-portsii/
-                </url>
+                </imageUrl>
                 <name>Запеченые Сочи 1/2 порции</name>
                 <price>129.00</price>
                 <description>
@@ -3656,9 +3656,9 @@
                 <param name="Вес">123.00 гр</param>
             </offer>
             <offer id="4497">
-                <url>
+                <imageUrl>
                     http://ufa.farfor.ru/japan/rolly/kaliforniya-s-lososem-12-portsii/
-                </url>
+                </imageUrl>
                 <name>Калифорния с лососем 1/2 порции</name>
                 <price>139.00</price>
                 <description>
@@ -3672,9 +3672,9 @@
                 <param name="Вес">80.00 гр</param>
             </offer>
             <offer id="4495">
-                <url>
+                <imageUrl>
                     http://ufa.farfor.ru/japan/rolly/zapechennyij-majami-12-portsii/
-                </url>
+                </imageUrl>
                 <name>Запеченный Майами 1/2 порции</name>
                 <price>139.00</price>
                 <description>
@@ -3688,9 +3688,9 @@
                 <param name="Вес">113.00 гр</param>
             </offer>
             <offer id="4494">
-                <url>
+                <imageUrl>
                     http://ufa.farfor.ru/japan/rolly/zapechennoe-goryachee-serdtse-samuraya-12-portsii/
-                </url>
+                </imageUrl>
                 <name>Запеченное Горячее сердце самурая 1/2 порции</name>
                 <price>149.00</price>
                 <description>
@@ -3704,9 +3704,9 @@
                 <param name="Вес">93.00 гр</param>
             </offer>
             <offer id="4519">
-                <url>
+                <imageUrl>
                     http://ufa.farfor.ru/japan/rolly/roll-tempurnyij-12-portsii/
-                </url>
+                </imageUrl>
                 <name>Ролл Темпурный 1/2 порции</name>
                 <price>149.00</price>
                 <description>
@@ -3720,9 +3720,9 @@
                 <param name="Вес">138.00 гр</param>
             </offer>
             <offer id="4615">
-                <url>
+                <imageUrl>
                     http://ufa.farfor.ru/japan/rolly/filadelfiya-one-12-portsii/
-                </url>
+                </imageUrl>
                 <name>Филадельфия-One 1/2 порции</name>
                 <price>149.00</price>
                 <description/>
@@ -3734,9 +3734,9 @@
                 <param name="Вес">105.00 гр</param>
             </offer>
             <offer id="4505">
-                <url>
+                <imageUrl>
                     http://ufa.farfor.ru/japan/rolly/nezhnost-12-portsii/
-                </url>
+                </imageUrl>
                 <name>Нежность 1/2 порции</name>
                 <price>159.00</price>
                 <description>
@@ -3750,7 +3750,7 @@
                 <param name="Вес">115.00 гр</param>
             </offer>
             <offer id="4614">
-                <url>http://ufa.farfor.ru/japan/rolly/filadelfiya-maxi/</url>
+                <imageUrl>http://ufa.farfor.ru/japan/rolly/filadelfiya-maxi/</imageUrl>
                 <name>Филадельфия-Maxi 1/2 порции</name>
                 <price>159.00</price>
                 <description/>
@@ -3762,9 +3762,9 @@
                 <param name="Вес">125.00 гр</param>
             </offer>
             <offer id="4498">
-                <url>
+                <imageUrl>
                     http://ufa.farfor.ru/japan/rolly/kanada-12-portsii/
-                </url>
+                </imageUrl>
                 <name>Канада 1/2 порции</name>
                 <price>179.00</price>
                 <description>
@@ -3778,9 +3778,9 @@
                 <param name="Вес">120.00 гр</param>
             </offer>
             <offer id="4500">
-                <url>
+                <imageUrl>
                     http://ufa.farfor.ru/japan/rolly/lava-klassik-12-portsii/
-                </url>
+                </imageUrl>
                 <name>Лава Классик 1/2 порции</name>
                 <price>169.00</price>
                 <description>
@@ -3794,9 +3794,9 @@
                 <param name="Вес">125.00 гр</param>
             </offer>
             <offer id="4526">
-                <url>
+                <imageUrl>
                     http://ufa.farfor.ru/japan/rolly/filadelfiya-classic-12-portsii/
-                </url>
+                </imageUrl>
                 <name>Филадельфия-Classic 1/2 порции</name>
                 <price>169.00</price>
                 <description>
@@ -3810,9 +3810,9 @@
                 <param name="Вес">125.00 гр</param>
             </offer>
             <offer id="4492">
-                <url>
+                <imageUrl>
                     http://ufa.farfor.ru/japan/rolly/zapechennaya-kaliforniya-12-portsii/
-                </url>
+                </imageUrl>
                 <name>Запеченная Калифорния 1/2 порции</name>
                 <price>169.00</price>
                 <description>
@@ -3826,9 +3826,9 @@
                 <param name="Вес">125.00 гр</param>
             </offer>
             <offer id="4493">
-                <url>
+                <imageUrl>
                     http://ufa.farfor.ru/japan/rolly/zapechennaya-filadelfiya-12-portsii/
-                </url>
+                </imageUrl>
                 <name>Запеченная Филадельфия 1/2 порции</name>
                 <price>189.00</price>
                 <description>
@@ -3842,9 +3842,9 @@
                 <param name="Вес">167.00 гр</param>
             </offer>
             <offer id="4525">
-                <url>
+                <imageUrl>
                     http://ufa.farfor.ru/japan/rolly/filadelfiya-pod-ugryom-12-portsii/
-                </url>
+                </imageUrl>
                 <name>Филадельфия под угрём 1/2 порции</name>
                 <price>169.00</price>
                 <description>
@@ -3858,9 +3858,9 @@
                 <param name="Вес">115.00 гр</param>
             </offer>
             <offer id="4524">
-                <url>
+                <imageUrl>
                     http://ufa.farfor.ru/japan/rolly/filadelfiya-delyuks-12-portsii/
-                </url>
+                </imageUrl>
                 <name>Филадельфия Делюкс 1/2 порции</name>
                 <price>189.00</price>
                 <description>

@@ -2,6 +2,7 @@ package com.mickeyco.android.fooddelivery.fragments;
 
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.graphics.drawable.Drawable;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -95,19 +96,37 @@ public class CategoryFragment extends Fragment {
         private TextView mCategoryName;
         private ImageView mCategoryImage;
         private Category mCategory;
+        private ImageView mFavoriteIcon;
+        private boolean isChecked;
 
         public CategoryHolder(View itemView) {
             super(itemView);
             mCategoryName = (TextView) itemView.findViewById(R.id.category_name);
             mCategoryImage = (ImageView) itemView.findViewById(R.id.category_image);
+            mFavoriteIcon = (ImageView) itemView.findViewById(R.id.favorite_icon);
+            mFavoriteIcon.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    changeCategoryFav();
+                    isChecked = !isChecked;
+                }
+            });
             itemView.setOnClickListener(this);
         }
 
         public void bindCategory(Category category){
             mCategory = category;
             mCategoryName.setText(mCategory.getName());
-//            String url = mCategory.getUrl();
-            Picasso.with(getActivity()).load(Constants.CATEGORY_IMAGE_URL).fit().into(mCategoryImage);
+            changeCategoryFav();
+            Picasso.with(getActivity()).load(mCategory.getImageUrl()).fit().into(mCategoryImage);
+        }
+
+        private void changeCategoryFav() {
+            final Drawable drawable = isChecked
+                    ? getResources().getDrawable(R.drawable.star_selected)
+                    : getResources().getDrawable(R.drawable.star);
+            mFavoriteIcon.setImageDrawable(drawable);
+            //TODO request
         }
 
         @Override
@@ -126,7 +145,6 @@ public class CategoryFragment extends Fragment {
 
         @Override
         public CategoryHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-
             LayoutInflater layoutInflater = LayoutInflater.from(getActivity());
             View view = layoutInflater.inflate(R.layout.category_list_item, parent, false);
             return new CategoryHolder(view);

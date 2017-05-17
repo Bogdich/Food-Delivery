@@ -62,12 +62,11 @@ public class DishFragment extends Fragment {
     }
 
     private void updateViews() {
-        Picasso.with(getContext()).load(Constants.CATEGORY_IMAGE_URL).into(mDishImage);
+        Picasso.with(getContext()).load(mDish.getImageUrl()).into(mDishImage);
         mDishName.setText(mDish.getName());
         mDishPrice.setText(mDish.getPrice() + " BYN");
         mDishDescription.setText(mDish.getDescription());
         mDishWeight.setText(mDish.getWeight() + " г.");
-//        mDishWeight.setText("344 г.");
         mDishAmount.setText(mAmount + " шт.");
     }
 
@@ -110,11 +109,12 @@ public class DishFragment extends Fragment {
                 if (mAmount != 0) {
                     CartDishes.getInstance().addDish(mDish, mAmount);
                     Toast.makeText(getActivity(), "Успешно добавлено в корзину!", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(getActivity(), "Установите количество!", Toast.LENGTH_SHORT).show();
                 }
 
             }
         });
         return view;
-
     }
 }

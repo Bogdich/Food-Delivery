@@ -1,8 +1,15 @@
 package com.mickeyco.android.fooddelivery.fragments;
 
 
+import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.BitmapFactory;
+import android.graphics.Color;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
+import android.support.annotation.Nullable;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
@@ -13,30 +20,44 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.mickeyco.android.fooddelivery.activities.CategoryActivity;
+import com.mickeyco.android.fooddelivery.activities.LoginActivity;
+import com.mickeyco.android.fooddelivery.activities.RegisterActivity;
 import com.mickeyco.android.fooddelivery.api.ApiFactory;
 import com.mickeyco.android.fooddelivery.api.RequestInterface;
+import com.mickeyco.android.fooddelivery.api.models.Category;
+import com.mickeyco.android.fooddelivery.api.models.LoginResponse;
 import com.mickeyco.android.fooddelivery.api.models.ServerRequest;
 import com.mickeyco.android.fooddelivery.api.models.ServerResponse;
 import com.mickeyco.android.fooddelivery.api.models.User;
+import com.mickeyco.android.fooddelivery.utils.BlurBuilder;
 import com.mickeyco.android.fooddelivery.utils.Constants;
 import com.mickeyco.android.fooddelivery.R;
 
+import jp.wasabeef.blurry.Blurry;
 import retrofit2.Call;
 import retrofit2.Callback;
 
 
 public class LoginFragment extends Fragment implements View.OnClickListener{
 
-    private AppCompatButton btn_login;
+    private AppCompatButton btn_login, btn_register;
     private EditText et_email,et_password;
-    private CheckBox chck_doctor;
-    private TextView tv_register;
     private ProgressBar progress;
-    private SharedPreferences pref;
 
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        if (PreferenceManager.getDefaultSharedPreferences(getActivity()).getBoolean(Constants.IS_LOGGED_IN, false)) {
+            startActivity(new Intent(getActivity(), CategoryActivity.class));
+            getActivity().finish();
+        }
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -46,20 +67,33 @@ public class LoginFragment extends Fragment implements View.OnClickListener{
         return view;
     }
 
-    private void initViews(View view){
+    private void initViews(View view) {
 
-        pref = getActivity().getSharedPreferences(Constants.PREFS_NAME, 0);
+        Drawable drawable = new BitmapDrawable(getResources(), BlurBuilder.blur(getActivity(),
+                BitmapFactory.decodeResource(getResources(), R.drawable.login_bg)));
+        view.findViewById(R.id.background_LL).setBackground(drawable);
 
         btn_login = (AppCompatButton)view.findViewById(R.id.btn_login);
-        tv_register = (TextView)view.findViewById(R.id.tv_register);
+        btn_register = (AppCompatButton) view.findViewById(R.id.btn_register);
         et_email = (EditText)view.findViewById(R.id.et_email);
         et_password = (EditText)view.findViewById(R.id.et_password);
-        chck_doctor = (CheckBox)view.findViewById(R.id.checkbox_doctor);
 
         progress = (ProgressBar)view.findViewById(R.id.progress);
 
         btn_login.setOnClickListener(this);
-        tv_register.setOnClickListener(this);
+        btn_register.setOnClickListener(this);
+    }
+
+    @Override
+    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        Blurry.with(getActivity())
+                .radius(100)
+                .sampling(80)
+                .color(Color.argb(66, 255, 255, 0))
+                .async()
+                .animate(500)
+                .onto((LinearLayout) view.findViewById(R.id.background_LL));
     }
 
     @Override
@@ -67,88 +101,69 @@ public class LoginFragment extends Fragment implements View.OnClickListener{
 
         switch (v.getId()){
 
-            case R.id.tv_register:
+            case R.id.btn_register:
                 goToRegister();
                 break;
 
             case R.id.btn_login:
                 String email = et_email.getText().toString();
                 String password = et_password.getText().toString();
-                Boolean isDoctor = chck_doctor.isChecked();
 
                 if(!email.isEmpty() && !password.isEmpty()) {
-
                     progress.setVisibility(View.VISIBLE);
-                    loginProcess(email,password, isDoctor);
+                    loginProcess(email,password);
+                    Snackbar.make(getView(), "Авторизация успешна!", Snackbar.LENGTH_LONG).show();
 
                 } else {
 
-                    Snackbar.make(getView(), "Fields are empty !", Snackbar.LENGTH_LONG).show();
+                    Snackbar.make(getView(), "Поля не заполнены!", Snackbar.LENGTH_LONG).show();
                 }
                 break;
 
         }
     }
-    private void loginProcess(String email, String password, final Boolean isDoctor){
+    private void loginProcess(String login, String password){
 
-//        RequestInterface requestInterface = ApiFactory.getService();
-//        User user = new User();
-//        user.setEmail(email);
-//        user.setPassword(password);
-//        user.setDoctor(isDoctor);
-//        ServerRequest request = new ServerRequest();
-//        request.setOperation(Constants.LOGIN_OPERATION);
-//        request.setUser(user);
-//        Call<ServerResponse> response = requestInterface.registration(request);
-//
-//        response.enqueue(new Callback<ServerResponse>() {
-//            @Override
-//            public void onResponse(Call<ServerResponse> call, retrofit2.Response<ServerResponse> response) {
-//
-//                ServerResponse resp = response.body();
+        RequestInterface requestInterface = ApiFactory.getService();
+        Call<LoginResponse> response = requestInterface.login(login, password);
+        response.enqueue(new Callback<LoginResponse>() {
+            @Override
+            public void onResponse(Call<LoginResponse> call, retrofit2.Response<LoginResponse> response) {
+
+                LoginResponse resp = response.body();
 //                Snackbar.make(getView(), resp.getMessage(), Snackbar.LENGTH_LONG).show();
-//
-//                if(resp.getResult().equals(Constants.SUCCESS)){
-//                    SharedPreferences.Editor editor = pref.edit();
-//                    editor.putBoolean(Constants.IS_LOGGED_IN,true);
-//                    editor.putString(Constants.EMAIL,resp.getUser().getEmail());
-//                    editor.putString(Constants.NAME,resp.getUser().getName());
-//                    editor.putBoolean(Constants.IS_DOCTOR, isDoctor);
-//
-//                    editor.apply();
-//                    goToProfile();
-//
-//                }
-//                progress.setVisibility(View.INVISIBLE);
-//            }
-//
-//            @Override
-//            public void onFailure(Call<ServerResponse> call, Throwable t) {
-//
-//                progress.setVisibility(View.INVISIBLE);
-//                Log.d(Constants.TAG,"failed");
-//                Snackbar.make(getView(), t.getLocalizedMessage(), Snackbar.LENGTH_LONG).show();
-//
-//            }
-//        });
+                progress.setVisibility(View.INVISIBLE);
+                if(resp.getMessage().equals("OK")){
+                    PreferenceManager.getDefaultSharedPreferences(getActivity()).edit()
+                            .putInt(Constants.PREF_ID, resp.getUserId())
+                            .putBoolean(Constants.IS_LOGGED_IN, true)
+                            .apply();
+                    goToMenu();
+
+                } else {
+                    Toast.makeText(getActivity(), "Неверные данные", Toast.LENGTH_SHORT).show();
+                }
+
+            }
+
+            @Override
+            public void onFailure(Call<LoginResponse> call, Throwable t) {
+
+                progress.setVisibility(View.INVISIBLE);
+                Log.d(Constants.TAG,"failed");
+                Snackbar.make(getView(), t.getLocalizedMessage(), Snackbar.LENGTH_LONG).show();
+
+            }
+        });
     }
 
     private void goToRegister(){
-
-//        Fragment register = new RegisterFragment();
-//        FragmentTransaction ft = getFragmentManager().beginTransaction();
-//        ft.replace(R.id.fragmentContainer,register);
-//        ft.commit();
+       startActivity(new Intent(getActivity(), RegisterActivity.class));
+        getActivity().finish();
     }
 
-    private void goToProfile(){
-//        Fragment profile;
-//        if(pref.getBoolean(Constants.IS_DOCTOR, false))
-//            profile = new DoctorFragment();
-//        else
-//            profile = new UserFragment();
-//        FragmentTransaction ft = getFragmentManager().beginTransaction();
-//        ft.replace(R.id.fragmentContainer,profile);
-//        ft.commit();
+    private void goToMenu(){
+        startActivity(new Intent(getActivity(), CategoryActivity.class));
+        getActivity().finish();
     }
 }

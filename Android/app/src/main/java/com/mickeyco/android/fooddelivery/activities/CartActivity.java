@@ -14,7 +14,7 @@ import com.mickeyco.android.fooddelivery.fragments.CartFragment;
  * Created by Softteco on 02.05.2017.
  */
 
-public class CartActivity extends SingleFragmentActivity{
+public class CartActivity extends SingleFragmentActivity implements CartFragment.Callbacks{
     @Override
     protected Fragment createFragment() {
         return new CartFragment();
@@ -30,5 +30,11 @@ public class CartActivity extends SingleFragmentActivity{
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
+    }
+
+
+    @Override
+    public void onButtonClicked(int totalPrice) {
+        startActivity(OrderAcceptActivity.createIntent(this, totalPrice));
     }
 }

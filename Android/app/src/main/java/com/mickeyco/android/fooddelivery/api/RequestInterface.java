@@ -22,15 +22,11 @@ public interface RequestInterface {
         @Query("address") String address, @Query("number") String number,
         @Query("email") String email);
 
-    @POST("food-delivery/user/insertUser")
+    @GET("food-delivery/user/login")
     Call<LoginResponse> login(@Query("login") String login, @Query("password") String password);
 
     @GET("food-delivery/user/getInfo/{userId}")
     Call<UserInfo> getUserInfo(@Path("userId") int userId);
-
-    Call<Void> createDish(@Query("name") String name, @Query("description") String description,
-                          @Query("weight") String weight, @Query("price") String price,
-                          @Query("categoryId") String categoryId, @Query("imageURL") String imageURL);
 
     @GET("food-delivery/category/getCategories")
     Call<ArrayList<Category>> getAllCategories();
