@@ -3,6 +3,7 @@ package com.dao.factory;
 import com.dao.*;
 import com.dao.impl.*;
 import com.dao.impl.UserDAOImpl;
+import com.entity.Subscription;
 
 
 public class MySQLDAOFactory extends DAOFactory {
@@ -13,6 +14,8 @@ public class MySQLDAOFactory extends DAOFactory {
     private final DishDAO dishDAO = new DishDAOImpl();
     private final PoolDAO poolDAO = new MySQLPoolDAO();
     private final CategoryDAO categoryDAO = new CategoryDAOImpl();
+    private final SubscriptionDAOImpl subscriptionDAO = new SubscriptionDAOImpl();
+
     //private final ReportDAO reportDAO = new MySQLReportDAO();
 
     private MySQLDAOFactory(){}
@@ -45,6 +48,11 @@ public class MySQLDAOFactory extends DAOFactory {
     @Override
     public CategoryDAO getCategoryDAO() {
         return categoryDAO;
+    }
+
+    @Override
+    public SubscriptionDAO getSubscriptionDAO() {
+        return subscriptionDAO;
     }
 //
 //    @Override

@@ -3,6 +3,7 @@ package com.controller;
 import com.entity.*;
 import com.service.DAOService;
 import com.service.DishAndCategoryService;
+import com.service.SubscriptionService;
 import com.service.UserService;
 import org.springframework.web.bind.annotation.*;
 
@@ -175,6 +176,34 @@ public class MainController {
         return answer;
     }
 
+    @RequestMapping(value= "/subscription/addSub",method = RequestMethod.POST)
+    @ResponseBody
+    public Answer addSubscription(
+            @RequestParam("category_id")int categoryId,
+            @RequestParam("user_id") int user_id) {
+
+        daoService.init();
+        Answer answer = new Answer();
+        SubscriptionService subscriptionService = new SubscriptionService();
+        subscriptionService.addSubscription(user_id, categoryId);
+        answer.setMessage("OK");
+        return answer;
+    }
+
+    @RequestMapping(value= "/subscription/deleteSub",method = RequestMethod.POST)
+    @ResponseBody
+    public Answer deleteSubscription(
+            @RequestParam("category_id")int categoryId,
+            @RequestParam("user_id") int user_id) {
+
+        daoService.init();
+        Answer answer = new Answer();
+        SubscriptionService subscriptionService = new SubscriptionService();
+        subscriptionService.deleteSubscription(user_id, categoryId);
+        answer.setMessage("OK");
+        return answer;
+    }
+
     @RequestMapping(value = "/user/update",method = RequestMethod.POST)
     @ResponseBody
     public Answer updateUserInfo(@RequestParam("login")String login,
@@ -195,4 +224,6 @@ public class MainController {
 
         return answer;
     }
+
+
 }
